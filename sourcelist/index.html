@@ -68,240 +68,93 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list_backup
 <p>綜合網上收集的資料<br>( eg: <a href="http://wiki.ubuntu.org.cn/Template:9.10source" target="_blank">http://wiki.ubuntu.org.cn/Template:9.10source</a> )</p>
 <p>修改前记得先备份</p>
 <pre><code>sudo <span class="keyword">cp</span> /etc/apt/sources<span class="preprocessor">.list</span> /etc/apt/sources<span class="preprocessor">.list</span>_backup
+
+
 </code></pre><p>然后修改源配置文件</p>
 <pre><code><span class="built_in">sudo</span> gedit /etc/apt/sources.list
+
+
+
 </code></pre><ul>
 <li>官方源</li>
 </ul>
-<pre>deb http://archive.ubuntu.com/ubuntu/ karmic main restricted universe multiverse
+<p>&lt;pre&gt;deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank">http://archive.ubuntu.com/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank">http://archive.ubuntu.com/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank">http://archive.ubuntu.com/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank">http://archive.ubuntu.com/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb <a href="http://archive.ubuntu.com/ubuntu/" target="_blank">http://archive.ubuntu.com/ubuntu/</a> karmic-backports main restricted universe multiverse&lt;/pre&gt;
 
-deb http://archive.ubuntu.com/ubuntu/ karmic-security main restricted universe multiverse
-
-deb http://archive.ubuntu.com/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb http://archive.ubuntu.com/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb http://archive.ubuntu.com/ubuntu/ karmic-backports main restricted universe multiverse</pre>
-
+</p>
 <ul>
 <li>網易163</li>
 </ul>
-<pre>deb http://mirrors.163.com/ubuntu/ karmic main restricted universe multiverse
+<p>&lt;pre&gt;deb <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic-backports main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.163.com/ubuntu/" target="_blank">http://mirrors.163.com/ubuntu/</a> karmic-backports main restricted universe multiverse&lt;/pre&gt;
 
-deb http://mirrors.163.com/ubuntu/ karmic-security main restricted universe multiverse
-
-deb http://mirrors.163.com/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb http://mirrors.163.com/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb http://mirrors.163.com/ubuntu/ karmic-backports main restricted universe multiverse
-
-deb-src http://mirrors.163.com/ubuntu/ karmic main restricted universe multiverse
-
-deb-src http://mirrors.163.com/ubuntu/ karmic-security main restricted universe multiverse
-
-deb-src http://mirrors.163.com/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb-src http://mirrors.163.com/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb-src http://mirrors.163.com/ubuntu/ karmic-backports main restricted universe multiverse</pre>
-
+</p>
 <ul>
 <li>搜狐sohu</li>
 </ul>
-<pre>deb http://mirrors.sohu.com/ubuntu/ karmic main restricted universe multiverse
+<p>&lt;pre&gt;deb <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic-backports main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb-src <a href="http://mirrors.sohu.com/ubuntu/" target="_blank">http://mirrors.sohu.com/ubuntu/</a> karmic-backports main restricted universe multiverse&lt;/pre&gt;
 
-deb http://mirrors.sohu.com/ubuntu/ karmic-security main restricted universe multiverse
-
-deb http://mirrors.sohu.com/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb http://mirrors.sohu.com/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb http://mirrors.sohu.com/ubuntu/ karmic-backports main restricted universe multiverse
-
-deb-src http://mirrors.sohu.com/ubuntu/ karmic main restricted universe multiverse
-
-deb-src http://mirrors.sohu.com/ubuntu/ karmic-security main restricted universe multiverse
-
-deb-src http://mirrors.sohu.com/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb-src http://mirrors.sohu.com/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb-src http://mirrors.sohu.com/ubuntu/ karmic-backports main restricted universe multiverse</pre>
-
+</p>
 <ul>
 <li>台湾</li>
 </ul>
-<pre>deb http://tw.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
+<p>&lt;pre&gt;deb <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic main universe restricted multiverse<br><br>deb <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic-updates universe main multiverse restricted<br><br>deb <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic-proposed universe main multiverse restricted<br><br>deb <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic-security universe main multiverse restricted<br><br>deb <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic-backports main multiverse restricted universe<br><br>deb-src <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic main universe restricted multiverse<br><br>deb-src <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic-security universe main multiverse restricted<br><br>deb-src <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic-updates universe main multiverse restricted<br><br>deb-src <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic-proposed universe main multiverse restricted<br><br>deb-src <a href="http://tw.archive.ubuntu.com/ubuntu/" target="_blank">http://tw.archive.ubuntu.com/ubuntu/</a> karmic-backports universe main multiverse restricted&lt;/pre&gt;
 
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted
-
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
-
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
-
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic-backports main multiverse restricted universe
-
-deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
-
-deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
-
-deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted
-
-deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
-
-deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic-backports universe main multiverse restricted</pre>
-
+</p>
 <ul>
 <li>SRT Sources 传说中的“骨头源”（SRT源）</li>
 </ul>
-<pre>deb http://ubuntu.srt.cn/ubuntu/ karmic main restricted universe multiverse
+<p>&lt;pre&gt;deb <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic-backports main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.srt.cn/ubuntu/" target="_blank">http://ubuntu.srt.cn/ubuntu/</a> karmic-backports main restricted universe multiverse&lt;/pre&gt;
 
-deb http://ubuntu.srt.cn/ubuntu/ karmic-security main restricted universe multiverse
-
-deb http://ubuntu.srt.cn/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb http://ubuntu.srt.cn/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb http://ubuntu.srt.cn/ubuntu/ karmic-backports main restricted universe multiverse
-
-deb-src http://ubuntu.srt.cn/ubuntu/ karmic main restricted universe multiverse
-
-deb-src http://ubuntu.srt.cn/ubuntu/ karmic-security main restricted universe multiverse
-
-deb-src http://ubuntu.srt.cn/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb-src http://ubuntu.srt.cn/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb-src http://ubuntu.srt.cn/ubuntu/ karmic-backports main restricted universe multiverse</pre>
-
+</p>
 <ul>
 <li>北京交通大学</li>
 </ul>
-<pre>deb http://mirror.bjtu.edu.cn/ubuntu/ karmic main multiverse restricted universe
+<p>&lt;pre&gt;deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic main multiverse restricted universe<br><br>deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic-backports main multiverse restricted universe<br><br>deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic-proposed main multiverse restricted universe<br><br>deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic-security main multiverse restricted universe<br><br>deb <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic-updates main multiverse restricted universe<br><br>deb-src <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic main multiverse restricted universe<br><br>deb-src <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic-backports main multiverse restricted universe<br><br>deb-src <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic-proposed main multiverse restricted universe<br><br>deb-src <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic-security main multiverse restricted universe<br><br>deb-src <a href="http://mirror.bjtu.edu.cn/ubuntu/" target="_blank">http://mirror.bjtu.edu.cn/ubuntu/</a> karmic-updates main multiverse restricted universe&lt;/pre&gt;
 
-deb http://mirror.bjtu.edu.cn/ubuntu/ karmic-backports main multiverse restricted universe
-
-deb http://mirror.bjtu.edu.cn/ubuntu/ karmic-proposed main multiverse restricted universe
-
-deb http://mirror.bjtu.edu.cn/ubuntu/ karmic-security main multiverse restricted universe
-
-deb http://mirror.bjtu.edu.cn/ubuntu/ karmic-updates main multiverse restricted universe
-
-deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic main multiverse restricted universe
-
-deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic-backports main multiverse restricted universe
-
-deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic-proposed main multiverse restricted universe
-
-deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic-security main multiverse restricted universe
-
-deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic-updates main multiverse restricted universe</pre>
-
+</p>
 <ul>
 <li>电子科技大学</li>
 </ul>
-<pre>deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic main restricted universe multiverse
+<p>&lt;pre&gt;deb <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic-backports main restricted universe multiverse<br><br>deb <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic-backports main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb-src <a href="http://ubuntu.uestc.edu.cn/ubuntu/" target="_blank">http://ubuntu.uestc.edu.cn/ubuntu/</a> karmic-updates main restricted universe multiverse&lt;/pre&gt;
 
-deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic-backports main restricted universe multiverse
-
-deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic-security main restricted universe multiverse
-
-deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic main restricted universe multiverse
-
-deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic-backports main restricted universe multiverse
-
-deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic-security main restricted universe multiverse
-
-deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic-updates main restricted universe multiverse</pre>
-
+</p>
 <ul>
 <li>马来西亚</li>
 </ul>
-<pre>deb http://archive.mmu.edu.my/ubuntu/ karmic main restricted universe multiverse
+<p>&lt;pre&gt;deb <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic-backports main restricted universe multiverse<br><br>deb-src <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic main restricted universe multiverse<br><br>deb-src <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic-security main restricted universe multiverse<br><br>deb-src <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic-updates main restricted universe multiverse<br><br>deb-src <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb-src <a href="http://archive.mmu.edu.my/ubuntu/" target="_blank">http://archive.mmu.edu.my/ubuntu/</a> karmic-backports main restricted universe multiverse&lt;/pre&gt;
 
-deb http://archive.mmu.edu.my/ubuntu/ karmic-security main restricted universe multiverse
-
-deb http://archive.mmu.edu.my/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb http://archive.mmu.edu.my/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb http://archive.mmu.edu.my/ubuntu/ karmic-backports main restricted universe multiverse
-
-deb-src http://archive.mmu.edu.my/ubuntu/ karmic main restricted universe multiverse
-
-deb-src http://archive.mmu.edu.my/ubuntu/ karmic-security main restricted universe multiverse
-
-deb-src http://archive.mmu.edu.my/ubuntu/ karmic-updates main restricted universe multiverse
-
-deb-src http://archive.mmu.edu.my/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb-src http://archive.mmu.edu.my/ubuntu/ karmic-backports main restricted universe multiverse</pre>
-
+</p>
 <ul>
 <li>lupaworld江苏双线</li>
 </ul>
-<pre>deb http://mirror.lupaworld.com/ubuntu karmic main restricted universe multiverse
+<p>&lt;pre&gt;deb <a href="http://mirror.lupaworld.com/ubuntu" target="_blank">http://mirror.lupaworld.com/ubuntu</a> karmic main restricted universe multiverse<br><br>deb <a href="http://mirror.lupaworld.com/ubuntu" target="_blank">http://mirror.lupaworld.com/ubuntu</a> karmic-security main restricted universe multiverse<br><br>deb <a href="http://mirror.lupaworld.com/ubuntu" target="_blank">http://mirror.lupaworld.com/ubuntu</a> karmic-updates main restricted universe multiverse<br><br>deb <a href="http://mirror.lupaworld.com/ubuntu" target="_blank">http://mirror.lupaworld.com/ubuntu</a> karmic-backports main restricted universe multiverse<br><br>deb <a href="http://mirror.lupaworld.com/ubuntu/ubuntu-cn" target="_blank">http://mirror.lupaworld.com/ubuntu/ubuntu-cn</a> karmic main restricted universe multiverse<br><br>deb <a href="http://mirror.lupaworld.com/ubuntu/" target="_blank">http://mirror.lupaworld.com/ubuntu/</a> karmic-proposed main restricted universe multiverse<br><br>deb-src <a href="http://mirror.lupaworld.com/ubuntu" target="_blank">http://mirror.lupaworld.com/ubuntu</a> karmic main restricted universe multiverse<br><br>deb-src <a href="http://mirror.lupaworld.com/ubuntu" target="_blank">http://mirror.lupaworld.com/ubuntu</a> karmic-security main restricted universe multiverse<br><br>deb-src <a href="http://mirror.lupaworld.com/ubuntu" target="_blank">http://mirror.lupaworld.com/ubuntu</a> karmic-updates main restricted universe multiverse<br><br>deb-src <a href="http://mirror.lupaworld.com/ubuntu" target="_blank">http://mirror.lupaworld.com/ubuntu</a> karmic-backports main restricted universe multiverse<br><br>deb-src <a href="http://mirror.lupaworld.com/ubuntu/" target="_blank">http://mirror.lupaworld.com/ubuntu/</a> karmic-proposed main restricted universe multiverse&lt;/pre&gt;
 
-deb http://mirror.lupaworld.com/ubuntu karmic-security main restricted universe multiverse
-
-deb http://mirror.lupaworld.com/ubuntu karmic-updates main restricted universe multiverse
-
-deb http://mirror.lupaworld.com/ubuntu karmic-backports main restricted universe multiverse
-
-deb http://mirror.lupaworld.com/ubuntu/ubuntu-cn karmic main restricted universe multiverse
-
-deb http://mirror.lupaworld.com/ubuntu/ karmic-proposed main restricted universe multiverse
-
-deb-src http://mirror.lupaworld.com/ubuntu karmic main restricted universe multiverse
-
-deb-src http://mirror.lupaworld.com/ubuntu karmic-security main restricted universe multiverse
-
-deb-src http://mirror.lupaworld.com/ubuntu karmic-updates main restricted universe multiverse
-
-deb-src http://mirror.lupaworld.com/ubuntu karmic-backports main restricted universe multiverse
-
-deb-src http://mirror.lupaworld.com/ubuntu/ karmic-proposed main restricted universe multiverse</pre>
-
+</p>
 <ul>
 <li>日本</li>
 </ul>
-<pre>deb http://jp.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
-
-deb http://security.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
-
-deb http://jp.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted
-
-deb http://jp.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
-
-deb-src http://jp.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
-
-deb-src http://jp.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
-
-deb-src http://jp.archive.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
-
-deb-src http://jp.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted </pre>
+<p>&lt;pre&gt;deb <a href="http://jp.archive.ubuntu.com/ubuntu/" target="_blank">http://jp.archive.ubuntu.com/ubuntu/</a> karmic main universe restricted multiverse<br><br>deb <a href="http://security.ubuntu.com/ubuntu/" target="_blank">http://security.ubuntu.com/ubuntu/</a> karmic-security universe main multiverse restricted<br><br>deb <a href="http://jp.archive.ubuntu.com/ubuntu/" target="_blank">http://jp.archive.ubuntu.com/ubuntu/</a> karmic-updates universe main multiverse restricted<br><br>deb <a href="http://jp.archive.ubuntu.com/ubuntu/" target="_blank">http://jp.archive.ubuntu.com/ubuntu/</a> karmic-proposed universe main multiverse restricted<br><br>deb-src <a href="http://jp.archive.ubuntu.com/ubuntu/" target="_blank">http://jp.archive.ubuntu.com/ubuntu/</a> karmic main universe restricted multiverse<br><br>deb-src <a href="http://jp.archive.ubuntu.com/ubuntu/" target="_blank">http://jp.archive.ubuntu.com/ubuntu/</a> karmic-proposed universe main multiverse restricted<br><br>deb-src <a href="http://jp.archive.ubuntu.com/ubuntu/" target="_blank">http://jp.archive.ubuntu.com/ubuntu/</a> karmic-security universe main multiverse restricted<br><br>deb-src <a href="http://jp.archive.ubuntu.com/ubuntu/" target="_blank">http://jp.archive.ubuntu.com/ubuntu/</a> karmic-updates universe main multiverse restricted &lt;/pre&gt;
 
 
+</p>
 <p>改完了记得</p>
 <pre><code><span class="built_in">sudo</span> aptitude update <span class="comment">#更新列表 </span>
 
 <span class="built_in">sudo</span> aptitude upgrade <span class="comment">#更新系统</span>
+
+
 </code></pre><p>升级完成之后，系统会要求你重启。不急，选择不重启。为了系统下次能够正常启动，还需要进行进一步软件包检查。关闭升级窗口之后，再重复使用：</p>
 <pre><code>su<span class="operator"><span class="keyword">do</span> apt-<span class="keyword">get</span> <span class="keyword">update</span>
 
-sudo apt-<span class="keyword">get</span> upgrade</span>
+sudo apt-<span class="keyword">get</span> upgrade
+
+</span>
 </code></pre><p>你会发现，原来还有很多软件包可以升级。重复的将它们全部升级完毕。直到没的升为止。</p>
 <p>OK，现在可以重启了。升级过程完成。如果升级一切顺利，这可以运行</p>
 <pre><code>su<span class="operator"><span class="keyword">do</span> apt-<span class="keyword">get</span> autoremove
 
-sudo apt-<span class="keyword">get</span> clean</span>
+sudo apt-<span class="keyword">get</span> clean
+
+</span>
 </code></pre><p>来清除旧有的文件，节约硬盘空间。</p>
 <p>Last Modified by kaka, at 2011-09-25 18:16 </p>
 
@@ -321,53 +174,6 @@ sudo apt-<span class="keyword">get</span> clean</span>
   <div class="widget-wrapper">
     <aside id="sidebar">
   
-  
-    
-      
-      
-
-<div class="widget recent-posts first">
-  <h3 class="title">最近的文章</h3>
-  <ul class="entry">
-    
-      <li>
-        <a href="/2014/01/04/between-2013-2014/">座標:2013-2014</a>
-      </li>
-    
-      <li>
-        <a href="/2011/11/30/11yue-zui-hou-yi-tian/">11月最後一天</a>
-      </li>
-    
-      <li>
-        <a href="/2011/11/29/pages-collapsed-in-firefox/">pages collapsed in Firefox</a>
-      </li>
-    
-      <li>
-        <a href="/2011/11/28/easy-learning-markdown/">easy learning markdown</a>
-      </li>
-    
-      <li>
-        <a href="/2011/11/28/xie-zi-huai-liao/">鞋子壞了</a>
-      </li>
-    
-  </ul>
-</div>
-
-    
-      
-      
-
-<div class="widget blogroll">
-  <h3 class="title">友情链接</h3>
-  <ul class="entry">
-  
-    
-    <li><a href="http://kaka2.github.io" target="_blank">kaka2</a></li>
-  
-  </ul>
-</div>
-
-    
   
 </aside>
 <div class="clearfix"></div>
