@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>sourcelist | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  <meta name="description" content="Ubuntu 9.10 更新源 *
+
+綜合網上收集的資料( eg: http://wiki.ubuntu.org.cn/Template:9.10source )
+修改前记得先备份
+sudo cp /etc/apt/sources.list /etc/apt/sources.list_backup
+">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="sourcelist"/>
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content"><article class="page">
+  <header>
+    
+    
+  
+    <h1 class="title">sourcelist</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <ul>
+<li>Ubuntu 9.10 更新源 *</li>
+</ul>
+<p>綜合網上收集的資料<br>( eg: <a href="http://wiki.ubuntu.org.cn/Template:9.10source" target="_blank">http://wiki.ubuntu.org.cn/Template:9.10source</a> )</p>
+<p>修改前记得先备份</p>
+<pre><code>sudo <span class="keyword">cp</span> /etc/apt/sources<span class="preprocessor">.list</span> /etc/apt/sources<span class="preprocessor">.list</span>_backup
+</code></pre><p>然后修改源配置文件</p>
+<pre><code><span class="built_in">sudo</span> gedit /etc/apt/sources.list
+</code></pre><ul>
+<li>官方源</li>
+</ul>
+<pre>deb http://archive.ubuntu.com/ubuntu/ karmic main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ karmic-security main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ karmic-backports main restricted universe multiverse</pre>
+
+<ul>
+<li>網易163</li>
+</ul>
+<pre>deb http://mirrors.163.com/ubuntu/ karmic main restricted universe multiverse
+
+deb http://mirrors.163.com/ubuntu/ karmic-security main restricted universe multiverse
+
+deb http://mirrors.163.com/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb http://mirrors.163.com/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb http://mirrors.163.com/ubuntu/ karmic-backports main restricted universe multiverse
+
+deb-src http://mirrors.163.com/ubuntu/ karmic main restricted universe multiverse
+
+deb-src http://mirrors.163.com/ubuntu/ karmic-security main restricted universe multiverse
+
+deb-src http://mirrors.163.com/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb-src http://mirrors.163.com/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb-src http://mirrors.163.com/ubuntu/ karmic-backports main restricted universe multiverse</pre>
+
+<ul>
+<li>搜狐sohu</li>
+</ul>
+<pre>deb http://mirrors.sohu.com/ubuntu/ karmic main restricted universe multiverse
+
+deb http://mirrors.sohu.com/ubuntu/ karmic-security main restricted universe multiverse
+
+deb http://mirrors.sohu.com/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb http://mirrors.sohu.com/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb http://mirrors.sohu.com/ubuntu/ karmic-backports main restricted universe multiverse
+
+deb-src http://mirrors.sohu.com/ubuntu/ karmic main restricted universe multiverse
+
+deb-src http://mirrors.sohu.com/ubuntu/ karmic-security main restricted universe multiverse
+
+deb-src http://mirrors.sohu.com/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb-src http://mirrors.sohu.com/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb-src http://mirrors.sohu.com/ubuntu/ karmic-backports main restricted universe multiverse</pre>
+
+<ul>
+<li>台湾</li>
+</ul>
+<pre>deb http://tw.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
+
+deb http://tw.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted
+
+deb http://tw.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
+
+deb http://tw.archive.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
+
+deb http://tw.archive.ubuntu.com/ubuntu/ karmic-backports main multiverse restricted universe
+
+deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
+
+deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
+
+deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted
+
+deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
+
+deb-src http://tw.archive.ubuntu.com/ubuntu/ karmic-backports universe main multiverse restricted</pre>
+
+<ul>
+<li>SRT Sources 传说中的“骨头源”（SRT源）</li>
+</ul>
+<pre>deb http://ubuntu.srt.cn/ubuntu/ karmic main restricted universe multiverse
+
+deb http://ubuntu.srt.cn/ubuntu/ karmic-security main restricted universe multiverse
+
+deb http://ubuntu.srt.cn/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb http://ubuntu.srt.cn/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb http://ubuntu.srt.cn/ubuntu/ karmic-backports main restricted universe multiverse
+
+deb-src http://ubuntu.srt.cn/ubuntu/ karmic main restricted universe multiverse
+
+deb-src http://ubuntu.srt.cn/ubuntu/ karmic-security main restricted universe multiverse
+
+deb-src http://ubuntu.srt.cn/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb-src http://ubuntu.srt.cn/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb-src http://ubuntu.srt.cn/ubuntu/ karmic-backports main restricted universe multiverse</pre>
+
+<ul>
+<li>北京交通大学</li>
+</ul>
+<pre>deb http://mirror.bjtu.edu.cn/ubuntu/ karmic main multiverse restricted universe
+
+deb http://mirror.bjtu.edu.cn/ubuntu/ karmic-backports main multiverse restricted universe
+
+deb http://mirror.bjtu.edu.cn/ubuntu/ karmic-proposed main multiverse restricted universe
+
+deb http://mirror.bjtu.edu.cn/ubuntu/ karmic-security main multiverse restricted universe
+
+deb http://mirror.bjtu.edu.cn/ubuntu/ karmic-updates main multiverse restricted universe
+
+deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic main multiverse restricted universe
+
+deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic-backports main multiverse restricted universe
+
+deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic-proposed main multiverse restricted universe
+
+deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic-security main multiverse restricted universe
+
+deb-src http://mirror.bjtu.edu.cn/ubuntu/ karmic-updates main multiverse restricted universe</pre>
+
+<ul>
+<li>电子科技大学</li>
+</ul>
+<pre>deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic main restricted universe multiverse
+
+deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic-backports main restricted universe multiverse
+
+deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic-security main restricted universe multiverse
+
+deb http://ubuntu.uestc.edu.cn/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic main restricted universe multiverse
+
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic-backports main restricted universe multiverse
+
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic-security main restricted universe multiverse
+
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ karmic-updates main restricted universe multiverse</pre>
+
+<ul>
+<li>马来西亚</li>
+</ul>
+<pre>deb http://archive.mmu.edu.my/ubuntu/ karmic main restricted universe multiverse
+
+deb http://archive.mmu.edu.my/ubuntu/ karmic-security main restricted universe multiverse
+
+deb http://archive.mmu.edu.my/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb http://archive.mmu.edu.my/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb http://archive.mmu.edu.my/ubuntu/ karmic-backports main restricted universe multiverse
+
+deb-src http://archive.mmu.edu.my/ubuntu/ karmic main restricted universe multiverse
+
+deb-src http://archive.mmu.edu.my/ubuntu/ karmic-security main restricted universe multiverse
+
+deb-src http://archive.mmu.edu.my/ubuntu/ karmic-updates main restricted universe multiverse
+
+deb-src http://archive.mmu.edu.my/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb-src http://archive.mmu.edu.my/ubuntu/ karmic-backports main restricted universe multiverse</pre>
+
+<ul>
+<li>lupaworld江苏双线</li>
+</ul>
+<pre>deb http://mirror.lupaworld.com/ubuntu karmic main restricted universe multiverse
+
+deb http://mirror.lupaworld.com/ubuntu karmic-security main restricted universe multiverse
+
+deb http://mirror.lupaworld.com/ubuntu karmic-updates main restricted universe multiverse
+
+deb http://mirror.lupaworld.com/ubuntu karmic-backports main restricted universe multiverse
+
+deb http://mirror.lupaworld.com/ubuntu/ubuntu-cn karmic main restricted universe multiverse
+
+deb http://mirror.lupaworld.com/ubuntu/ karmic-proposed main restricted universe multiverse
+
+deb-src http://mirror.lupaworld.com/ubuntu karmic main restricted universe multiverse
+
+deb-src http://mirror.lupaworld.com/ubuntu karmic-security main restricted universe multiverse
+
+deb-src http://mirror.lupaworld.com/ubuntu karmic-updates main restricted universe multiverse
+
+deb-src http://mirror.lupaworld.com/ubuntu karmic-backports main restricted universe multiverse
+
+deb-src http://mirror.lupaworld.com/ubuntu/ karmic-proposed main restricted universe multiverse</pre>
+
+<ul>
+<li>日本</li>
+</ul>
+<pre>deb http://jp.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
+
+deb http://security.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
+
+deb http://jp.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted
+
+deb http://jp.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
+
+deb-src http://jp.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
+
+deb-src http://jp.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
+
+deb-src http://jp.archive.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
+
+deb-src http://jp.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted </pre>
+
+
+<p>改完了记得</p>
+<pre><code><span class="built_in">sudo</span> aptitude update <span class="comment">#更新列表 </span>
+
+<span class="built_in">sudo</span> aptitude upgrade <span class="comment">#更新系统</span>
+</code></pre><p>升级完成之后，系统会要求你重启。不急，选择不重启。为了系统下次能够正常启动，还需要进行进一步软件包检查。关闭升级窗口之后，再重复使用：</p>
+<pre><code>su<span class="operator"><span class="keyword">do</span> apt-<span class="keyword">get</span> <span class="keyword">update</span>
+
+sudo apt-<span class="keyword">get</span> upgrade</span>
+</code></pre><p>你会发现，原来还有很多软件包可以升级。重复的将它们全部升级完毕。直到没的升为止。</p>
+<p>OK，现在可以重启了。升级过程完成。如果升级一切顺利，这可以运行</p>
+<pre><code>su<span class="operator"><span class="keyword">do</span> apt-<span class="keyword">get</span> autoremove
+
+sudo apt-<span class="keyword">get</span> clean</span>
+</code></pre><p>来清除旧有的文件，节约硬盘空间。</p>
+<p>Last Modified by kaka, at 2011-09-25 18:16 </p>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+
+<div class="widget recent-posts first">
+  <h3 class="title">最近的文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/01/08/hello-world/">Hello World</a>
+      </li>
+    
+      <li>
+        <a href="/2014/01/04/between-2013-2014/">座標:2013-2014</a>
+      </li>
+    
+  </ul>
+</div>
+
+    
+      
+      
+
+<div class="widget blogroll">
+  <h3 class="title">友情链接</h3>
+  <ul class="entry">
+  
+    
+    <li><a href="http://kaka2.github.io" target="_blank">kaka2</a></li>
+  
+  </ul>
+</div>
+
+    
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>
