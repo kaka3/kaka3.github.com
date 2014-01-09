@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>Twitboo的Gtalk機器人使用OAuth授權 | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  <meta name="description" content="Twittersina：中文名叫“圍著脖子推”，是一款值得推薦的微博（網頁版）同步工具，我覺得重要點在於它也是基於GAE搭建的。機器人版是Twitboo（twitboo@appspot.com），被我稱呼為“推波”，使用不算複雜的命令來進行綁定Twitter帳號和進行更新等狀態。
+由於不願意時刻使用">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="Twitboo的Gtalk機器人使用OAuth授權"/>
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2010-07-30T17:26:27.000Z"><a href="/2010/07/31/twitboo-bot-use-oauth-update-twitter/">7月 31 2010</a></time>
+    
+    
+  
+    <h1 class="title">Twitboo的Gtalk機器人使用OAuth授權</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p><a href="http://code.google.com/p/twittersina" target="_blank">Twittersina</a>：中文名叫“圍著脖子推”，是一款值得推薦的微博（網頁版）同步工具，我覺得重要點在於它也是基於GAE搭建的。機器人版是Twitboo（twitboo@appspot.com），被我稱呼為“推波”，使用不算複雜的命令來進行綁定Twitter帳號和進行更新等狀態。</p>
+<p>由於不願意時刻使用代理或VPN等工具上網頁更新Twitter，所以我寧願選擇用Twitboo的Gtalk機器人來進行微博的同步工作，這樣從WEB網頁走向客戶端，不用開著瀏覽器就可以進行update或comment，亦免除了翻牆的麻煩。</p>
+<p>因為Twitter API要在<a href="http://countdowntooauth.com" target="_blank">8月16日</a>停止對HTTP Basic授權的支持，所以屆時第三方應用將不再能使用用戶提供的用戶名和密碼進行相關操作，故此Twitboo的開發者Steven Wang在限期之前就將其進行了更新。在<a href="http://twittersina.appspot.com" target="_blank">網頁版</a>和<a href="http://twitboo.appspot.com" target="_blank">機器人版</a>都可以進行操作了。</p>
+<p>摘引<a href="http://blog.stevenwang.name/twittersina-oauth-252002.html" target="_blank">Steven的博文</a>：</p>
+<blockquote>Gtalk机器人新增了一个”-oauth”命令，输入该命令，机器人将返回一个URL地址，在浏览器中打开该地址，就来到了当前GTalk用户的OAuth授权管理页面，于是把OAuth授权过程从机器人转移到了网页上。<br><br>授权过程与网页版的类似，完成授权后，将显示授权的帐号，同时，在机器人中输入”-status”，也可看到授权帐号。后续需要修改OAuth授权时，向机器人发”-oauth”命令，然后在浏览器中打开机器人返回的地址即可。<br><br>通过OAuth授权的账户所更新的状态的来源，在Twitter中将显示“Twitboo”，在新浪微博中将显示”围着脖子推”。</blockquote>
+
+<p>另外，需說明的是：在8月16日前，會同時提供HTTP BASIC授權和OAuth授權2種方式，而OAuth授權會被優先採用。</p>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

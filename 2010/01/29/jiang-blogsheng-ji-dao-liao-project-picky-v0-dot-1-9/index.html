@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>將blog升級到了Project Picky v0.1.9 | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  <meta name="description" content="Fri, 29 Jan 
+這次升級有點頭痛。。。呵呵！！
+從下載源文件到見到writer后臺，還是蠻曲折的，唉，誰叫我那么笨呢？！
+1）auth.py的修改：
+v0.1.9版本的Picky，如果要進入writer控制臺，先注意設置好auth.py中的SHA1的值；以前只要修改app.yaml中的項目">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="將blog升級到了Project Picky v0.1.9"/>
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2010-01-28T23:26:48.000Z"><a href="/2010/01/29/jiang-blogsheng-ji-dao-liao-project-picky-v0-dot-1-9/">1月 29 2010</a></time>
+    
+    
+  
+    <h1 class="title">將blog升級到了Project Picky v0.1.9</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>Fri, 29 Jan </p>
+<p>這次升級有點頭痛。。。呵呵！！</p>
+<p>從下載源文件到見到writer后臺，還是蠻曲折的，唉，誰叫我那么笨呢？！</p>
+<p>1）auth.py的修改：</p>
+<p>v0.1.9版本的Picky，如果要進入writer控制臺，先注意設置好auth.py中的SHA1的值；以前只要修改app.yaml中的項目名就可以，現在要配置好2个文件先，步驟多了；但是這一步搞好了，也是有好處的；因為用GAE的驗證遇上代理有些麻煩（據Livid話），配上個性化的驗證也是她酷的一面。</p>
+<p>其實要配置自己的驗證方案很簡單，在auth.py中已經說明了；源程序的密碼名是”secret”對應有自己的SHA1值，上傳程序之前，則要修改這2个參數。如果不更改就默認上傳了，在/writer/auth的提示框輸入”secret”亦能進入writer；但這樣不安全的結果可想而知了，嗯哼？！</p>
+<p>比如我在winxp下，可以在python目錄下運行CLI界面的Python，<br>再輸入命令：hashlib.sha1(‘your password’).hexdigest()<br>即可生成自己的SHA1值，然后，將所得值添入secret之中。單引號內就是你自己取的密碼，別忘記了；之后的登錄就會用它的。</p>
+<p>2）頁面顯示的字體變大號了，比原來看起來是舒服，贊一個！</p>
+<p>3）如果有問題，還可以參照Livid已經發布的<a href="http://picky.olivida.com/install" target="_blank">最新版Project Picky安裝文件</a>。</p>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>
