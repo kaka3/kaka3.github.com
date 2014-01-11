@@ -48,25 +48,18 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-28T12:22:00.000Z"><a href="/2011/11/28/better-browser/">11月 28 2011</a></time>
+      <time datetime="2011-11-26T15:09:00.000Z"><a href="/2011/11/26/sites-powered-by-jekyll/">11月 26 2011</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/28/better-browser/">better browser</a></h1>
+    <h1 class="title"><a href="/2011/11/26/sites-powered-by-jekyll/">sites powered by jekyll</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>這個狀況，不知其他同學有沒有遇過,但還是勸告路過的同學盡量使用更高版本的Chrome或Firefox等非IE核心的瀏覽器。</p>
-<p>今天在不同瀏覽器下查看blog時，發現一個奇怪的問題。</p>
-<p>1.在Chrome下，頁面很順暢，加載disqus都正常。</p>
-<p>2.但是在K-Meleon的一個版本下，能夠瀏覽頁面文字，可下面的disqus部分卻無法顯示出來，而且出現彈窗表示xxx錯誤。</p>
-<p>3.再去Firefox下查看，則是直接頁面崩潰，而且要退出瀏覽器，給出一個反饋錯誤的窗口。</p>
-<p>再回想起午休的時候，還用MID試過打開了此blog，由於是自適應移動設備的，所以也是正常的。</p>
-<p>在K-Meleon下，看了一下頁面的source code，覺得可能是要加載asides部分，還有後面的disqus的部分，都沒有成功，於是瀏覽器就崩潰了；Octopress是支持HTML5的，會不會是我的Firefox版本太低了？因為還是在3.6時期下載的。</p>
-<p>哎，自從用了Chrome後，就沒捨得換其他的；而K-Meleon是安裝在一部很舊的pc上，這部機器用其他瀏覽器還非常的慢，我看中的是它啟動的速度快，而且代理切換直接在菜單進行，確實捨不得，用了好多年，有情感的。 嗯哼！</p>
+      <p><a href="https://github.com/mojombo/jekyll/wiki/sites" target="_blank">Link</a> to Jekyll-powered blogs and other sites here.</p>
 
     
   </div>
@@ -85,26 +78,26 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-27T05:25:00.000Z"><a href="/2011/11/27/config-asides/">11月 27 2011</a></time>
+      <time datetime="2011-11-26T13:12:00.000Z"><a href="/2011/11/26/post-by-terminal/">11月 26 2011</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/27/config-asides/">config asides</a></h1>
+    <h1 class="title"><a href="/2011/11/26/post-by-terminal/">post by terminal</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>如何定製custom自己的側邊欄呢？</p>
-<p>找到 source/_includes/custom/asides 文件夾下</p>
-<p>有一個默認的about.html，可以在裡面添加自己的內容，</p>
-<p>保存後，然後複製到 source/_includes/asides的文件夾中；</p>
-<p>接下來，就是在_config.yml呢面配置：</p>
-<p>大致上定位到第47行 ，下面是默認的</p>
-<p>default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</p>
-<p>看見沒？如果你想把about.html放在 recent_posts.html的前面，</p>
-<p>就照樣寫成asides/about.html，很簡單了吧，o(∩∩)o…哈哈</p>
+      <p>使用終端進行發布的3個命令：</p>
+<ol>
+<li>rake new_post[“hello world”]</li>
+<li>gedit source/_post/year-month-day-hello-world.markdown</li>
+<li>rake generate</li>
+<li>rake deploy </li>
+</ol>
+<p>是不是很簡單呢？</p>
+<p>接下來的任務就是對markdown的練習。</p>
 
     
   </div>
@@ -123,27 +116,82 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-26T19:40:00.000Z"><a href="/2011/11/27/no-sleeping/">11月 27 2011</a></time>
+      <time datetime="2011-11-26T12:22:00.000Z"><a href="/2011/11/26/how-to-install-octopress-and-deploy-on-github/">11月 26 2011</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/27/no-sleeping/">no sleeping</a></h1>
+    <h1 class="title"><a href="/2011/11/26/how-to-install-octopress-and-deploy-on-github/">how to install octopress and deploy on github</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>哎，折騰到現在都沒有睡意啊！</p>
-<p>或許是上午喝過凍咖啡的作用，也許是太興奮了？</p>
-<p>又看到一種玩法—-建立新頁面的命令：</p>
-<p>eg:</p>
+      <p>都是在網上搜集到的一些資料，看起來有些亂，但還是希望有寫用處吧！ ：）</p>
 <ul>
-<li><p>rake new_page[super-awesome]</p>
-<blockquote>  creates /source/super-awesome/index.markdown</blockquote>
+<li><p><a href="http://octopress.org/docs/" target="_blank">Octopress：A blogging framework for hackers.</a></p>
 </li>
-<li><p>rake new_page[super-awesome/page.html]</p>
-<blockquote>creates /source/super-awesome/page.html</blockquote>
+<li><p><a href="http://lyhdev.com/note:octopress" target="_blank">Octopress: a blogging framework for hackers</a></p>
+</li>
+<li><p><a href="http://help.github.com/win-set-up-git/" target="_blank">Guide for setting up git in Windows</a></p>
+</li>
+<li><p><a href="http://help.github.com/linux-set-up-git/" target="_blank">Guide for setting up git in Linux</a></p>
+</li>
+<li><p><a href="http://serholiu.com/github-share-code/" target="_blank">在GitHub上分享和展示你的代码</a> </p>
+</li>
+<li><p><a href="http://gotgit.github.com/gotgithub/" target="_blank">GotGitHub v0.1 documentation</a></p>
+</li>
+<li><p><a href="http://zwq.me/git-and-github-use-ubuntu.html" target="_blank">ubuntu下Git与GitHub的使用</a> </p>
+</li>
+<li><p><a href="http://www.pureweber.com/article/git-and-github/" target="_blank">Git与Github的使用(ubuntu)</a></p>
+</li>
+<li><p><a href="http://blog.itmem.com/?p=1157" target="_blank">Git与GitHub在Windows环境下的使用指南</a></p>
+</li>
+<li><p><a href="http://interjc.net/archives/2011/09/05/using-github-on-windows.html" target="_blank">Windows 上使用 Github 手记</a></p>
+</li>
+<li><p><a href="http://pizn.github.com/blog/2011/09/22/create-github-page.html" target="_blank">在 github 上建立 pages 的过程</a></p>
+</li>
+<li><p><a href="http://www.pizn.net/24-09-2011/use-github-pages-to-build-a-blog/" target="_blank">使用 GitHub Pages 建立博客</a></p>
+</li>
+<li><p><a href="http://blog.leezhong.com/tech/2010/08/25/make-github-as-blog-engine.html" target="_blank">使用github作为博客引擎(Jekyll)</a> </p>
+</li>
+<li><p><a href="http://osser.me/git/2011/11/08/github-page.html" target="_blank">在github上搭建自己的博客(Jekyll)</a></p>
+</li>
+<li><p><a href="http://tzangms.com/2011/10/09/from-blogofile-to-octopress/" target="_blank">From Blogofile to Octopress</a></p>
+</li>
+<li><p><a href="http://forcefront.com/2011/create-github-organizations/" target="_blank">如何在 GitHub 建立组织</a> </p>
+</li>
+<li><p><a href="http://forcefront.com/2011/build-your-github-pages/" target="_blank">如何在 GitHub 建立个人主页和项目演示页面</a></p>
+</li>
+<li><p><a href="http://blog.xdite.net/posts/2011/10/07/what-is-octopress/" target="_blank">Why Octopress?</a></p>
+</li>
+<li><p><a href="http://yavaeye.com/p/show/hello-octopress" target="_blank">Hello octopress</a></p>
+</li>
+<li><p><a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html" target="_blank">使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章</a> </p>
+</li>
+<li><p><a href="http://www.yangzhiping.com/tech/octopress.html" target="_blank">Ruby开源项目介绍(1)：octopress—像黑客一样写博客</a></p>
+</li>
+<li><p><a href="http://hychen.wuweig.org/blog/2011/11/13/huan-dao-octopress/" target="_blank">由WordPress換到Octopress</a></p>
+</li>
+<li><p><a href="http://www.yodi.me/blog/2011/10/24/github-custom-domain-with-octopress-in-ubuntu-oneiric-11-dot-10/" target="_blank">Github Custom Domain With Octopress in Ubuntu Oneiric 11.10</a></p>
+</li>
+<li><p><a href="http://greglus.com/blog/2011/10/10/how-to-install-octopress-on-ubuntu/" target="_blank">How to Install Octopress on Ubuntu and Deploy on GitHub</a></p>
+</li>
+<li><p><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/" target="_blank">windows下Octopress安裝筆記</a></p>
+</li>
+<li><p><a href="http://a.wuyb.com/blog/2011/10/29/octopressed/" target="_blank">遷移WordPress到Octopress</a></p>
+</li>
+<li><p><a href="http://ravenw.com/blog/2011/08/27/blog-with-jekyll/" target="_blank">基于Jekyll搭建自己的博客</a></p>
+</li>
+<li><p><a href="http://blog.tingkun.com/blog/2011/11/03/zai-githubda-jian-octopress-bo-ke/" target="_blank">如何写blog—在github搭建-Octopress 博客</a></p>
+</li>
+<li><p><a href="http://lxj.name/github/2010/09/20/saberma-github-page-blog-build-with-jekyll.html" target="_blank">应用jekyll构建基于github page的博客</a></p>
+</li>
+<li><p><a href="http://blog.miaout17.net/2011/05/08/convert-wordpress-to-jekyll-and-disqus/" target="_blank">將Wordpress轉移到Jekyll及Disqus</a></p>
+</li>
+<li><p><a href="http://code.raycn.net/tech/github.html" target="_blank">jekyll教程</a> </p>
+</li>
+<li><p><a href="http://kyle.xlau.org/posts/blogging-like-a-hacker.html" target="_blank">Jekyll像黑客一样写博客</a></p>
 </li>
 </ul>
 

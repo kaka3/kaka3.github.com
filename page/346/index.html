@@ -48,66 +48,26 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2007-01-20T11:44:00.000Z"><a href="/2007/01/20/guan-yu-hostsde-yi-xie-zhi-shi/">1月 20 2007</a></time>
+      <time datetime="2007-01-18T11:29:00.000Z"><a href="/2007/01/18/wang-luo-dian-shi-joost/">1月 18 2007</a></time>
     
     
   
-    <h1 class="title"><a href="/2007/01/20/guan-yu-hostsde-yi-xie-zhi-shi/">关于hosts的一些知识</a></h1>
+    <h1 class="title"><a href="/2007/01/18/wang-luo-dian-shi-joost/">网络电视:Joost</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>1/20/07</p>
-<p>在windows系统中有一个叫”hosts”文件,但它具体是什么?有什么作用?工作原理是怎样的?从网上搜索一下,有不少知识,这里就转贴一段,虽然不是唯一的答案,但对自己的理解还是有些帮助吧!</p>
-<h2 id="-3d-3d-3d-3d-5173-4e8e-host-6587-4ef6-3d-3d-3d-3d-">====关于host文件====</h2>
-<p>一． Hosts文件的位置</p>
-<p>很多用户都知道在Window系统中有个Hosts文件（没有后缀名），在Windows 98系统下该文件在Windows文件夹。在Windows 2000/XP系统中位于\%Systemroot%\System32\Drivers\Etc 文件夹中，其中，%Systemroot%指系统安装路径。例如，Windows XP 安装在C:\WINDOWS,那么Hosts文件就在C:\Widows\System32\Drvers\Etc中。</p>
-<p>你也可以用windows自带的查找功能搜索找到hosts文件。<br>该文件其实是一个纯文本的文件，用普通的文本编辑软件如记事本等都能打开和编辑。</p>
-<p>二． Hosts文件的基本内容和语法</p>
-<p>用记事本打开hosts文件，就可以看见了微软对这个文件的说明。Hosts文件文一般有如下面的基本内容:</p>
-<pre># Copyright (c) 1993-1999 Microsoft Corp.
-# For example:
-# 102.54.94.97 rhino.acme.com # source server
-# 38.25.63.10 x.acme.com # x client host
-127.0.0.1 localhost</pre>
-
-<p>这个文件是根据TCP/IP for Windows 的标准来工作的。<br>它的作用是定义IP地址和Host name(主机名)的映射关系，是一个映射IP地址和Host name (主机名) 的规定。这个规定中，要求每段只能包括一个映射关系，也就是一个IP地址和一个与之有映射关系的主机名。 IP地址要放在每段的最前面，映射的Host name(主机名)在IP后面，中间用空格分隔。对于这段的映射说明，用“#”分割后用文字说明。</p>
-<p>三． Hosts文件的工作方式</p>
-<p>现在让我们来看看Hosts在Windows中是怎么工作的。<br>我们知道在网络上访问网站，要首先通过DNS服务器把要访问的网络域名（XXXX.com）解析成XXX.XXX.XXX.XXX的IP地址后，计算机才能对这个网络域名作访问。<br>要是对于每个域名请求我们都要等待域名服务器解析后返回IP信息，这样访问网络的效率就会降低，因为DNS做域名解析和返回IP都需要时间。<br>为了提高对经常访问的网络域名的解析效率，可以通过利用Hosts文件中建立域名和IP的映射关系来达到目的。根据Windows系统规定，在进行DNS请求以前，Windows系统会先检查自己的Hosts文件中是否有这个网络域名映射关系。如果有,则调用这个IP地址映射，如果没有，再向已知的DNS服务器提出域名解析。也就是说Hosts的请求级别比DNS高。</p>
-<p>四． Hosts文件的工作方式和具体作用  </p>
-<p>现在来看一下Hosts文件的工作方式以及它在具体使用中起哪些作用。</p>
-<p>1、加快域名解析</p>
-<p>对于要经常访问的网站，我们可以通过在Hosts中配置域名和IP的映射关系，提高域名解析速度。由于有了映射关系，当我们输入域名计算机就能很快解析出IP，而不用请求网络上的DNS服务器。</p>
-<p>2、方便局域网用户</p>
-<p>在很多单位的局域网中，会有服务器提供给用户使用。但由于局域网中一般很少架设DNS服务器，访问这些服务器时，要输入难记的IP地址。这对不少人来说相当麻烦。现在可以分别给这些服务器取个容易记住的名字，然后在Hosts中建立IP映射，这样以后访问的时候，只要输入这个服务器的名字就行了。</p>
-<p>3、屏蔽网站</p>
-<p>现在有很多网站不经过用户同意就将各种各样的插件安装到你的计算机中，其中有些说不定就是木马或病毒。对于这些网站我们可以利用Hosts把该网站的域名映射到错误的IP或本地计算机的IP，这样就不用访问了。在WINDOWS XP系统中，约定127.0.0.1为本地计算机的IP地址, 0.0.0.0是错误的IP地址。<br>如果，我们在Hosts中，写入以下内容：</p>
-<p>127.0.0.1 # 要屏蔽的网站 A<br>0.0.0.0 # 要屏蔽的网站 B</p>
-<p>这样，计算机解析域名 A和 B时，就解析到本机IP或错误的IP，达到了屏蔽网站A 和B的目的。</p>
-<p>4、顺利连接系统</p>
-<p>对于Lotus的服务器和一些数据库服务器，在访问时如果直接输入IP地址那是不能访问的，只能输入服务器名才能访问。那么我们配置好Hosts文件，这样输入服务器名就能顺利连接了。</p>
-<p>五． 屏蔽不想访问的网站的例子<br>这里给出一些收集到的利用Hosts文件对一些网址屏蔽的例子，共大家学习使用Hosts文件时参考。</p>
-<p>例1.<br>在 hosts文件中加入如下内容就可以屏蔽文件中定义的对应的网址。</p>
-<pre>127.0.0.1 localhost
-127.0.0.1 download.3721.com
-127.0.0.1 3721.com #3721网络实名
-127.0.0.1 3721.net #3721网络实名
-127.0.0.1 cnsmin.3721.com #3721网络实名
-127.0.0.1 cnsmin.3721.net #3721网络实名
-127.0.0.1 download.3721.com #3721网络实名
-127.0.0.1 download.3721.net #3721网络实名
-127.0.0.1 www.3721.com #3721网络实名
-127.0.0.1 www.3721.net #3721网络实名</pre>
-
-<p>例2.<br>在 hosts文件中加入如下内容就可以屏蔽文件中定义的对应的网址。</p>
-<pre>127.0.0.1 localhost
-127.0.0.1 bar.baidu.com #百度IE搜索伴侣
-127.0.0.1 www.baidu.com #百度IE搜索伴侣
-127.0.0.1 baidu.com #百度IE搜索伴侣</pre>
-
-<p>最后要指出的是，Hosts文件配置的映射是静态的，如果网络上的计算机更改了请及时更新IP地址，否则将不能访问。</p>
+      <p>1/18/07</p>
+<p><img src="http://photo1.yupoo.com/20070118/091305_262677034_m.jpg" /></p>
+<p>目前还是beta测试阶段.  <a href="http://www.joost.com/" target="_blank"><a href="http://www.joost.com/">http://www.joost.com/</a></a>   </p>
+<p>来自Chinese Skype Whatch的<a href="http://blog.terac.com/skype/e_1367.html" target="_blank">消息</a>:Skype和Kazaa公司创始人,Janus Friis(弗里斯)和Nikalas Zennstrom(曾斯托姆)日前发布了新公司的名称<a href="http://www.joost.com/" target="_blank">Joost</a>! (翻译为”乔斯特”?)</p>
+<p>网站1.16日发布,采取p2p技术,当然也要给它扣上web2.0的大帽子,也算是”网络电视”或”播客”一类吧!</p>
+<p>这一项目甚至是在投资<a href="http://www.skype.com/" target="_blank">skype</a>之前就已经被提出过,而2006年是个恰当的时机,随着计算机和宽带传播技术的深入发展,这个Venice (<a href="http://www.joost.com/blog/2007/01/we-are-joost.html" target="_blank">一个酒店的会议室的名字</a>)Project开始露面;不过现在该为它取个正式的公司名字,于是Joost担当起品牌重任的角色!</p>
+<p>利用快捷的网络,提供电视节目欣赏,可以与朋友互动交谈,甚至创建个性tv channels等等,当然这种服务可以随时随地进行!</p>
+<p>链接参考:  </p>
+<p>1)<a href="http://www.enet.com.cn/article/2007/0117/A20070117401937.shtml" target="_blank">Skype同门P2P电视软件Joost吸引5万人测试</a><br>2)<a href="http://www.ppcn.net/n3609c1.aspx" target="_blank">Skype和Kazaa创始人宣布今年进军网络电视</a><br>3)<a href="http://www.wangtam.com/50226711/venice_project_ae_joost_56446.php" title="Venice Project 正式更名为 Joost" target="_blank">Venice Project 正式更名为 Joost</a><br>4)<a href="http://news.ccidnet.com/art/1032/20070117/1002677_1.html" target="_blank">Skype创始人转战宽带TV市场 Joost登台亮相</a><br>5)DEVNET/TIPS CHINA: <a href="http://www.tipschina.gov.cn/search_detail.asp?cardid=6780&amp;page=1" target="_blank">(BW)(NY-JOOST) 代码名The Venice Project停止使用</a></p>
 
     
   </div>
@@ -126,24 +86,33 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2007-01-19T11:37:00.000Z"><a href="/2007/01/19/2006nian-du-feng-kuang-pan-dian/">1月 19 2007</a></time>
+      <time datetime="2007-01-16T11:27:00.000Z"><a href="/2007/01/16/you-de-ge/">1月 16 2007</a></time>
     
     
   
-    <h1 class="title"><a href="/2007/01/19/2006nian-du-feng-kuang-pan-dian/">2006年度:疯狂盘点</a></h1>
+    <h1 class="title"><a href="/2007/01/16/you-de-ge/">有的歌</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>1/19/07</p>
-<p>2006年,就这样过去了,我很怀念;<br>这话当然不是源于我自己的口头,借用于此也不大为过吧!</p>
-<p>为什么说”疯狂盘点”?</p>
-<p>当报纸上的年终时事文化娱乐新闻.电脑科技资讯方面的盘点和总结让我看得头晕目眩的时候,我还是选择去依赖网络,特别是搜索引擎;因为现在是网络时代了,什么资讯都可从网上得到;可当我真的找到了内容的时候,却又面临是否认真看.认真读的尴尬境地;结果呢,要记住的东西却少得可怜;所以,我怀疑到自己是患有<a href="http://www.ftchina.net/blog/article.asp?id=32" target="_blank">william所提到的</a>“信息狂躁症”!!</p>
-<p>就算自己已经这样了,但对已经过去的一年总该留点什么吧!!  </p>
-<p>于是就把自己搜罗到的一些来自著名网站和网络媒体上的2006年终盘点做成一道大餐,留着慢慢去消化和回味!</p>
-<p>2006年,谁又能记得那么多呢? 2007,谁会得到更多呢?<br>2006年,我关注了哪些呢? 2007年我又会继续关注哪些呢?</p>
+      <p>1/16/07</p>
+<p>声音,有动听的,有吵闹的;<br>有节奏和旋律的声音被变成了歌声!  </p>
+<p>歌声,有悠扬的,有沉闷的;<br>歌声,有忧郁的,有欢快的;  </p>
+<p>有的歌,听着很无聊;<br>有的歌,听着很兴奋;  </p>
+<p>有的歌,好听;有的歌,不好听;<br>有的歌,是古代的;有的歌是现代的;  </p>
+<p>有的歌,是独唱的;有的歌,是合唱的;<br>有的歌, 听过就忘;有的歌,百听不厌;  </p>
+<p>有的歌,是男生的;有的歌,是女生的;<br>有的歌,是本土的;有的歌是国际的;  </p>
+<p>有的歌,流行;有的歌,被禁;<br>有的歌,需要炒作;有的歌,只留口碑;  </p>
+<p>有的歌,属于晚间听的;有的歌,属于早晨听的;<br>有的歌,属于儿童唱的;有的歌,是属于青年男女唱的;  </p>
+<p>最伟大的歌是什么歌?<br>没有歌声的地方在哪里?  </p>
+<p>====<span style="color: rgb(255, 102, 0);">不 想 划 的 分 割 线</span>====</p>
+<p>今日,在寻找”爱得太迟”的作曲人的时候,找了几个fans团体,觉得很好玩,记录如此!</p>
+<p>卫兰大陆后援会(Janice):<br><a href="http://www.janicefans.com" target="_blank"><a href="http://www.janicefans.com">http://www.janicefans.com</a></a></p>
+<p>容祖儿全球联盟论坛(Joey):<br><a href="http://www.joey-fans.net" target="_blank"><a href="http://www.joey-fans.net">http://www.joey-fans.net</a></a></p>
+<p>巨基谷论坛(Leoku):<br><a href="http://leoku.net/" target="_blank"><a href="http://leoku.net">http://leoku.net</a></a></p>
+<p>千言堂(Miriam):<br><a href="http://www.miriamyeung.cn" target="_blank"><a href="http://www.miriamyeung.cn">http://www.miriamyeung.cn</a></a></p>
 
     
   </div>
@@ -162,50 +131,28 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2007-01-19T11:35:00.000Z"><a href="/2007/01/19/chui-niu-bu-shou-shui/">1月 19 2007</a></time>
+      <time datetime="2007-01-16T11:24:00.000Z"><a href="/2007/01/16/2006shi-da-jing-ge-jin-qu-ban-jiang-dian-li/">1月 16 2007</a></time>
     
     
   
-    <h1 class="title"><a href="/2007/01/19/chui-niu-bu-shou-shui/">吹牛不收税</a></h1>
+    <h1 class="title"><a href="/2007/01/16/2006shi-da-jing-ge-jin-qu-ban-jiang-dian-li/">2006十大劲歌金曲颁奖典礼</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>1/19/07</p>
-<p>这些吹牛的段子,暂时不知道来自何处,因为从百度搜索结果中发现相似的网页有585篇,今次仅为转载提供娱乐and一笑而过!!</p>
-<p>以前相声中说吹牛不要脸,现在看来吹牛其实还不收税呢,多好啊!!<br>何乐而不转呢?!</p>
-<p><span style="color: rgb(255, 102, 0); font-weight: bold;">//////////转贴//////////</span></p>
-<p>看看几个最能吹的网虫们的吹牛记录吧！  </p>
-<ol>
-<li><p>“我的CPU是我用一个电容一个电容焊接起来的！好大一砣啊……哈哈哈！” </p>
-</li>
-<li><p>“楼上的很厉害哦，可怜我昨天费了一个晚上的工夫才用小刀在我的硬盘上刻了一个操作系统，我要向大家学习啊！”  </p>
-</li>
-<li><p>“呵，吹吧，吹牛不上税……我昨天把我家的那台老式电视拆了，七拼八凑变成了一块GF4Ti4800的显卡，赚了……”    </p>
-</li>
-<li><p>“这算什么，刚才我边吃苹果边上网，忽然就死机了，重启一下就发现操作系统就变成了MAC OS。”  </p>
-</li>
-<li><p>“昨天我闲着没事，看着自己的显示器烦，随便找了块碎玻璃，几张马粪纸，又拆了一个收音机，组装了台液晶显示器，凑合用了。”</p>
-</li>
-<li><p>“我刚把我56K猫超频了，结果，我一上网，我家小区那一片的所有电话全部占线。”</p>
-</li>
-<li><p>“我说点老的事情吧，那是我刚上大学的时候，大家都用286，显示器也是单显，硬盘就更小的可怜了。我一想，这样不行，于是拆了个彩电的显示屏装在显示器上，单显变彩显了。偶后来嫌硬盘小，于是回收了一千张5英寸软盘，把里面的芯全部拿出来，粘在了一起，于是一个1G多的硬盘就出来了。”</p>
-</li>
-<li><p>“我穷，买不起计算机，现在只能拿这个5块钱买的计算器改成计算机上网。缺点是屏幕小，但是原来的计算器是太阳能的，我保留了这个功能。穷啊，将就吧。”
-　　</p>
-</li>
-<li><p>“真都是强人啊。我只是把电视遥控加了个带摄象头当新款手机凑合着用。”</p>
-</li>
-<li><p>“这里的帖子实在太大，每次打开都快死机。看来内存不足。虽然现在内存便宜，但是我穷啊，还只用128M的。我琢磨了半天，发现一个好办法，我把内存反过来插，嘿。嘀的一声自检通过，内存变成了821M的啦。”
-　　</p>
-</li>
-<li><p>“我今天下午好不容易抓住一只老鼠，注入芯片把他弄成了一只鼠标。”</p>
-</li>
-<li><p>“昨天夜里用 M$PAINT 画了一张贞子的图，才画完她就从显示器爬出来了。”</p>
-</li>
-</ol>
+      <p>1/16/07</p>
+<p>看了新闻才知道年度”十大劲歌”颁奖已经过了3天啦!</p>
+<p>对面香江的四大年度音乐颁奖盛事,我最期望的就是tvb的”十大”歌曲,可惜这次漏了看电视直播;所以只有去找碟看看,因为收藏”十大”的现场版VCD这个习惯还是不会更改的!</p>
+<p>基仔的”爱得太迟”的确是一首不错的作品!填词者是著名的林夕,这个是错不了的;</p>
+<p>而对于作曲人是谁的问题却让我迷惑;因为看到搜索的结果中有”杨镇邦”和”林振邦”居多,但究竟谁是正确的呢?不会连人家的姓氏都弄错了啊?!结果在tvb的官网”<a href="http://tvcity.tvb.com/jsg/seasonal2006/seasonal2006_3.html" target="_blank">2006劲歌金曲优秀选第三回</a>“的页面上找到第4首得奖歌曲”爱得太迟”,原来作曲人是<span style="color: rgb(255, 102, 102);">“杨镇邦”</span>!</p>
+<p><img src="http://photo1.yupoo.com/20070116/185826_952280064_m.jpg" /></p>
+<p>附:2006年度十大劲歌金曲颁奖典礼成绩单<br>网易专题:<a href="http://ent.163.com/special/000325H4/jingejinqu.html" target="_blank"><a href="http://ent.163.com/special/000325H4/jingejinqu.html">http://ent.163.com/special/000325H4/jingejinqu.html</a></a><br>新浪专题:<a href="http://ent.sina.com.cn/f/y/06tvbtop10/index.shtml" target="_blank"><a href="http://ent.sina.com.cn/f/y/06tvbtop10/index.shtml">http://ent.sina.com.cn/f/y/06tvbtop10/index.shtml</a></a><br>搜狐专题:<a href="http://music.yule.sohu.com/s2006/tvbjg2007/" target="_blank"><a href="http://music.yule.sohu.com/s2006/tvbjg2007">http://music.yule.sohu.com/s2006/tvbjg2007</a></a>  </p>
+<p>=========<br>小贴士:无线劲歌的简短历史</p>
+<p>劲歌金曲(Jade Solid Gold，简称JSG)是一个在香港电视史上,相当长寿的音乐节目,由无线电视制作。</p>
+<p>无线台的劲歌金曲节目源于1981年,当时第1代的节目主持人是蔡枫华（据知亦是任期最长的一位）,并于逢星期日晚上九时左右播映,节目的内容以访问歌手,以及播放过去一个星期内的新歌MTV为主。起初并没有一个正式的颁奖典礼,直到1984年1月28日,才开始举办1983年度十大劲歌金曲颁奖典礼,这个“传统”一直维持到现在。</p>
+<p>当然,我们不会忘记”十大劲歌金曲季选”这个特别节目!从2004年起改为每年只举办2次劲歌优秀选。</p>
 
     
   </div>

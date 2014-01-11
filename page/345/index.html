@@ -48,31 +48,66 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2007-02-01T11:52:00.000Z"><a href="/2007/02/01/zhu-liu-de-cao-gen/">2月 1 2007</a></time>
+      <time datetime="2007-01-20T11:44:00.000Z"><a href="/2007/01/20/guan-yu-hostsde-yi-xie-zhi-shi/">1月 20 2007</a></time>
     
     
   
-    <h1 class="title"><a href="/2007/02/01/zhu-liu-de-cao-gen/">主流的草根</a></h1>
+    <h1 class="title"><a href="/2007/01/20/guan-yu-hostsde-yi-xie-zhi-shi/">关于hosts的一些知识</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>2/1/07</p>
-<p>如题,其实是说一本书的名字—“<a href="http://www.douban.com/subject/1951369/" target="_blank">草根才是主流</a>“</p>
-<p>上周日,虽说把<a href="http://www.douban.com/group/topic/1415176/" target="_blank">手机弄丢了</a>,但是对自己的情绪影响还不算大;没有了信息.铃声和电话的干扰,人的感觉反倒是很清静;</p>
-<p>去书店买的这本书就是<a href="http://blog.sina.com.cn/m/xueyong" target="_blank">薛涌</a>先生写的,其实在<a href="http://blog.sina.com.cn/m/xueyong" target="_blank">他的日志</a>上也有介绍;我是被”700多万点击率,新浪思想文化博客的冠军”几个大字给吸引住了;当时在书店的二楼入口摆放着,我记得看”<a href="http://www.wangxiaofeng.com" target="_blank">不许联想</a>“也是在那个位置,呵呵!名家博客出书早已不是什么稀事,跟艺人弄写真集没什么好奇;</p>
-<p>百万点击率的博客中徐静蕾的书—“老徐博客”,写的是感性的生活;”不许联想”有足够的幽默讽刺味道,对时弊予以批驳,总有令人意想不大的效果;而”<a href="http://blog.sina.com.cn/m/xueyong" target="_blank">反智的书生</a>“的作品却是理性的思想和评论,现实的杂文成为当今”民间意见领袖”;其实,在平时的南都报上也不时有他的观点和文字,让读者有很大的共鸣;</p>
-<p>在看到他评论印度如何赶超中国并崛起的短文,甚是赞不绝口;以”<a href="http://www.bullog.cn/blogs/qitiandadasheng/archives/23799.aspx" target="_blank">垃圾生活中的人不是垃圾</a>“为题,讲述了我们在国内媒体无法看到的现实情景;贫民窟的妇女一样拥有政府的各种福利,靠的是手中拥有权利为自己说话;</p>
-<p>本人从离开学校到现在还从没有参加过什么选举活动呢,尽管意识里知道我们都有选举权利,但我连选票是什么样子都不知道;还有住房,教育,保险等等实际的权益都无法有根本的保障;甚至于周围不少人觉得很难理解当今的制度;</p>
-<p>的确很佩服薛先生对现实中的不合理现象进行批驳的勇气;<br>经济”自由派”为什么遭到反对?如何对待穷人?为什么中国不能永远为世界打工?<br>等等……<br>还有针对教育问题,网络现象都给予了不平凡的思考,<br>看问题的视觉也比所谓的”精英”要实在;但他的主题很明确,就是要注重大多数人的利益,这个大多数就是那些所谓”精英识士”最不屑的”草根”!  </p>
-<p>无疑,看完他的这本杂文集,不得不承认他是一位”<a href="http://blog.sina.com.cn/u/4925924f010007mf" target="_blank">会思想的草根</a>“!!</p>
-<p><a href="http://lz.book.sohu.com/serialize-id-6472.html"></a>导读提示:</p>
-<p>“影响中国公共知识分子50人之一”—-南方人物周刊</p>
-<p>“薛涌是我最尊重和最爱读的少数几个中国当代作家之一;他论述中美社会发展的文字,目光敏锐.想象深刻;他是当代中国的托克维尔,他的文字与思想已经并将继续对中国社会产生重要影响”——徐小平</p>
-<p>“随着社会的进步,即公民参与意识的增强,薛涌的影响将超越20多年前的董氏兄弟(董鼎山.董乐山)和几年前的林达夫妇”——智效民</p>
-<p>连载在这里:<a href="http://lz.book.sohu.com/serialize-id-6472.html" target="_blank">草根才是主流</a></p>
+      <p>1/20/07</p>
+<p>在windows系统中有一个叫”hosts”文件,但它具体是什么?有什么作用?工作原理是怎样的?从网上搜索一下,有不少知识,这里就转贴一段,虽然不是唯一的答案,但对自己的理解还是有些帮助吧!</p>
+<h2 id="-3d-3d-3d-3d-5173-4e8e-host-6587-4ef6-3d-3d-3d-3d-">====关于host文件====</h2>
+<p>一． Hosts文件的位置</p>
+<p>很多用户都知道在Window系统中有个Hosts文件（没有后缀名），在Windows 98系统下该文件在Windows文件夹。在Windows 2000/XP系统中位于\%Systemroot%\System32\Drivers\Etc 文件夹中，其中，%Systemroot%指系统安装路径。例如，Windows XP 安装在C:\WINDOWS,那么Hosts文件就在C:\Widows\System32\Drvers\Etc中。</p>
+<p>你也可以用windows自带的查找功能搜索找到hosts文件。<br>该文件其实是一个纯文本的文件，用普通的文本编辑软件如记事本等都能打开和编辑。</p>
+<p>二． Hosts文件的基本内容和语法</p>
+<p>用记事本打开hosts文件，就可以看见了微软对这个文件的说明。Hosts文件文一般有如下面的基本内容:</p>
+<pre># Copyright (c) 1993-1999 Microsoft Corp.
+# For example:
+# 102.54.94.97 rhino.acme.com # source server
+# 38.25.63.10 x.acme.com # x client host
+127.0.0.1 localhost</pre>
+
+<p>这个文件是根据TCP/IP for Windows 的标准来工作的。<br>它的作用是定义IP地址和Host name(主机名)的映射关系，是一个映射IP地址和Host name (主机名) 的规定。这个规定中，要求每段只能包括一个映射关系，也就是一个IP地址和一个与之有映射关系的主机名。 IP地址要放在每段的最前面，映射的Host name(主机名)在IP后面，中间用空格分隔。对于这段的映射说明，用“#”分割后用文字说明。</p>
+<p>三． Hosts文件的工作方式</p>
+<p>现在让我们来看看Hosts在Windows中是怎么工作的。<br>我们知道在网络上访问网站，要首先通过DNS服务器把要访问的网络域名（XXXX.com）解析成XXX.XXX.XXX.XXX的IP地址后，计算机才能对这个网络域名作访问。<br>要是对于每个域名请求我们都要等待域名服务器解析后返回IP信息，这样访问网络的效率就会降低，因为DNS做域名解析和返回IP都需要时间。<br>为了提高对经常访问的网络域名的解析效率，可以通过利用Hosts文件中建立域名和IP的映射关系来达到目的。根据Windows系统规定，在进行DNS请求以前，Windows系统会先检查自己的Hosts文件中是否有这个网络域名映射关系。如果有,则调用这个IP地址映射，如果没有，再向已知的DNS服务器提出域名解析。也就是说Hosts的请求级别比DNS高。</p>
+<p>四． Hosts文件的工作方式和具体作用  </p>
+<p>现在来看一下Hosts文件的工作方式以及它在具体使用中起哪些作用。</p>
+<p>1、加快域名解析</p>
+<p>对于要经常访问的网站，我们可以通过在Hosts中配置域名和IP的映射关系，提高域名解析速度。由于有了映射关系，当我们输入域名计算机就能很快解析出IP，而不用请求网络上的DNS服务器。</p>
+<p>2、方便局域网用户</p>
+<p>在很多单位的局域网中，会有服务器提供给用户使用。但由于局域网中一般很少架设DNS服务器，访问这些服务器时，要输入难记的IP地址。这对不少人来说相当麻烦。现在可以分别给这些服务器取个容易记住的名字，然后在Hosts中建立IP映射，这样以后访问的时候，只要输入这个服务器的名字就行了。</p>
+<p>3、屏蔽网站</p>
+<p>现在有很多网站不经过用户同意就将各种各样的插件安装到你的计算机中，其中有些说不定就是木马或病毒。对于这些网站我们可以利用Hosts把该网站的域名映射到错误的IP或本地计算机的IP，这样就不用访问了。在WINDOWS XP系统中，约定127.0.0.1为本地计算机的IP地址, 0.0.0.0是错误的IP地址。<br>如果，我们在Hosts中，写入以下内容：</p>
+<p>127.0.0.1 # 要屏蔽的网站 A<br>0.0.0.0 # 要屏蔽的网站 B</p>
+<p>这样，计算机解析域名 A和 B时，就解析到本机IP或错误的IP，达到了屏蔽网站A 和B的目的。</p>
+<p>4、顺利连接系统</p>
+<p>对于Lotus的服务器和一些数据库服务器，在访问时如果直接输入IP地址那是不能访问的，只能输入服务器名才能访问。那么我们配置好Hosts文件，这样输入服务器名就能顺利连接了。</p>
+<p>五． 屏蔽不想访问的网站的例子<br>这里给出一些收集到的利用Hosts文件对一些网址屏蔽的例子，共大家学习使用Hosts文件时参考。</p>
+<p>例1.<br>在 hosts文件中加入如下内容就可以屏蔽文件中定义的对应的网址。</p>
+<pre>127.0.0.1 localhost
+127.0.0.1 download.3721.com
+127.0.0.1 3721.com #3721网络实名
+127.0.0.1 3721.net #3721网络实名
+127.0.0.1 cnsmin.3721.com #3721网络实名
+127.0.0.1 cnsmin.3721.net #3721网络实名
+127.0.0.1 download.3721.com #3721网络实名
+127.0.0.1 download.3721.net #3721网络实名
+127.0.0.1 www.3721.com #3721网络实名
+127.0.0.1 www.3721.net #3721网络实名</pre>
+
+<p>例2.<br>在 hosts文件中加入如下内容就可以屏蔽文件中定义的对应的网址。</p>
+<pre>127.0.0.1 localhost
+127.0.0.1 bar.baidu.com #百度IE搜索伴侣
+127.0.0.1 www.baidu.com #百度IE搜索伴侣
+127.0.0.1 baidu.com #百度IE搜索伴侣</pre>
+
+<p>最后要指出的是，Hosts文件配置的映射是静态的，如果网络上的计算机更改了请及时更新IP地址，否则将不能访问。</p>
 
     
   </div>
@@ -91,32 +126,24 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2007-01-31T11:51:00.000Z"><a href="/2007/01/31/2ge-chu-cuo/">1月 31 2007</a></time>
+      <time datetime="2007-01-19T11:37:00.000Z"><a href="/2007/01/19/2006nian-du-feng-kuang-pan-dian/">1月 19 2007</a></time>
     
     
   
-    <h1 class="title"><a href="/2007/01/31/2ge-chu-cuo/">2个出错</a></h1>
+    <h1 class="title"><a href="/2007/01/19/2006nian-du-feng-kuang-pan-dian/">2006年度:疯狂盘点</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>1/31/07</p>
-<p>我自己登陆<a href="http://alumni.chinaren.com/" target="_blank">Chinaren同学录</a>的次数很频繁,但每次是直接从书签的班级地址直接进去,昨天在登陆的时候发现了出错信息,后来还贴到<a href="http://www.v2ex.com/topic/view/7124.html" target="_blank">v2ex上了</a>;</p>
-<p>另外,还发现<a href="http://www.chinaren.com/" target="_blank">chinaren</a>的logo带了beta尾巴!</p>
-<p><img src="http://www.chinaren.com/upload/img060426/logo_3.gif" /></p>
-<p>我弄了张<a href="http://www.chinaren.com/" target="_blank">www.chinaren.com</a>顶端的截图,感觉是进了<a href="http://cn.yahoo.com/" target="_blank">Yahoo!中国</a>的界面哦!</p>
-<p><img src="http://photo1.yupoo.com/20070130/165203_938794585_m.jpg" /></p>
-<p>好不容易登陆ok后,发现了个性化的页面<a href="http://my.chinaren.com/" target="_blank"><a href="http://my.chinaren.com">http://my.chinaren.com</a></a></p>
-<p>很明显地摆出了4大服务:  </p>
-<p>校友录:<a href="http://alumni.chinaren.com/" target="_blank"><a href="http://alumni.chinaren.com">http://alumni.chinaren.com</a></a><br>社区:<a href="http://club.chinaren.com/" target="_blank"><a href="http://club.chinaren.com">http://club.chinaren.com</a></a><br>校内:<a href="http://xiaonei.chinaren.com/" target="_blank"><a href="http://xiaonei.chinaren.com">http://xiaonei.chinaren.com</a></a><br>校园:<a href="http://campus.chinaren.com/" target="_blank"><a href="http://campus.chinaren.com">http://campus.chinaren.com</a></a>  </p>
-<p><img src="http://photo1.yupoo.com/20070130/162227_1014634783_m.jpg" /></p>
-<p>我为什么关注<a href="http://www.sohu.com/" target="_blank">搜狐</a>呢?<br>除了一个<a href="http://blog.sohu.com/" target="_blank">sohu博客</a>,然后就是同学录能够吸引我!</p>
-<p>本来有了1个同学录的,但是后来看到其页面广告特别多;<br>所以就在<a href="http://www.uu1001.com" target="_blank">uu1001</a>上面注册(06/11/14)了免费论坛,想建立一个班级的领地;<br>可是接连2天都是登陆不了,去<a href="http://bbs.uu1001.com/" target="_blank">帮助中心</a>转一转,发现很多同类问题存在,<br>大家都是在寻找解决方法……管理员也很辛苦吧?!<br>我连续清理cookies几次也未成功,老是说我的密码错误或验证码不对;</p>
-<p>哎,还是随它的便吧!  </p>
-<p>有些东西,有了一个就可以了,何必去贪婪?</p>
-<p>就象blog一样,当初也是到处下蛋,到最后有点信息可留的还是只有blogger满足了我!</p>
+      <p>1/19/07</p>
+<p>2006年,就这样过去了,我很怀念;<br>这话当然不是源于我自己的口头,借用于此也不大为过吧!</p>
+<p>为什么说”疯狂盘点”?</p>
+<p>当报纸上的年终时事文化娱乐新闻.电脑科技资讯方面的盘点和总结让我看得头晕目眩的时候,我还是选择去依赖网络,特别是搜索引擎;因为现在是网络时代了,什么资讯都可从网上得到;可当我真的找到了内容的时候,却又面临是否认真看.认真读的尴尬境地;结果呢,要记住的东西却少得可怜;所以,我怀疑到自己是患有<a href="http://www.ftchina.net/blog/article.asp?id=32" target="_blank">william所提到的</a>“信息狂躁症”!!</p>
+<p>就算自己已经这样了,但对已经过去的一年总该留点什么吧!!  </p>
+<p>于是就把自己搜罗到的一些来自著名网站和网络媒体上的2006年终盘点做成一道大餐,留着慢慢去消化和回味!</p>
+<p>2006年,谁又能记得那么多呢? 2007,谁会得到更多呢?<br>2006年,我关注了哪些呢? 2007年我又会继续关注哪些呢?</p>
 
     
   </div>
@@ -135,25 +162,50 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2007-01-30T11:48:00.000Z"><a href="/2007/01/30/rang-vistalai-ba/">1月 30 2007</a></time>
+      <time datetime="2007-01-19T11:35:00.000Z"><a href="/2007/01/19/chui-niu-bu-shou-shui/">1月 19 2007</a></time>
     
     
   
-    <h1 class="title"><a href="/2007/01/30/rang-vistalai-ba/">让Vista来吧</a></h1>
+    <h1 class="title"><a href="/2007/01/19/chui-niu-bu-shou-shui/">吹牛不收税</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>1/30/07</p>
-<p>看到<a href="http://it.enorth.com.cn/system/2007/01/30/001533546.shtml" target="_blank">海缆修复</a>工作完成的消息还是令人高兴的,<br>毕竟今天访问网络的时候感觉已经快了不少;<br>自己的这块3分地也是开启速度很快,不再是老牛拉破车状!</p>
-<p>可别说不记得今天是什么大日子啊?!<br>1月30日是微软的新一代操作系统<a href="http://www.microsoft.com/china/windows/default.mspx" target="_blank">vista</a>正式上市之日!<br>也许,大家都终于等到这一天了吧!  </p>
-<p><img src="http://photo1.yupoo.com/20070131/153202_797532630_m.jpg" /></p>
-<p>虽然还没有正式亲自用它,但是逛电脑市场的时候,在商家柜台上摆放的样机里还是去小小体验了一下,即使还不是正式版,但总算也是对新系统感叹了几声;当年从Netware转向Windows的时候,起先也是一筹莫展,后来也很快就掌握了,Vista自然会难不到哪里吧?!</p>
-<p>其实,就是单价在国内卖得过高了点;象我们平头百姓何时才可买来安装应用呢?或者等到大家都急于安装的时候,我却选择了Unix/Linux;1月初从<a href="http://www.canonical.com/projects" target="_blank">Canonical</a>荷兰公司寄过来的免费<a href="http://ubuntu.org.cn/desktop" target="_blank">Ubuntu</a> Live CD我还没有拿来试用,说不定在Vista之前我会先用Ubuntu啦!</p>
-<p>你对”<a href="http://goodbye-microsoft.com/screenshots/" target="_blank">Say Good Bye To Microsoft</a>“感到奇怪吗?</p>
-<p>我们可以在Win XP下直接安装Ubuntu了!(不过我还没有试过,可以参考<a href="http://metamuse.blogspot.com/" target="_blank">Meta Muse</a>写的<a href="http://metamuse.blogspot.com/2007/01/windows-xp-install-ubuntu-debian.html" target="_blank">日志</a>)</p>
+      <p>1/19/07</p>
+<p>这些吹牛的段子,暂时不知道来自何处,因为从百度搜索结果中发现相似的网页有585篇,今次仅为转载提供娱乐and一笑而过!!</p>
+<p>以前相声中说吹牛不要脸,现在看来吹牛其实还不收税呢,多好啊!!<br>何乐而不转呢?!</p>
+<p><span style="color: rgb(255, 102, 0); font-weight: bold;">//////////转贴//////////</span></p>
+<p>看看几个最能吹的网虫们的吹牛记录吧！  </p>
+<ol>
+<li><p>“我的CPU是我用一个电容一个电容焊接起来的！好大一砣啊……哈哈哈！” </p>
+</li>
+<li><p>“楼上的很厉害哦，可怜我昨天费了一个晚上的工夫才用小刀在我的硬盘上刻了一个操作系统，我要向大家学习啊！”  </p>
+</li>
+<li><p>“呵，吹吧，吹牛不上税……我昨天把我家的那台老式电视拆了，七拼八凑变成了一块GF4Ti4800的显卡，赚了……”    </p>
+</li>
+<li><p>“这算什么，刚才我边吃苹果边上网，忽然就死机了，重启一下就发现操作系统就变成了MAC OS。”  </p>
+</li>
+<li><p>“昨天我闲着没事，看着自己的显示器烦，随便找了块碎玻璃，几张马粪纸，又拆了一个收音机，组装了台液晶显示器，凑合用了。”</p>
+</li>
+<li><p>“我刚把我56K猫超频了，结果，我一上网，我家小区那一片的所有电话全部占线。”</p>
+</li>
+<li><p>“我说点老的事情吧，那是我刚上大学的时候，大家都用286，显示器也是单显，硬盘就更小的可怜了。我一想，这样不行，于是拆了个彩电的显示屏装在显示器上，单显变彩显了。偶后来嫌硬盘小，于是回收了一千张5英寸软盘，把里面的芯全部拿出来，粘在了一起，于是一个1G多的硬盘就出来了。”</p>
+</li>
+<li><p>“我穷，买不起计算机，现在只能拿这个5块钱买的计算器改成计算机上网。缺点是屏幕小，但是原来的计算器是太阳能的，我保留了这个功能。穷啊，将就吧。”
+　　</p>
+</li>
+<li><p>“真都是强人啊。我只是把电视遥控加了个带摄象头当新款手机凑合着用。”</p>
+</li>
+<li><p>“这里的帖子实在太大，每次打开都快死机。看来内存不足。虽然现在内存便宜，但是我穷啊，还只用128M的。我琢磨了半天，发现一个好办法，我把内存反过来插，嘿。嘀的一声自检通过，内存变成了821M的啦。”
+　　</p>
+</li>
+<li><p>“我今天下午好不容易抓住一只老鼠，注入芯片把他弄成了一只鼠标。”</p>
+</li>
+<li><p>“昨天夜里用 M$PAINT 画了一张贞子的图，才画完她就从显示器爬出来了。”</p>
+</li>
+</ol>
 
     
   </div>

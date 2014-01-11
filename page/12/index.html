@@ -48,22 +48,25 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-29T14:39:00.000Z"><a href="/2011/11/29/pages-collapsed-in-firefox/">11月 29 2011</a></time>
+      <time datetime="2011-11-28T12:22:00.000Z"><a href="/2011/11/28/better-browser/">11月 28 2011</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/29/pages-collapsed-in-firefox/">pages collapsed in Firefox</a></h1>
+    <h1 class="title"><a href="/2011/11/28/better-browser/">better browser</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>上次對於Firefox下崩潰的問題一直耿耿於懷，甚至不甘心。</p>
-<p>為什麼查看同類型其他人的主頁是正常的，而自己的卻異常了呢？</p>
-<p>於是又查看一下頁面的源代碼，發現仍然調用了twitter的api，可能癥結在這裡。</p>
-<p>剛才再次檢查了一下_config.yml配置文件，發現在定製twitter的side bar的時候，把false搞成flase了，哎，就是字母的順序看走了眼啊；現在應該不會在Firefox下崩潰了。</p>
-<p>看來，還是要理解octopress下的各種文檔才好啊！</p>
+      <p>這個狀況，不知其他同學有沒有遇過,但還是勸告路過的同學盡量使用更高版本的Chrome或Firefox等非IE核心的瀏覽器。</p>
+<p>今天在不同瀏覽器下查看blog時，發現一個奇怪的問題。</p>
+<p>1.在Chrome下，頁面很順暢，加載disqus都正常。</p>
+<p>2.但是在K-Meleon的一個版本下，能夠瀏覽頁面文字，可下面的disqus部分卻無法顯示出來，而且出現彈窗表示xxx錯誤。</p>
+<p>3.再去Firefox下查看，則是直接頁面崩潰，而且要退出瀏覽器，給出一個反饋錯誤的窗口。</p>
+<p>再回想起午休的時候，還用MID試過打開了此blog，由於是自適應移動設備的，所以也是正常的。</p>
+<p>在K-Meleon下，看了一下頁面的source code，覺得可能是要加載asides部分，還有後面的disqus的部分，都沒有成功，於是瀏覽器就崩潰了；Octopress是支持HTML5的，會不會是我的Firefox版本太低了？因為還是在3.6時期下載的。</p>
+<p>哎，自從用了Chrome後，就沒捨得換其他的；而K-Meleon是安裝在一部很舊的pc上，這部機器用其他瀏覽器還非常的慢，我看中的是它啟動的速度快，而且代理切換直接在菜單進行，確實捨不得，用了好多年，有情感的。 嗯哼！</p>
 
     
   </div>
@@ -82,34 +85,26 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-28T15:17:00.000Z"><a href="/2011/11/28/easy-learning-markdown/">11月 28 2011</a></time>
+      <time datetime="2011-11-27T05:25:00.000Z"><a href="/2011/11/27/config-asides/">11月 27 2011</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/28/easy-learning-markdown/">easy learning markdown</a></h1>
+    <h1 class="title"><a href="/2011/11/27/config-asides/">config asides</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>收集了一些 markdown的學習資源，共享：</p>
-<p>原本想起個LMTHW=Learn Markdown The Hard Way的題目的，^_^ ，想想還是算了吧，免得閑話難聽。</p>
-<p>1.<a href="http://daringfireball.net/projects/markdown/dingus" target="_blank">dingus</a>: By項目作者JOHN GRUBER</p>
-<p>2.<a href="http://gfrog.net/2008/03/markdown-syntax-basic/" target="_blank">gfrog</a>:Markdown语法摘要</p>
-<p>3.<a href="http://qingbo.net/picky/502-markdown-syntax.html" target="_blank">qingbo</a>:Markdown 语法</p>
-<p>4.<a href="http://sinolog.it/?p=383" target="_blank">牧碼志</a>: Markdown中文教程</p>
-<p>5.<a href="http://wowubuntu.com/retext.html" target="_blank">ReText</a>: MarkDown文本编辑器</p>
-<p>6.<a href="http://linuxtoy.org/archives/markdown-wysiwyg-editor.html" target="_blank">MADE</a>:MarkDown编辑器</p>
-<p>7.<a href="http://ihacklog.com/php/markdown-intro.html" target="_blank">ihacklog</a>:Markdown 的使用介绍</p>
-<p>8.<a href="http://hoofo.net/tidbits/markdown/syntax" target="_blank">hoofo</a>:MARKDOWN SYNTAX CHEATSHEET</p>
-<p>9.<a href="http://www.fwolf.com/blog/post/303" target="_blank">fwolf</a>:超级纯文本转换为HTML的工具Markdown Extra</p>
-<p>10.<a href="http://apt-blog.net/vimpress-add-markdown-multiblog-support" target="_blank">apt-blog</a>:Vimpress内置markdown支持、多博客支持</p>
-<p>11.<a href="http://blog.jjgod.org/2006/03/13/translate-markdown/" target="_blank">jjgod</a>:Markdown 的一点翻译</p>
-<p>12.<a href="http://markdown.tw/" target="_blank">譯文</a>:繁體版</p>
-<p>13.<a href="http://wiki.hotoo.me/Markdown.html" target="_blank">hotoo</a>:Markdown的一些項目工具鏈接</p>
-<p>14.<a href="http://www.junchenwu.com/2007/03/the_wysiwyg_usability.html" target="_blank">junchenwu</a>: Web 编辑器与所见即所得（WYSIWYG）</p>
-<p>順便測試一下MADE這個Chrome下的擴展，坑爹啊！這是第二次重新編輯啊，第一次不知我動了哪個鍵，原有內容都消失了，好吧，還是要個即時保存的功能好啊！有木有！</p>
+      <p>如何定製custom自己的側邊欄呢？</p>
+<p>找到 source/_includes/custom/asides 文件夾下</p>
+<p>有一個默認的about.html，可以在裡面添加自己的內容，</p>
+<p>保存後，然後複製到 source/_includes/asides的文件夾中；</p>
+<p>接下來，就是在_config.yml呢面配置：</p>
+<p>大致上定位到第47行 ，下面是默認的</p>
+<p>default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</p>
+<p>看見沒？如果你想把about.html放在 recent_posts.html的前面，</p>
+<p>就照樣寫成asides/about.html，很簡單了吧，o(∩∩)o…哈哈</p>
 
     
   </div>
@@ -128,22 +123,29 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-28T12:51:00.000Z"><a href="/2011/11/28/xie-zi-huai-liao/">11月 28 2011</a></time>
+      <time datetime="2011-11-26T19:40:00.000Z"><a href="/2011/11/27/no-sleeping/">11月 27 2011</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/28/xie-zi-huai-liao/">鞋子壞了</a></h1>
+    <h1 class="title"><a href="/2011/11/27/no-sleeping/">no sleeping</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>你懂的，記一點破事兒，:-)</p>
-<p>這些日子，外面的天氣非常不錯，就是有些乾燥。</p>
-<p>嘴角發炎有很久了，現在已經痊癒，當然心裡也很happy的。</p>
-<p>傍晚下班後，沒吃什麼東西，休息一下後就吃些周日買的蛋糕。然後，換衫和鞋子就去踢下足球，哥很久沒運動啦，不是為咗減肥。</p>
-<p>回來後，發現鞋子底面已經破了，要換它了。忘記了它是什麼時候買的，今年也沒怎麼用它啊，可能閑置得太耐自己要玩毀滅？</p>
+      <p>哎，折騰到現在都沒有睡意啊！</p>
+<p>或許是上午喝過凍咖啡的作用，也許是太興奮了？</p>
+<p>又看到一種玩法—-建立新頁面的命令：</p>
+<p>eg:</p>
+<ul>
+<li><p>rake new_page[super-awesome]</p>
+<blockquote>  creates /source/super-awesome/index.markdown</blockquote>
+</li>
+<li><p>rake new_page[super-awesome/page.html]</p>
+<blockquote>creates /source/super-awesome/page.html</blockquote>
+</li>
+</ul>
 
     
   </div>
