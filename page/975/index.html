@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>第 975 页 | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27398712-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content">
+  <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2007-05-16T14:56:00.000Z"><a href="/2007/05/16/ge-ren-wen-jian-gong-xiang-fu-wu-qi-hfs-plus-peanuthull-plus-port-mapping/">5月 16 2007</a></time>
+    
+    
+  
+    <h1 class="title"><a href="/2007/05/16/ge-ren-wen-jian-gong-xiang-fu-wu-qi-hfs-plus-peanuthull-plus-port-mapping/">个人文件共享服务器:HFS+PeanutHull+Port-Mapping</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>5/16/07</p>
+<p>今天终于成功的构建了个人文件共享服务器(http)，当然是用来传递文件之用，确实觉得很方便！！</p>
+<p>共享文件操作在办公中的应用很多，比如在局域网下可将自己的文档与同一网络下的同事设置成共享状态；还可以借用im即时通讯工具互传文档；另外还可以借助网络硬盘工具；</p>
+<p>局域网下的共享有时也不安全；Msn共享文件夹也要看服务的稳定性；而网络硬盘上传文件有时速度不可靠；剩下来的就是考虑如何才能方便地搭建一个自己的共享服务器呢？</p>
+<p>在局域网中可用<a href="http://www.pablosoftwaresolutions.com/html/baby_web_server.html" target="_blank">Baby Asp Web Serve</a>网络软件构建简单的服务器；也可以用TFP(<a href="http://en.typsoft.com//index.php" target="_blank">Typsoft Ftp Server</a> )来建立Ftp服务器;</p>
+<p>由于平常跟住居于外地的同事是在im(msn,gtalk)上共享文件的，即使文档不算太大，但是发送和接受的过程我还是觉得很麻烦；这时候就想自己何不弄个ftp或Http的文件服务器来与好友、同事共享呢？</p>
+<p>现在答案是完全可行的！<br><a href="http://www.xiaoxiaozhu.cn/article.asp?id=79" target="_blank"><br>我的组合就是HFS+PeanutHull+Port-Mapping</a>,试用环境是ADSL局域网,本机是经路由器DHCP动态分配IP(如192.168.1.xxx格式)地址！</p>
+<p>1)先说HFS,即服务器软件Http File Server</p>
+<p>下载源是<a href="http://www.rejetto.com/hfs/" target="_blank"><a href="http://www.rejetto.com/hfs/">http://www.rejetto.com/hfs/</a></a>,英文不过关也不要紧,网上也有汉化版本提供；安装后再运行hfs.exe执行文件就行了；至于具体如何操作这个小巧的软件可以参考”小小窝之猪“放的资料<a href="http://www.xiaoxiaozhu.cn/article.asp?id=79" target="_blank"><a href="http://www.xiaoxiaozhu.cn/article.asp?id=79">http://www.xiaoxiaozhu.cn/article.asp?id=79</a></a> ,软件虽小，可是它的功能和菜单设置特别丰富！要注意有2种模式:Easy Mode和Expert Mode，相应地在2种模式下都会有不同功能展示！！</p>
+<p><img src="http://photo7.yupoo.com/20070516/114325_2012459198_m.jpg" /></p>
+<p>2)接下来的问题，如何固定IP地址？</p>
+<p>上面的HFS服务器虽然暂时在本地localhost(或127.0.0.1)下可以浏览，但如何让外网异地同事也能共享查看？最好的就是有固定域名发给对方，如xxx.oicp.net,让对方在浏览器中就能直接下载查看共享我的服务器上的文档。</p>
+<p>在HFS安装后会找出内网/外网ip地址,还需要通过”花生壳”(Oray.cn)程序来管理动态IP,可先下载PeanutHull客户端;并在申请花生壳护照后，在它的网站上注册免费域名如(xxx.oicp.net)，在A记录项下绑定自己所在的外网ip地址(如219.130.76.xxx,而不是本机的192.168.1.xxx)成功,这样激活后才能在客户端的免费域名选项下出现域名(xxx.oicp.net)地址;</p>
+<p><img src="http://photo6.yupoo.com/20070516/194241_1266796052_m.jpg" /></p>
+<p>3)如何让上面申请的域名可以被网外同事访问呢？  </p>
+<p>由于本机是处于局域网中，暂时还不能让外网用户访问这个xxx.oicp.net地址，所以就要在路由器上开放http的80端口；可以在路由器界面下将本机对应的80端口映射ok;这一步可以去看看“<a href="http://www.pconline.com.cn/pcedu/soft/wl/server/0604/788832_3.html" target="_blank">完美绿色的个人服务器</a>”这篇文章</p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+
+<nav id="pagination">
+  
+    <a href="/page/974/" class="prev">上一页</a>
+  
+  
+    <a href="/page/976/" class="next">下一页</a>
+  
+  <div class="clearfix"></div>
+</nav></div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+  var disqus_shortname = 'kaka2';
+
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  }());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

@@ -19,6 +19,18 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27398712-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 
 
@@ -48,125 +60,28 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2010-04-02T00:09:45.000Z"><a href="/2010/04/02/keep-fucking-gfw/">4月 2 2010</a></time>
+      <time datetime="2011-05-17T00:25:45.000Z"><a href="/2011/05/17/my-mbti/">5月 17 2011</a></time>
     
     
   
-    <h1 class="title"><a href="/2010/04/02/keep-fucking-gfw/">keep fucking gfw</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>Fri, 2 Apr<br>哥翻的不是墻</p>
-<p>日子還是要數著手指頭過下去，墻也要照翻，但翻的是糾結，源于：一切都是被逼的！不過這樣的日子也惹得國外網民的羨慕，他們沒有想到大陸網民具有那么強的心理素質和技術素質。</p>
-<p>1.人的天性：愈壓迫愈反抗</p>
-<p>我一個普通的網民本不愿意折騰的，可是在國內訪問個國外著名網站就像趕赴沙場一樣，要有大無畏死而不驚的英雄氣概。數年下來，一批blog被封了，另一批blog又重新站起來了，并且一部分blogger選擇了獨立的域名和空間，他們沖破了某種網絡審查制度的桎梏，在網絡使用權利上至少恢復了自由身。這其中，開源blog軟件（如：WP/MT等）的廣泛傳播和使用起了重要的作用。從我訂閱的大多數RRS來看，最大的部分就是來自于用WP搭建的blog，在中文世界里的發展可見一斑。當然，在GC或SF這些軟件倉庫中也不斷地會有其他個人公布的blog程序。所以，這種向上發展的力量在網絡里如同每個人渴望自由的意識一樣，什么東西也擋不住的；想依靠一堵墻就能把這股力量圍起來，想摧毀它生根發芽的基礎令其自生自滅，這種愚蠢的辦法是行不通的。</p>
-<p>2.敵退我進.敵進我退</p>
-<p>本周之前的日子，我要瀏覽twitter或從google搜索結果里打開某些被重置的webpage的時候，需要開啟Ultra VPN（現在已經登錄不了）或PacketiX VPN（一直還可以用），但一直對這種免費軟件的速度不太滿意，又要注冊啊帳號之類的，對于比較懶惰的我來說，總是很少有機會把它們從機器里請出來。后來又遇上Puff，但最近免費版的好像也不好使喚，最后，這臺Windows破機器里沒有了其他工具可用啦！早前用FireFox的時候，也弄了Tor，但是那個速度比上面的幾款桌面軟件還要慢，簡直是龜速。至于其他的在線代理或自由門等，由于是初期<a href="http://blog.e-520.com.cn/index.php/archives/911" target="_blank">翻墻（掃盲貼）</a>階段掌握的，所以就不想再反轉頭顧及它們了。</p>
-<p>在免費VPN這些代理工具幾乎都被廢掉了之后，我就開始了SSH的嘗試之路。</p>
-<p>推薦閱讀：<a href="http://www.williamlong.info/archives/2057.html" target="_blank">如何使用代理服务器</a></p>
-<p>3.柳暗花明又一村</p>
-<p>好在Google好使，找到免費的SSH通行證還是不難的。以前雖有留意相關的SSH翻墻資料，但是迫于需要申請和購買帳號，所以只能望洋興嘆。我也沒有網銀，所以也僅能心懷羨慕那些富裕blogger之份。</p>
-<p>推薦閱讀：<a href="http://kangzj.net/difference-between-ssh-vpn/" target="_blank">使用SSH和VPN翻墙的联系与区别</a></p>
-<p>4.實用的SSH帳號及使用方法：</p>
-<p>維基百科：什么是SSH？<blockquote>SSH為Secure Shell的縮寫，由IETF的網路工作小組（Network Working Group）所制定；SSH為建立在應用層和傳輸層基礎上的安全協議。</p>
-<p>傳統的網路服務程序，如FTP、POP和Telnet其本質上都是不安全的；因為它們在網路上用明文傳送數據、用戶帳號和用戶口令，很容易受到中間人（man-in-the-middle）攻擊方式的攻擊。就是存在另一個人或者一台機器冒充真正的伺服器接收用戶傳給伺服器的數據，然後再冒充用戶把數據傳給真正的伺服器。</p>
-<p>而SSH是目前較可靠，專為遠程登錄會話和其他網路服務提供安全性的協議。利用SSH協議可以有效防止遠程管理過程中的信息泄露問題。透過SSH可以對所有傳輸的數據進行加密，也能夠防止DNS欺騙和IP欺騙。</p>
-<p>SSH之另一項優點為其傳輸的數據是經過壓縮的，所以可以加快傳輸的速度。SSH有很多功能，它既可以代替Telnet，又可以為FTP、POP、甚至為PPP提供一個安全的「通道」。</blockquote>1）使用MyEntunnel或Tunnelier</p>
-<p>從<a href="http://igfw.tk/archives/196" target="_blank">igfw.tk上</a>了解到的一個zip包，<a href="http://www.filedropper.com/theworld" target="_blank">下載后</a>看到包含有一個TW瀏覽器，一個TOR，一個Puff，還有一個SSH。我需要的就是SSH，所以解壓縮安裝，它已經含有5個配置好的帳戶，剩下的就是去把瀏覽器K-meleon中的Proxy連接設置成Socks：127.0.0.1，添加端口號2012，當然了選項是指定Socks v5啦！</p>
-<p>說明一下，這個SSH包里面使用了MyEnTunnel，其實很多朋友試驗過<a href="http://omobox.com/memo/tunnelier-instead-of-myentunnel.html" target="_blank">用Tunnelier替代MyEnTunnel</a>來翻墻的速度較快，但是由于不能提取密碼所以無法試用了。</p>
-<p>如果你有自己的SSH帳號，可以在<a href="http://www.bitvise.com/tunnelier" target="_blank">這里</a>下載Tunnelier。</p>
-<p>推薦閱讀：</p>
-<p>a: <a href="http://kangzj.net/tunnelier-tutorial" target="_blank">Tunnelier使用教程</a></p>
-<p>b: <a href="http://www.366300.org/ssh-proxy.html" target="_blank">用MyEntunnel代理翻墙访问被Gfw网站</a></p>
-<p>2）使用Putty圖形界面+少許Dos命令行</p>
-<p>從<a href="http://xiaod.in/read.php?10" target="_blank">xiaod.in那里</a>看到到他無償提供了SSH代理：</p>
-<p>IP:208.113.176.78<br>端口:22<br>账户名:xiaodin<br>密码:www.xiaod.in<br>流量:无限/月 </p>
-<p>至于Putty如何使用，可以參照閱讀xiaodin發的blog：<a href="http://xiaod.in/read.php?14" target="_blank">免费SSH代理账号及使用方法</a>。</p>
-<p>由于SSH代理账号信息會不定期更改，所以多关注:<a href="http://s.xiaod.in" target="_blank"><a href="http://s.xiaod.in">http://s.xiaod.in</a></a></p>
-<p>推薦閱讀：</p>
-<p>a: <a href="http://chaifeng.com/blog/2007/06/putty_200611.html" target="_blank">PuTTY中文教程</a></p>
-<p>b: <a href="http://tech.ddvip.com/2008-05/121188486544609.html" target="_blank">巧设PuTTY做Windows的安全代理</a></p>
-<p>5.進階（Linux系統）資料補充：</p>
-<p>1）<a href="http://blog.zhuli.name/archives/6644" target="_blank">使用expect防止sshgfw代理断线</a></p>
-<p>2）<a href="http://sprayfly.com/tag/%E7%BF%BB%E5%A2%99/" target="_blank">用tsocks和proxychains使Linux下所有软件能够翻墙</a></p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-
-  <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <time datetime="2010-04-01T19:24:54.000Z"><a href="/2010/04/02/true-or-not-true/">4月 2 2010</a></time>
-    
-    
-  
-    <h1 class="title"><a href="/2010/04/02/true-or-not-true/">true or not true</a></h1>
+    <h1 class="title"><a href="/2011/05/17/my-mbti/">my mbti</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>假假真真，真真假假</p>
-<p>假戲真做就不好了，真戲假做也不行。可是到了“愚人節”仿佛開個玩笑就是天經地義的事情。</p>
-<p>4月1日，永遠不會忘了這天還是<a href="http://www.cnbeta.com/articles/107657.htm" target="_blank">Gmail的周歲</a>紀念日。</p>
-<p>大概是從當時的04年開始，Google和其他一些IT/網絡公司就開始以制造一些驚奇的新聞為嚼頭進行“病毒式宣傳“，為“愚人節”增添了不少樂趣。當然其中也有一些惡搞成分。比如：<a href="http://blog.donews.com/keepwalking/archive/2010/04/01/1583833.aspx" target="_blank">成龍昨夜之死</a>，<a href="http://tech.sina.com.cn/i/2010-04-02/09104015550.shtml" target="_blank">馬化騰與阿SA</a>，凡此種種，幾乎可以看到世間百態，以及某些媒體的良心。</p>
-<p>以下面的信息為例，證明今年也不例外：</p>
-<p>1）CB：<a href="http://www.cnbeta.com/articles/107658.htm" target="_blank">愚人節國外創意假新聞彙總</a></p>
-<p>2）GA：<a href="http://www.google.org.cn/posts/google-rename-to-topeka.html" target="_blank">Google宣布重大決定：改名為Topeka</a></p>
-<p>3）TW：<a href="http://www.techweb.com.cn/news/2010-04-01/571516.shtml" target="_blank">穀歌收購百度 今年愚人節最逼真的整蠱新聞</a></p>
-<p>4）CSDN：<a href="http://news.csdn.net/a/20100401/217696.html" target="_blank">Python與Perl合並，打造史上最牛語言Parrot</a></p>
-<p>5）iFanr：<a href="http://www.ifanr.com/8355" target="_blank">快訊：蘋果Google合並，矽穀進入寡頭時代</a></p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-
-  <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <time datetime="2010-03-31T18:37:54.000Z"><a href="/2010/04/01/foolish-play/">4月 1 2010</a></time>
-    
-    
-  
-    <h1 class="title"><a href="/2010/04/01/foolish-play/">foolish play</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>開放日：有仇的報仇</p>
-<p>本來不想摻和這種所謂節日的，<br>昨天還點擊了一個該死的網頁，巨汗！<br>看來只要是個人，今天難免要轉入進來，<br>不是愚樂別人，就是自己被人愚樂，<br>兩廂情愿的事情，就成全吧！</p>
-<p>人生，只得一個“樂”字，就該知足了！</p>
-<p>還有，今天之前如果與人有怨恨或是仇冤，請一起做個了結。<br>4月1日，就是開放日。咱們<a href="http://bbs.163.com/special/00153L3J/2010yurenjie.html" target="_blank">有仇的報仇去吧</a>！</p>
-<p>PS：</p>
-<p>聽聞騰訊<a href="http://t.qq.com/" target="_blank">QQ的微博</a>也在經歷開通了，但是登錄進去看到的是“98765320”這排數字，究竟是什么密碼？有誰知道嗎？</p>
-<p>如果哪位同學有邀請碼的話，不妨給俺發一個；否則，呵呵，小心今天被人整的。</p>
+      <p>性格类型倾向为“ ISTJ ”(内向 实感 思维 判断)</p>
+<p>沉静，认真；贯彻始终、得人信赖而取得成功。讲求实际，注重事实和有责任感。能够合情合理地去决定应做的事情，而且坚定不移地把它完成，不会因外界事物而分散精神。以做事有次序、有条理为乐—不论在工作上， 家庭上或者生活上。重视传统和忠诚。</p>
+<p>ISTJ型的人是严肃的、有责任心的和通情达理的社会坚定分子。他们值得信赖，他们重视承诺，对他们来说，言语就是庄严的宣誓。 </p>
+<p>ISTJ型的人工作缜密，讲求实际，很有头脑也很现实。他们具有很强的集中力、条理性和准确性。无论他们做什么，都相当有条理和可靠。他们具有坚定不移、深思熟虑的思想，一旦他们着手自己相信是最好的行动方法时，就很难转变或变得沮丧。 </p>
+<p>ISTJ型的人特别安静和勤奋，对于细节有很强的记忆和判断。他们能够引证准确的事实支持自己的观点，把过去的经历运用到现在的决策中。他们重视和利用符合逻辑、客观的分析，以坚持不懈的态度准时地完成工作，并且总是安排有序，很有条理。他们重视必要的理论体系和传统惯例，对于那些不是如此做事的人则很不耐烦。</p>
+<p>ISTJ型的人总是很传统、谨小甚微。他们聆听和喜欢确实、清晰地陈述事物。</p>
+<p>ISTJ型的人天生不喜欢显露，即使危机之时，也显得很平静。他们总是显得责无旁贷、坚定不变 、但是在他们冷静的外表之下，也许有强烈却很少表露的反应。</p>
+<p>适合的领域有：工商业领域、政府机构 金融银行业、政府机构、技术领域、医务领域</p>
+<p>适合的职业有：</p>
+<p>· 审计师<br>· 会计<br>· 财务经理<br>· 办公室行政管理<br>· 后勤和供应管理<br>· 中层经理<br>· 公务（法律、税务）执行人员<br>· 银行信贷员<br>· 预算分析师<br>· 保险精算师<br>· 税务经纪人<br>· 税务检查员<br>· 机械、电气工程师<br>· 计算机程序员<br>· 数据库管理员<br>· 地质、气象学家<br>· 法律研究者<br>· 律师<br>· 外科医生<br>· 药剂师<br>· 实验室技术人员<br>· 牙科医生<br>· 医学研究员<br>· 信息总监<br>· 电脑编程员<br>· 证券经纪人<br>· 会计<br>· 文字处理专业人士 </p>
+<p>via :<a href="http://www.apesk.com/mbtihd/mbti_all.html" target="_blank">性格測試</a></p>
 
     
   </div>
@@ -214,6 +129,18 @@
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
+
+<script type="text/javascript">
+  var disqus_shortname = 'kaka2';
+
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  }());
+</script>
 
 
 

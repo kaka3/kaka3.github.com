@@ -19,6 +19,18 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27398712-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 
 
@@ -48,108 +60,24 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2010-01-29T01:54:20.000Z"><a href="/2010/01/29/google-five-privacy-principle/">1月 29 2010</a></time>
+      <time datetime="2010-07-30T17:26:27.000Z"><a href="/2010/07/31/twitboo-bot-use-oauth-update-twitter/">7月 31 2010</a></time>
     
     
   
-    <h1 class="title"><a href="/2010/01/29/google-five-privacy-principle/">google five privacy principle</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>Fri, 29 Jan </p>
-<p>2010年1月28日，是<a href="http://dataprivacyday2010.org/" target="_blank">世界隱私節（日）</a></p>
-<p>via：<a href="http://www.google.com/privacy.html" target="_blank">Google Privacy Center</a></p>
-<ol>
-<li><p>Use information to provide our users with valuable products and services.（用信息帶給用戶有價值的產品和服務。）</p>
-</li>
-<li><p>Develop products that reflect strong privacy standards and practices.（研發能夠反映權威性隱私標準的產品。）</p>
-</li>
-<li><p>Make the collection of personal information transparent.<br>（使收集個人資料透明化。）</p>
-</li>
-<li><p>Give users meaningful choices to protect their privacy.<br>（給用戶有意義的選擇來保護他們的隱私。）</p>
-</li>
-<li><p>Be a responsible steward of the information we hold.<br>（成為一個稱職的管家去管理我們所擁有的信息。）</p>
-</li>
-</ol>
-<p>新聞：<a href="http://tech.163.com/10/0128/23/5U5CJH3C000915BF.html" target="_blank">Google公布五項隱私原則 慶祝數據隱私保護日</a></p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-
-  <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <time datetime="2010-01-29T00:25:20.000Z"><a href="/2010/01/29/twitterxin-xi-chu-xian-zai-googlesou-suo-jie-guo-zhong/">1月 29 2010</a></time>
-    
-    
-  
-    <h1 class="title"><a href="/2010/01/29/twitterxin-xi-chu-xian-zai-googlesou-suo-jie-guo-zhong/">Twitter信息出現在Google搜索結果中</a></h1>
+    <h1 class="title"><a href="/2010/07/31/twitboo-bot-use-oauth-update-twitter/">Twitboo的Gtalk機器人使用OAuth授權</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p> Fri, 29 Jan </p>
-<p>寫這點東西，是因為看到“博客園”上的一篇文章說：<a href="http://www.cnblogs.com/shuchao/archive/2010/01/28/google-social-search-beta.html" target="_blank">Google社會化搜索將發布Beta版</a>。</p>
-<p>我的默認搜索引擎是Google,而且還設置成<a href="http://www.google.com/experimental/index.html" target="_blank">Expermental</a>，即是為了能夠切換Google Labs推出的某些新式服務。現在這個頁面下，只存在2種“實驗”啦！<br>1）Keyboard shortcuts<br>2）Accessible View </p>
-<p>Google的搜索結果中已經整合了社會化web上的信息，比如：來自Twitter.com上的post亦可顯示在你面前。</p>
-<p>這是我早前截的<a href="http://picasaweb.google.com/lh/photo/Cka2QXnI6NdvXdyeqXat_w?feat=embedwebsite" target="_blank">一張圖</a>，展示一下吧！</p>
-<p><img src="http://lh4.ggpht.com/_FzVWQaZQR5M/S2KV1Hdpp_I/AAAAAAAABZs/mM74-acglLk/s288/google_latest_twitter.png" /></p>
-<p>彼時正是Google聲明要撤離“谷歌”的時候，不少“推友”在twitter上發布了這一消息（我已經在圖上用紅線標識了）。</p>
-<p>很想貼這張圖了，但是基于GAE的pp要發圖上來還是沒有解決，所以得依靠第三方圖站，于是不得不將<a href="http://picasaweb.google.com" target="_blank">Picasa web albums</a>拿出來了。</p>
+      <p><a href="http://code.google.com/p/twittersina" target="_blank">Twittersina</a>：中文名叫“圍著脖子推”，是一款值得推薦的微博（網頁版）同步工具，我覺得重要點在於它也是基於GAE搭建的。機器人版是Twitboo（twitboo@appspot.com），被我稱呼為“推波”，使用不算複雜的命令來進行綁定Twitter帳號和進行更新等狀態。</p>
+<p>由於不願意時刻使用代理或VPN等工具上網頁更新Twitter，所以我寧願選擇用Twitboo的Gtalk機器人來進行微博的同步工作，這樣從WEB網頁走向客戶端，不用開著瀏覽器就可以進行update或comment，亦免除了翻牆的麻煩。</p>
+<p>因為Twitter API要在<a href="http://countdowntooauth.com" target="_blank">8月16日</a>停止對HTTP Basic授權的支持，所以屆時第三方應用將不再能使用用戶提供的用戶名和密碼進行相關操作，故此Twitboo的開發者Steven Wang在限期之前就將其進行了更新。在<a href="http://twittersina.appspot.com" target="_blank">網頁版</a>和<a href="http://twitboo.appspot.com" target="_blank">機器人版</a>都可以進行操作了。</p>
+<p>摘引<a href="http://blog.stevenwang.name/twittersina-oauth-252002.html" target="_blank">Steven的博文</a>：</p>
+<blockquote>Gtalk机器人新增了一个”-oauth”命令，输入该命令，机器人将返回一个URL地址，在浏览器中打开该地址，就来到了当前GTalk用户的OAuth授权管理页面，于是把OAuth授权过程从机器人转移到了网页上。<br><br>授权过程与网页版的类似，完成授权后，将显示授权的帐号，同时，在机器人中输入”-status”，也可看到授权帐号。后续需要修改OAuth授权时，向机器人发”-oauth”命令，然后在浏览器中打开机器人返回的地址即可。<br><br>通过OAuth授权的账户所更新的状态的来源，在Twitter中将显示“Twitboo”，在新浪微博中将显示”围着脖子推”。</blockquote>
 
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-
-  <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <time datetime="2010-01-28T23:26:48.000Z"><a href="/2010/01/29/jiang-blogsheng-ji-dao-liao-project-picky-v0-dot-1-9/">1月 29 2010</a></time>
-    
-    
-  
-    <h1 class="title"><a href="/2010/01/29/jiang-blogsheng-ji-dao-liao-project-picky-v0-dot-1-9/">將blog升級到了Project Picky v0.1.9</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>Fri, 29 Jan </p>
-<p>這次升級有點頭痛。。。呵呵！！</p>
-<p>從下載源文件到見到writer后臺，還是蠻曲折的，唉，誰叫我那么笨呢？！</p>
-<p>1）auth.py的修改：</p>
-<p>v0.1.9版本的Picky，如果要進入writer控制臺，先注意設置好auth.py中的SHA1的值；以前只要修改app.yaml中的項目名就可以，現在要配置好2个文件先，步驟多了；但是這一步搞好了，也是有好處的；因為用GAE的驗證遇上代理有些麻煩（據Livid話），配上個性化的驗證也是她酷的一面。</p>
-<p>其實要配置自己的驗證方案很簡單，在auth.py中已經說明了；源程序的密碼名是”secret”對應有自己的SHA1值，上傳程序之前，則要修改這2个參數。如果不更改就默認上傳了，在/writer/auth的提示框輸入”secret”亦能進入writer；但這樣不安全的結果可想而知了，嗯哼？！</p>
-<p>比如我在winxp下，可以在python目錄下運行CLI界面的Python，<br>再輸入命令：hashlib.sha1(‘your password’).hexdigest()<br>即可生成自己的SHA1值，然后，將所得值添入secret之中。單引號內就是你自己取的密碼，別忘記了；之后的登錄就會用它的。</p>
-<p>2）頁面顯示的字體變大號了，比原來看起來是舒服，贊一個！</p>
-<p>3）如果有問題，還可以參照Livid已經發布的<a href="http://picky.olivida.com/install" target="_blank">最新版Project Picky安裝文件</a>。</p>
+<p>另外，需說明的是：在8月16日前，會同時提供HTTP BASIC授權和OAuth授權2種方式，而OAuth授權會被優先採用。</p>
 
     
   </div>
@@ -197,6 +125,18 @@
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
+
+<script type="text/javascript">
+  var disqus_shortname = 'kaka2';
+
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  }());
+</script>
 
 
 

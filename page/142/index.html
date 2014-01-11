@@ -19,6 +19,18 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27398712-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 
 
@@ -48,139 +60,26 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2009-03-26T14:20:00.000Z"><a href="/2009/03/26/you-fu-gong-xiang/">3月 26 2009</a></time>
+      <time datetime="2010-03-18T23:39:07.000Z"><a href="/2010/03/19/dang-diao-pin-yu-shang-wei-bo/">3月 19 2010</a></time>
     
     
   
-    <h1 class="title"><a href="/2009/03/26/you-fu-gong-xiang/">有[福]共享</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>3/26/09</p>
-<p>本文将提供一种一劳永逸的翻墙方式（ssh -D），实施之后，那道墙——对你来说——将从此透明。</p>
-<p>本文面向的用户：使用Windows作为操作系统并且使用Firefox作为常用浏览器。</p>
-<h3>第一步：免费获取拥有SSH权限的帐号和密码。</h3>
-
-<p>默认的免费获取方式：将本文转载到你自己的博客上，将转载后的文章网址发送到<img src="http://photos.smugmug.com/photos/497999637_nw25h-O.png" alt="f.ckgfw#gmail.com" title="" />。</p>
-<p>转载方式：拷贝<a href="https://dl.getdropbox.com/u/398/html.txt" target="_blank">文章代码</a>至博客后台HTML编辑器中，直接发布即可，文章标题自拟，可在前后文插入自己的评论。</p>
-<p>经过人工审核，你将收到一封附有五个拥有SSH权限的帐号和密码的电子邮件，你可以将它们赠与你自己的读者。</p>
-<p>更多获取方式将在今后陆续激活，请关注帐号配送中心：<a href="https://friendfeed.com/rooms/fuckgfw-for-free" target="_blank"><a href="https://friendfeed.com/rooms/fuckgfw-for-free">https://friendfeed.com/rooms/fuckgfw-for-free</a></a></p>
-<h3>第二步：配置MyEntunnel软件</h3>
-
-<p>下载并安装MyEntunnel，该软件全名为My Encrypted Tunnel。</p>
-<p>一键下载：<a href="https://dl.getdropbox.com/u/398/myentunnel.exe" target="_blank"><a href="https://dl.getdropbox.com/u/398/myentunnel.exe">https://dl.getdropbox.com/u/398/myentunnel.exe</a></a></p>
-<p><img src="http://photos.smugmug.com/photos/497956295_FRKXY-O.jpg" alt="myentunnel" title="" /></p>
-<p>按照上图将第一步收到的帐号信息填写到相应的地方后，点击<img src="http://photos.smugmug.com/photos/497956305_GuUqV-O.jpg" alt="save" title="" />按钮，再点击<img src="http://photos.smugmug.com/photos/497956257_vDBHg-O.jpg" alt="hide" title="" />按钮。</p>
-<p>第一次连接过程中会出现一个认证对话框，按照提示确认即可。以后的自动连接中将不再出现此认证对话框。</p>
-<p>最后点击<img src="http://photos.smugmug.com/photos/497956277_uqUyE-O.jpg" alt="hide" title="" />按钮，使对话框隐藏到系统任务栏中。</p>
-<p>提示：</p>
-<p>为MyEntunnel创建一个快捷方式，将其复制到系统的【启动】（C:\Documents and Settings\当前用户名（需要修改成你自己的）\「开始」菜单\程序\启动）文件夹中，今后开机便可自动启动软件，并自动连接服务器。</p>
-<p><img src="http://photos.smugmug.com/photos/497956351_pNNkc-O.png" alt="tray" title=""/></p>
-<p>绿色代表连接成功且稳定；黄色代表正在连接或重新连接；红色代表连接失败。</p>
-<h3>第三步：配置Firefox浏览器</h3>
-
-<p>假设你正使用<a href="http://www.mozilla.com/firefox" target="_blank">Firefox浏览器</a>阅读本文。</p>
-<p>一键安装：<a href="http://autoproxy.mozdev.org/latest.xpi" target="_blank"><a href="http://autoproxy.mozdev.org/latest.xpi">http://autoproxy.mozdev.org/latest.xpi</a></a></p>
-<p><img src="http://photos.smugmug.com/photos/498951512_XzxSh-O.png" alt="xpi-offical" title="" /></p>
-<p>点击立即安装，安装后，重新启动Firefox。然后你会看到如下对话框，选择gfwlist (P.R.China)后，点击确定。</p>
-<p><img src="http://photos.smugmug.com/photos/497956357_vmp9W-O.png" alt="gfwlist" title="" /></p>
-<p>接着你会看到Firefox主界面右上角出现有一个“福”字图案，点击“福”。</p>
-<p><img src="http://photos.smugmug.com/photos/497956204_t4d3L-O.png" alt="fu" title="" /></p>
-<p>点击“代理服务器——编辑代理服务器”。</p>
-<p><img src="http://photos.smugmug.com/photos/497956317_yWwtL-O.png" alt="edit" title="" /></p>
-<p>随即出现如下画面，你会看到如GAppProxy、Tor和Your Freedom这样一系列代理服务器名称。</p>
-<p><img src="http://photos.smugmug.com/photos/497956227_jQby9-O.png" alt="before" title="" /></p>
-<p>将GAppProxy一栏的参数修改为如下图所示。</p>
-<p><img src="http://photos.smugmug.com/photos/497956232_ttQRj-O.png" alt="after" title="" /></p>
-<p>修改完毕后，点击确定。至此配置已全部就绪。</p>
-<p>获取更多帮助，请关注反馈中心：<a href="https://friendfeed.com/rooms/fuckgfw-feedback" target="_blank"><a href="https://friendfeed.com/rooms/fuckgfw-feedback">https://friendfeed.com/rooms/fuckgfw-feedback</a></a></p>
-<h3>第四步：支持fuckGFW</h3>
-
-<p>获取详情，请关注捐赠与推广中心：<a href="https://friendfeed.com/rooms/fuckgfw-donation-and-marketing" target="_blank"><a href="https://friendfeed.com/rooms/fuckgfw-donation-and-marketing">https://friendfeed.com/rooms/fuckgfw-donation-and-marketing</a></a></p>
-<p>版权信息：您可以自由复制、传播、演绎本作品且无需署名、无需注明原始出处。</p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-
-  <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <time datetime="2009-03-26T14:13:00.000Z"><a href="/2009/03/26/na-li-bu-gao-xing/">3月 26 2009</a></time>
-    
-    
-  
-    <h1 class="title"><a href="/2009/03/26/na-li-bu-gao-xing/">哪里不高興</a></h1>
+    <h1 class="title"><a href="/2010/03/19/dang-diao-pin-yu-shang-wei-bo/">當調頻遇上微博</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>3/26/09</p>
-<p>那天感冒的時候，看到一則有關陳炯明的歷史評論，作者對歷史人物的總結可謂非常適宜和到位的。聯想到《團》劇中那些“炮灰”的故事和中國遠征軍的史實，我們有好多東西都需要客觀的評價，只可惜在我初中高中這個階段的歷史教科書裏學到的內容也大致需要推到加以重新認識。</p>
-<p>另外，還看見不少人在爭論<a href="http://book.qq.com/s/book/0/16/16367/" target="_blank">《中國不高興》</a>這本書，我還沒有看這本據說是《中國可以說不》的升級版。當然，以“中國”之名的東西，會招來兩種力量的意見相爭，比如：力挺派和質疑派，各說各有理啊，但有理也說不清啊，其實現實誰都知道這不過是商家的習慣性炒作手段而已，這條食物鏈上最高興的是書商罷了。或者正如<a href="http://www.douban.com/review/1895068/" target="_blank">豆瓣裏</a>有人引用王小波的文字道出了作者目的是仿效李太白的“隔山打牛”之功，其意味不可謂不深啊！</p>
-<p>1）<a href="http://epaper.nddaily.com/C/html/2009-03/24/content_738031.htm" target="_blank">不以勝敗論陳炯明</a></p>
-<blockquote>如果說，孫中山是一位不擇手段的成功者，那么陳炯明就是一位堅持原則的失敗者。也許，堅持原則者總是容易輸給不擇手段者，道德主義者總是容易輸給功利主義者，理想主義者總是容易輸給機會主義者。</blockquote>
-
-<p>2）<a href="http://blog.sina.com.cn/lm/z/zgbgx09/index.html" target="_blank">《中國不高興》引發博客論戰</a></p>
-<p><img src="http://otho.douban.com/lpic/s3657760.jpg"/></p>
-<p>3月15日南都報曾<a href="http://epaper.nddaily.com/A/html/2009-03/15/content_730081.htm" target="_blank">深度報道</a>了淮河支流嚴重“砷汙染”的事件，讓人觸目驚心，自然環境對人類的過度開發行為也開始了反擊和懲罰。還有3月24<a href="http://epaper.nddaily.com/A/html/2009-03/24/content_738811.htm" target="_blank">對“手足口病”的披露</a>，更是讓人對某些管理層不負責的行為感到憤怒，連個死亡兒童統計的數字都無法做到公開和采取開明的態度，百姓還要你們干嘛？</p>
-<p>3）<a href="http://news.sina.com.cn/z/shouzukou09/index.shtml" target="_blank">多個省份出現手足口病疫情專題</a><br>4）<a href="http://finance.sina.com.cn/focus/qsyeyptd/index.shtml" target="_blank">強生等嬰兒衛浴品被指有毒</a><br>5）<a href="http://view.qq.com/a/20090324/000011.htm" target="_blank">王志安：瘦肉精屢禁不絕的經濟學分析</a>   </p>
-<blockquote>我們不想研究那么多的主義,也不想知道那么多的經濟學道理,我們只想讓這個世界的人都有個人樣,豬肉有個豬肉樣,中國有個中國的樣子!!現在的人都是怎么了,難道都是讓錢鬧的嗎?好好的東西非要往糟裏弄,牛奶、雞蛋、面粉、大米還有現在的肉類，這不是自己在害自己嗎？這樣下去，還用得著別人嗎，自己就把自己給毀了，現在精神層面上的東西還剩下多少是美好的了？？國人啊，真該好好反思了，從上到下！！！全民上下，不能只剩下一個“錢”字了！！！</blockquote>
-
-<p>連番的嬰幼兒奶粉和用品的風波引發產品質量安全危機過後，讓人揪心的還有“瘦肉精”利益鏈條被有良心的媒體挖掘後……你說，在有毒的環境下生活的人還有活命的權利嗎？再聯想到艾未未們<a href="http://www.tianya.cn/publicforum/content/news/1/120094.shtml" target="_blank">民間調查遇難學生名單</a>的感人行動……我不得不低頭默認：<a href="http://bullogger.blogbus.com/logs/36774435.html" target="_blank">我們都是有罪的人</a>！！！</p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-
-  <article class="post">
-  <header>
-    
-      <div class="icon"></div>
-      <time datetime="2009-03-26T14:10:00.000Z"><a href="/2009/03/26/wu-liao-bu-ke-yi-mei-you/">3月 26 2009</a></time>
-    
-    
-  
-    <h1 class="title"><a href="/2009/03/26/wu-liao-bu-ke-yi-mei-you/">無聊不可以沒有</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>3/26/09</p>
-<p>1）無聊是一把尺子</p>
-<blockquote>“一個國家的博客是否發達，跟這個國家的民眾是否無聊有關，比如我就挺無聊的，所以沒事寫博客比別人勤快一些。以此類推，中國博客方興東未艾，一定是跟老百姓沒事幹有關系。老百姓為什么沒事幹？因為不讓你有事而幹，那可不就寫博客了嗎。結果寫著寫著就變成了政府的負擔了，你們這幫孫子整天在博客上胡說八道，怎么得了。於是就開始修理博客。”</blockquote>
-
-<p>——來自 <a href="http://www.wangxiaofeng.net/?p=2717" target="_blank">帶三個表：還需要寫博客嗎？</a></p>
-<p>2）中醫的國恥日</p>
-<blockquote>“中醫那么牛B，那劉翔掉鏈子，也是中醫掉鏈子了。我提議全國有志於振興中醫的人士，應該將劉翔退賽這天定為中醫的國恥日，好好反省一下。”</blockquote>
-
-<p>——來自 <a href="http://epaper.nddaily.com/A/html/2009-03/26/content_741299.htm" target="_blank">何山專欄:中醫足球?</a></p>
+      <p>Fri, 19 Mar 2010 07:39:07 </p>
+<p>沒有電視無所謂，但沒有電臺廣播，那才是人生的悲哀。<br>縱使沒有電視，電臺的聲音也能陪伴我打發寂寥而平凡的日子。</p>
+<p><a href="http://www.fm1052.com.cn" target="_blank">FM1052羊城交通</a>除了《大吉利車隊》我喜愛聽外，另一個晚間的互動節目——《晚安！珠三角》也是可聽性和受眾極廣的，因為DJ是陳sir，在豆瓣上喜愛他節目的豆子們成立了<a href="http://www.douban.com/group/G4/" target="_blank">“陳SIR|廣州撐你小組“</a>，可見一名主持人受歡迎的程度。</p>
+<p>電臺Radio是傳統的傳播媒介之一，而“微博”比如新浪的“圍脖”算是一種新鮮的傳播方式，可以通過PC/NB或手機進行交流。然而，當一個電臺節目以“圍脖”的方式出現在你的聽覺中，你會否覺得有些意外？我自己認為這是不錯的嘗試，起碼也是2種媒介的Mashup（混搭）之作。</p>
+<p><img src="http://126.fm/4Cmrxis"/></p>
+<p>《晚安！珠三角》就是以讀新浪“圍脖”為發端實現主持人和聽眾之間的互動，聽聽別人談生活.談天氣，或者某些社政話題，偶爾冒出幾條“金句”雖是一笑而過，也基本上使自己的心靈得到某些共鳴吧！</p>
+<p>幾乎每個人都喜歡聽里面的<a href="http://zhidao.baidu.com/question/135419557.html" target="_blank">背景音樂</a>：《Beatiful Lady》和《Falling For You》，相信你也不例外。</p>
+<p>有興趣的可以圍觀陳SIR的“圍脖”：<a href="http://t.sina.com.cn/gzchensir" target="_blank"><a href="http://t.sina.com.cn/gzchensir">http://t.sina.com.cn/gzchensir</a></a></p>
+<p>陳SIR：<a href="http://sp.ycwb.com/2010-01/19/content_2405647.htm" target="_blank">做電臺的人是幸福的</a></p>
 
     
   </div>
@@ -228,6 +127,18 @@
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
+
+<script type="text/javascript">
+  var disqus_shortname = 'kaka2';
+
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  }());
+</script>
 
 
 
