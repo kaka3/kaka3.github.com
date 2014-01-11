@@ -48,18 +48,34 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-26T15:09:00.000Z"><a href="/2011/11/26/sites-powered-by-jekyll/">11月 26 2011</a></time>
+      <time datetime="2012-08-25T07:14:00.000Z"><a href="/2012/08/25/fatal-error/">8月 25 2012</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/26/sites-powered-by-jekyll/">sites powered by jekyll</a></h1>
+    <h1 class="title"><a href="/2012/08/25/fatal-error/">fatal error</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p><a href="https://github.com/mojombo/jekyll/wiki/sites" target="_blank">Link</a> to Jekyll-powered blogs and other sites here.</p>
+      <p>發一個今天rake gen_deploy時的數據，花了很久的時間，octopress-&gt;github還是令人有點小鬱悶，那個connection reset怎麼那麼眼熟呢？ 妳懂的！</p>
+<p>還是不包括開頭的信息吧， -:)</p>
+<p>Building site: source -&gt; public<br>Successfully generated site: source -&gt; public<br>Deploying branch to Github Pages   </p>
+<p>—- 部分內容省略 —-</p>
+<p>copying public to _deploy  </p>
+<blockquote>
+<p>cp -r public/. _deploy<br>cd _deploy  </p>
+</blockquote>
+<p>Commiting: Site updated at 2012-08-25 06:02:28 UTC  </p>
+<blockquote>
+<p>[master 60fe166] Site updated at 2012-08-25 06:02:28 UTC<br> 55 files changed, 149 insertions(+), 117 deletions(-)  </p>
+</blockquote>
+<p>Pushing generated _deploy website  </p>
+<blockquote>
+<p>Counting objects: 148852, done.<br>Delta compression using up to 2 threads.<br>Compressing objects: 100% (79955/79955), done.<br>Read from remote host github.com: Connection reset by peer<br>fatal: The remote end hung up unexpectedly<br>error: pack-objects died of signal 13<br>error: failed to push some refs to ‘git@github.com:kaka2/kaka2.github.com.git’</p>
+</blockquote>
+<p>Github Pages deploy complete   </p>
 
     
   </div>
@@ -78,26 +94,29 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-26T13:12:00.000Z"><a href="/2011/11/26/post-by-terminal/">11月 26 2011</a></time>
+      <time datetime="2012-08-02T11:37:00.000Z"><a href="/2012/08/02/dig-rss-via-github/">8月 2 2012</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/26/post-by-terminal/">post by terminal</a></h1>
+    <h1 class="title"><a href="/2012/08/02/dig-rss-via-github/">你的閱讀器渴了麽</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>使用終端進行發布的3個命令：</p>
-<ol>
-<li>rake new_post[“hello world”]</li>
-<li>gedit source/_post/year-month-day-hello-world.markdown</li>
-<li>rake generate</li>
-<li>rake deploy </li>
-</ol>
-<p>是不是很簡單呢？</p>
-<p>接下來的任務就是對markdown的練習。</p>
+      <p>7月已經結束了，又來感嘆一下那把殺豬刀般的歲月。由於某件事在工作過程中弄得很不爽，所以雖然workday時開着im，但對於業務上的聯繫卻顯得無動於衷了。都怪我麽？</p>
+<p>這2天不怎麼忙，於是就開始了閱讀器的整理，每一年我都會不定期做一下這節功課的。因為通過這種閱讀方式獲得的益處愈多，越來越離不開rss了。門戶網站和某類社區已經對我毫無吸引之力了。</p>
+<p>上次看了一個<a href="http://sofish.de/file/demo/github/" target="_blank">demo</a>的玩法後，覺得<a href="https://github.com" target="_blank">github.com</a>的確是個能挖掘東東的源泉，也是真正卧虎藏龍之所。比如，搜索location:china後，出現了很多熟悉的id名字，於是再翻看ta們的bio，可以看到其個人主頁或blog的鏈接，這下子就可以找到feed/rss，藉此可以為閱讀器添加彈藥了。</p>
+<p>通過 <a href="https://github.com/search" target="_blank">https://github.com/search</a> 這里，再加上下面的參數定位<br>Advanced Search:  location:china<br>search for: users<br>search language: any language  </p>
+<p>粗略瞄一眼，就可以找到國內這些技術愛好者的分布情況，大致直到目前有6691個id了；當然，也有一些沒有顯示出來的，因為註冊時就沒有留下詳細的資料嘛。可以看到每個id下的followers數，repo數，及其主要使用的開發語言類型，有趣的是絕大多數人的資料里都是留了Gmail郵址。嗯，還能窺到哪些童鞋服務於哪間it公司。</p>
+<p>由於與<a href="http://pages.github.com/" target="_blank">pages</a>相關，所以也有部分童鞋用上了<a href="http://jekyllrb.com/" target="_blank">jekyll</a>和<a href="http://octopress.org/" target="_blank">octopress</a>的發布途徑，其好處自然不在此啰嗦啦！也有部分是藉助wordpress作為blog驅動力的；其中bootstrape<a href="http://twitter.github.com/bootstrap/" target="_blank">1</a>和<a href="http://jekyllbootstrap.com/" target="_blank">2</a>的貢獻也不小。</p>
+<p>如果你接觸blog/weblog有n（&gt;5)年了，那麼會發覺以前那批先行者/佈道者的足跡已經慢慢消失了。除了某組織的防火長城干擾外，一些空間穩定，精力投入，訪客評論，廣告收入等因素也對blogging的氛圍造成了消沉的局面。但，還是有多數技術愛好者和web開發/設計者們仍然堅持分享自己的所思所想，這一點與某些社區上的浮躁者們相比是很難能可貴的。</p>
+<p>鑒於blog人氣日漸勢微，因而rss閱讀器下獲得的信息也少了，除了幾個TMT站和v2ex社區有不斷的geeker類信息分享外，以前的那些寫作質量不錯的blogger漸漸失去了更新的動力，這對於信息饑渴症的人來說有些束手無措，但又不能「坐以待斃」，所以必須去尋找更多信源了。於是，通過上面對github上搜索和發現的實踐，就可以獲取更多blog上的rss來緩解閱讀器飢餓之狀。</p>
+<p>ps: 再嘮叨一點兒</p>
+<p>對於愛自己和自己所愛之人，我一定要努力去珍惜。雖然，日子總是有些平淡無奇，但心裡仍然無時無刻不在挂念着，感謝一切天意，感激她。</p>
+<p>很重要的，兩個人相處，要互相理解和尊重，無論發生什麼事，都應該懂得設身處地/換位思考。</p>
+<p>願：接下來的日子，更加順利。</p>
 
     
   </div>
@@ -116,89 +135,29 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2011-11-26T12:22:00.000Z"><a href="/2011/11/26/how-to-install-octopress-and-deploy-on-github/">11月 26 2011</a></time>
+      <time datetime="2012-07-21T09:13:00.000Z"><a href="/2012/07/21/mash/">7月 21 2012</a></time>
     
     
   
-    <h1 class="title"><a href="/2011/11/26/how-to-install-octopress-and-deploy-on-github/">how to install octopress and deploy on github</a></h1>
+    <h1 class="title"><a href="/2012/07/21/mash/">mash</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>都是在網上搜集到的一些資料，看起來有些亂，但還是希望有寫用處吧！ ：）</p>
-<ul>
-<li><p><a href="http://octopress.org/docs/" target="_blank">Octopress：A blogging framework for hackers.</a></p>
-</li>
-<li><p><a href="http://lyhdev.com/note:octopress" target="_blank">Octopress: a blogging framework for hackers</a></p>
-</li>
-<li><p><a href="http://help.github.com/win-set-up-git/" target="_blank">Guide for setting up git in Windows</a></p>
-</li>
-<li><p><a href="http://help.github.com/linux-set-up-git/" target="_blank">Guide for setting up git in Linux</a></p>
-</li>
-<li><p><a href="http://serholiu.com/github-share-code/" target="_blank">在GitHub上分享和展示你的代码</a> </p>
-</li>
-<li><p><a href="http://gotgit.github.com/gotgithub/" target="_blank">GotGitHub v0.1 documentation</a></p>
-</li>
-<li><p><a href="http://zwq.me/git-and-github-use-ubuntu.html" target="_blank">ubuntu下Git与GitHub的使用</a> </p>
-</li>
-<li><p><a href="http://www.pureweber.com/article/git-and-github/" target="_blank">Git与Github的使用(ubuntu)</a></p>
-</li>
-<li><p><a href="http://blog.itmem.com/?p=1157" target="_blank">Git与GitHub在Windows环境下的使用指南</a></p>
-</li>
-<li><p><a href="http://interjc.net/archives/2011/09/05/using-github-on-windows.html" target="_blank">Windows 上使用 Github 手记</a></p>
-</li>
-<li><p><a href="http://pizn.github.com/blog/2011/09/22/create-github-page.html" target="_blank">在 github 上建立 pages 的过程</a></p>
-</li>
-<li><p><a href="http://www.pizn.net/24-09-2011/use-github-pages-to-build-a-blog/" target="_blank">使用 GitHub Pages 建立博客</a></p>
-</li>
-<li><p><a href="http://blog.leezhong.com/tech/2010/08/25/make-github-as-blog-engine.html" target="_blank">使用github作为博客引擎(Jekyll)</a> </p>
-</li>
-<li><p><a href="http://osser.me/git/2011/11/08/github-page.html" target="_blank">在github上搭建自己的博客(Jekyll)</a></p>
-</li>
-<li><p><a href="http://tzangms.com/2011/10/09/from-blogofile-to-octopress/" target="_blank">From Blogofile to Octopress</a></p>
-</li>
-<li><p><a href="http://forcefront.com/2011/create-github-organizations/" target="_blank">如何在 GitHub 建立组织</a> </p>
-</li>
-<li><p><a href="http://forcefront.com/2011/build-your-github-pages/" target="_blank">如何在 GitHub 建立个人主页和项目演示页面</a></p>
-</li>
-<li><p><a href="http://blog.xdite.net/posts/2011/10/07/what-is-octopress/" target="_blank">Why Octopress?</a></p>
-</li>
-<li><p><a href="http://yavaeye.com/p/show/hello-octopress" target="_blank">Hello octopress</a></p>
-</li>
-<li><p><a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html" target="_blank">使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章</a> </p>
-</li>
-<li><p><a href="http://www.yangzhiping.com/tech/octopress.html" target="_blank">Ruby开源项目介绍(1)：octopress—像黑客一样写博客</a></p>
-</li>
-<li><p><a href="http://hychen.wuweig.org/blog/2011/11/13/huan-dao-octopress/" target="_blank">由WordPress換到Octopress</a></p>
-</li>
-<li><p><a href="http://www.yodi.me/blog/2011/10/24/github-custom-domain-with-octopress-in-ubuntu-oneiric-11-dot-10/" target="_blank">Github Custom Domain With Octopress in Ubuntu Oneiric 11.10</a></p>
-</li>
-<li><p><a href="http://greglus.com/blog/2011/10/10/how-to-install-octopress-on-ubuntu/" target="_blank">How to Install Octopress on Ubuntu and Deploy on GitHub</a></p>
-</li>
-<li><p><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/" target="_blank">windows下Octopress安裝筆記</a></p>
-</li>
-<li><p><a href="http://a.wuyb.com/blog/2011/10/29/octopressed/" target="_blank">遷移WordPress到Octopress</a></p>
-</li>
-<li><p><a href="http://ravenw.com/blog/2011/08/27/blog-with-jekyll/" target="_blank">基于Jekyll搭建自己的博客</a></p>
-</li>
-<li><p><a href="http://blog.tingkun.com/blog/2011/11/03/zai-githubda-jian-octopress-bo-ke/" target="_blank">如何写blog—在github搭建-Octopress 博客</a></p>
-</li>
-<li><p><a href="http://lxj.name/github/2010/09/20/saberma-github-page-blog-build-with-jekyll.html" target="_blank">应用jekyll构建基于github page的博客</a></p>
-</li>
-<li><p><a href="http://blog.miaout17.net/2011/05/08/convert-wordpress-to-jekyll-and-disqus/" target="_blank">將Wordpress轉移到Jekyll及Disqus</a></p>
-</li>
-<li><p><a href="http://code.raycn.net/tech/github.html" target="_blank">jekyll教程</a> </p>
-</li>
-<li><p><a href="http://kyle.xlau.org/posts/blogging-like-a-hacker.html" target="_blank">Jekyll像黑客一样写博客</a></p>
-</li>
-</ul>
+      <p>沒有ta的午後，一個人靜靜地開着電腦，彷彿要找點什麼感覺出來。</p>
+<p>偶曾經記得一句話：我不害怕網絡，我害怕沒有網絡。</p>
+<p>其實，每天固定的瀏覽目標也就這幾個：<a href="http://www.v2ex.com" target="_blank">v2ex</a> , <a href="http://hckrnews.com/" target="_blank">H&amp;N</a> ,以及<a href="http://ruby-china.org/topics/" target="_blank">Ruby-China</a>，當然了最少不了的就是<a href="http://reader.youdao.com" target="_blank">「有道閱讀器」</a>，要不然，我一直在維護的<a href="http://kooclass.appspot.com/" target="_blank">kooclass</a>的topics怎麼會超過7000條呢？</p>
 
     
   </div>
   <footer class="end-sep">
     
+      
+        <div class="alignleft">
+          <a href="/2012/07/21/mash/#more" class="more-link">Read More</a>
+        </div>
       
       
     

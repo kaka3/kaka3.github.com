@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>gh-pages | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  <meta name="description" content="哎，技術小白在這幾天Google服務「大姨媽」的情況下，依然停止不住折騰的腳步，實屬艱難。(“斯巴達”,尼瑪! )
+鬱悶的是，起初用octopress的時候也沒這麽折騰過，這次卻是在win系統下， 各種不方便啊！有木有？！看到jekyll和jekyll-bootstrap很久了，卻一直未試驗，於是，看了幾篇別人的blog介紹就開始動工了。
+曾經以為只要在自己username下可以用其他name來建立user pages的，但貌似幫助文檔提示不行，所以試着在username.github.com的master下再建立gh-pages的project pages。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="gh-pages"/>
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2012-10-25T12:40:00.000Z"><a href="/2012/10/25/gh-pages-and-project-pages/">10月 25 2012</a></time>
+    
+    
+  
+    <h1 class="title">gh-pages</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>哎，技術小白在這幾天Google服務<a href="http://www.v2ex.com/t/50724" target="_blank">「大姨媽」</a>的情況下，<br>依然停止不住折騰的腳步，實屬艱難。(“斯巴達”,尼瑪! )</p>
+<p>鬱悶的是，起初用<a href="http://octopress.org/" target="_blank">octopress</a>的時候也沒這麽折騰過，<br>這次卻是在win系統下， 各種不方便啊！有木有？！<br>看到jekyll和jekyll-bootstrap很久了，卻一直未試驗，<br>於是，看了幾篇別人的blog介紹就開始動工了。</p>
+<p>曾經以為只要在自己username下可以用其他name來建立<br>user pages的，但貌似<a href="https://help.github.com/articles/user-organization-and-project-pages" target="_blank">幫助文檔</a>提示不行，<br>所以試着在username.github.com的<br>master下再建立<code>gh-pages</code>的project pages。</p>
+<a id="more"></a>
+
+<h2 id="-8edf-786c-74b0-5883-548c-914d-7f6e-ff1a-">軟硬環境和配置：</h2>
+<p>PC：Win XP<br>Git for win: <a href="http://msysgit.github.com/" target="_blank">msysgit</a><br>Ruby和devkit: <a href="http://rubyinstaller.org/downloads/" target="_blank">rubyinstaller</a><br>RubyGems: <a href="http://rubygems.org/pages/download" target="_blank">rubygems</a><br>Jekyll: <a href="http://jekyllbootstrap.com/usage/jekyll-quick-start.html" target="_blank">Jekyll</a><br>Jekyll-Bootstrap: <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a>  </p>
+<h2 id="-77e5-8b58-9ede-">知識點</h2>
+<ol>
+<li><p>利用<a href="http://pages.github.com/" target="_blank">pages</a>自動創建<code>gh-pages</code>:<br>推薦非常棒的: <a href="http://yanping.me/cn/blog/2012/03/18/github-pages-step-by-step/" target="_blank">極簡教程</a>  </p>
+</li>
+<li><p>由於步驟1建立的<code>gh-pages</code>中，<br>含有非步驟2中的文件，所以: 如何刪除<a href="http://hi.baidu.com/zairl23/item/4a34c60084108fd01ef0464d" target="_blank">remote</a>的文件?<br>本地<code>gh-pages</code>操作命令：   </p>
+<blockquote>
+<p>git status<br>git rm the files(不要的文件)<br>git commit -a -m “delete”<br>git push origin gh-pages  </p>
+</blockquote>
+</li>
+<li><p>clone該gh-pages所在的repo到本地 ,保留.git目錄  </p>
+<blockquote>
+<p>git clone git@github.com:username/repo.git </p>
+</blockquote>
+</li>
+<li><p>將JB(jekyll-bootstrap)的源碼clone到本地<br>刪掉此處的.git目錄 ,剩下的文件複製到步驟2的repo目錄下,<br>配置_config.yml等    </p>
+</li>
+<li><p>然後push到<code>gh-pages</code>  </p>
+<blockquote>
+<p>git add .<br>git commit -a -m “delete”<br>git push origin ph-pages  </p>
+</blockquote>
+</li>
+<li><p>其他命令, 由項目主頁的project到<code>gh-pages</code>  </p>
+<blockquote>
+<p>cd repo<br>git branch gh-pages_name<br>git checkout gh-pages_name</p>
+</blockquote>
+</li>
+</ol>
+
+    
+  </div>
+  <footer>
+    
+      
+  
+  <div class="categories">
+    <a href="/categories/project-pages/">project-pages</a>
+  </div>
+
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

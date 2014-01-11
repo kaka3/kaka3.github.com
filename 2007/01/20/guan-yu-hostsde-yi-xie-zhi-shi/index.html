@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>关于hosts的一些知识 | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  <meta name="description" content="1/20/07
+在windows系统中有一个叫”hosts”文件,但它具体是什么?有什么作用?工作原理是怎样的?从网上搜索一下,有不少知识,这里就转贴一段,虽然不是唯一的答案,但对自己的理解还是有些帮助吧!
+====关于host文件====
+一． Hosts文件的位置
+很多用户都知道在Window系">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="关于hosts的一些知识"/>
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2007-01-20T11:44:00.000Z"><a href="/2007/01/20/guan-yu-hostsde-yi-xie-zhi-shi/">1月 20 2007</a></time>
+    
+    
+  
+    <h1 class="title">关于hosts的一些知识</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>1/20/07</p>
+<p>在windows系统中有一个叫”hosts”文件,但它具体是什么?有什么作用?工作原理是怎样的?从网上搜索一下,有不少知识,这里就转贴一段,虽然不是唯一的答案,但对自己的理解还是有些帮助吧!</p>
+<h2 id="-3d-3d-3d-3d-5173-4e8e-host-6587-4ef6-3d-3d-3d-3d-">====关于host文件====</h2>
+<p>一． Hosts文件的位置</p>
+<p>很多用户都知道在Window系统中有个Hosts文件（没有后缀名），在Windows 98系统下该文件在Windows文件夹。在Windows 2000/XP系统中位于\%Systemroot%\System32\Drivers\Etc 文件夹中，其中，%Systemroot%指系统安装路径。例如，Windows XP 安装在C:\WINDOWS,那么Hosts文件就在C:\Widows\System32\Drvers\Etc中。</p>
+<p>你也可以用windows自带的查找功能搜索找到hosts文件。<br>该文件其实是一个纯文本的文件，用普通的文本编辑软件如记事本等都能打开和编辑。</p>
+<p>二． Hosts文件的基本内容和语法</p>
+<p>用记事本打开hosts文件，就可以看见了微软对这个文件的说明。Hosts文件文一般有如下面的基本内容:</p>
+<pre># Copyright (c) 1993-1999 Microsoft Corp.
+# For example:
+# 102.54.94.97 rhino.acme.com # source server
+# 38.25.63.10 x.acme.com # x client host
+127.0.0.1 localhost</pre>
+
+<p>这个文件是根据TCP/IP for Windows 的标准来工作的。<br>它的作用是定义IP地址和Host name(主机名)的映射关系，是一个映射IP地址和Host name (主机名) 的规定。这个规定中，要求每段只能包括一个映射关系，也就是一个IP地址和一个与之有映射关系的主机名。 IP地址要放在每段的最前面，映射的Host name(主机名)在IP后面，中间用空格分隔。对于这段的映射说明，用“#”分割后用文字说明。</p>
+<p>三． Hosts文件的工作方式</p>
+<p>现在让我们来看看Hosts在Windows中是怎么工作的。<br>我们知道在网络上访问网站，要首先通过DNS服务器把要访问的网络域名（XXXX.com）解析成XXX.XXX.XXX.XXX的IP地址后，计算机才能对这个网络域名作访问。<br>要是对于每个域名请求我们都要等待域名服务器解析后返回IP信息，这样访问网络的效率就会降低，因为DNS做域名解析和返回IP都需要时间。<br>为了提高对经常访问的网络域名的解析效率，可以通过利用Hosts文件中建立域名和IP的映射关系来达到目的。根据Windows系统规定，在进行DNS请求以前，Windows系统会先检查自己的Hosts文件中是否有这个网络域名映射关系。如果有,则调用这个IP地址映射，如果没有，再向已知的DNS服务器提出域名解析。也就是说Hosts的请求级别比DNS高。</p>
+<p>四． Hosts文件的工作方式和具体作用  </p>
+<p>现在来看一下Hosts文件的工作方式以及它在具体使用中起哪些作用。</p>
+<p>1、加快域名解析</p>
+<p>对于要经常访问的网站，我们可以通过在Hosts中配置域名和IP的映射关系，提高域名解析速度。由于有了映射关系，当我们输入域名计算机就能很快解析出IP，而不用请求网络上的DNS服务器。</p>
+<p>2、方便局域网用户</p>
+<p>在很多单位的局域网中，会有服务器提供给用户使用。但由于局域网中一般很少架设DNS服务器，访问这些服务器时，要输入难记的IP地址。这对不少人来说相当麻烦。现在可以分别给这些服务器取个容易记住的名字，然后在Hosts中建立IP映射，这样以后访问的时候，只要输入这个服务器的名字就行了。</p>
+<p>3、屏蔽网站</p>
+<p>现在有很多网站不经过用户同意就将各种各样的插件安装到你的计算机中，其中有些说不定就是木马或病毒。对于这些网站我们可以利用Hosts把该网站的域名映射到错误的IP或本地计算机的IP，这样就不用访问了。在WINDOWS XP系统中，约定127.0.0.1为本地计算机的IP地址, 0.0.0.0是错误的IP地址。<br>如果，我们在Hosts中，写入以下内容：</p>
+<p>127.0.0.1 # 要屏蔽的网站 A<br>0.0.0.0 # 要屏蔽的网站 B</p>
+<p>这样，计算机解析域名 A和 B时，就解析到本机IP或错误的IP，达到了屏蔽网站A 和B的目的。</p>
+<p>4、顺利连接系统</p>
+<p>对于Lotus的服务器和一些数据库服务器，在访问时如果直接输入IP地址那是不能访问的，只能输入服务器名才能访问。那么我们配置好Hosts文件，这样输入服务器名就能顺利连接了。</p>
+<p>五． 屏蔽不想访问的网站的例子<br>这里给出一些收集到的利用Hosts文件对一些网址屏蔽的例子，共大家学习使用Hosts文件时参考。</p>
+<p>例1.<br>在 hosts文件中加入如下内容就可以屏蔽文件中定义的对应的网址。</p>
+<pre>127.0.0.1 localhost
+127.0.0.1 download.3721.com
+127.0.0.1 3721.com #3721网络实名
+127.0.0.1 3721.net #3721网络实名
+127.0.0.1 cnsmin.3721.com #3721网络实名
+127.0.0.1 cnsmin.3721.net #3721网络实名
+127.0.0.1 download.3721.com #3721网络实名
+127.0.0.1 download.3721.net #3721网络实名
+127.0.0.1 www.3721.com #3721网络实名
+127.0.0.1 www.3721.net #3721网络实名</pre>
+
+<p>例2.<br>在 hosts文件中加入如下内容就可以屏蔽文件中定义的对应的网址。</p>
+<pre>127.0.0.1 localhost
+127.0.0.1 bar.baidu.com #百度IE搜索伴侣
+127.0.0.1 www.baidu.com #百度IE搜索伴侣
+127.0.0.1 baidu.com #百度IE搜索伴侣</pre>
+
+<p>最后要指出的是，Hosts文件配置的映射是静态的，如果网络上的计算机更改了请及时更新IP地址，否则将不能访问。</p>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

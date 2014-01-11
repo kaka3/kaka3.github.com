@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>UA: 關于User Agent的歷史 | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  <meta name="description" content="1/10/09
+我用K-Meleon（CCF ME版本），在瀏覽器窗口開啟www.useragent.cn後，得到一頁分析數據，如下圖：   
+
+我的User Agent字符串(string)：Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="UA: 關于User Agent的歷史"/>
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2009-01-10T11:57:00.000Z"><a href="/2009/01/10/uaguan-yu-user-agentde-li-shi/">1月 10 2009</a></time>
+    
+    
+  
+    <h1 class="title">UA: 關于User Agent的歷史</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>1/10/09</p>
+<p>我用K-Meleon（CCF ME版本），在瀏覽器窗口開啟<a href="http://www.useragent.cn/" target="_blank">www.useragent.cn</a>後，得到一頁分析數據，如下圖：   </p>
+<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_FzVWQaZQR5M/SWg8mndRJEI/AAAAAAAABHg/dhh9Ye0G2ww/s1600-h/user_agent_a.jpg" target="_blank"><img style="cursor:pointer; cursor:hand;width: 267px; height: 320px;" src="http://2.bp.blogspot.com/_FzVWQaZQR5M/SWg8mndRJEI/AAAAAAAABHg/dhh9Ye0G2ww/s320/user_agent_a.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5289544396471084098" /></a></p>
+<p>我的User Agent字符串(string)：<br><code>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9) Gecko/2008052906 K-MeleonCCFME 0.09</code></p>
+<p>Mozilla：這是一個基於 Mozilla 的瀏覽器<br>5.0    ：Mozilla 版本<br>Windows：操作系統平台   </p>
+<p>U      ：安全性:  </p>
+<pre><code>         * N 代表無安全性  
+         * U 代表強安全性  
+         * I 代表弱安全性  
+</code></pre><p>Windows NT 5.1： OS或CPU : Windows XP<br>en-US  ：語言標記，表明客戶端使用的本地化語言:TODO<br>rv:1.9 ：CVS 分支標記:此瀏覽器中使用的 Gecko 版本<br>Gecko  : 使用 Gecko 引擎渲染<br>2008052906: 編譯日期:瀏覽器編譯的日期   </p>
+<p>在K-Meleon CCF ME瀏覽器的菜單裏有一個User Agent的選項，如下圖：</p>
+<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_FzVWQaZQR5M/SWg5eAVsD_I/AAAAAAAABHY/7Pk91Pa6Pcg/s1600-h/user_agent.jpg" target="_blank"><img style="cursor:pointer; cursor:hand;width: 318px; height: 320px;" src="http://3.bp.blogspot.com/_FzVWQaZQR5M/SWg5eAVsD_I/AAAAAAAABHY/7Pk91Pa6Pcg/s320/user_agent.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5289540949996474354" /></a></p>
+<p>由上可以看出，幾大瀏覽器都有自己的一套范式，但它在瀏覽器裏發揮什麼作用呢？這是回顧收藏過的<a href="http://www.cnbeta.com/articles/71532.htm" target="_blank">一篇譯文</a>的時候留意到的一個問題，雖然常見這個User Agent的名詞，但是真正比較一下幾大瀏覽器中的表現形式，還是有點不知所謂。其實，在<a href="http://en.wikipedia.org/wiki/User_agent" target="_blank">英文維基上</a>有專門的介紹，但讓我看起來也有點犯難。今日把篇譯文貼在這裏，以備他日再用。</p>
+<p>原文：<a href="http://www.webaim.org/blog/user-agent-string-history/"/ target="_blank">History of the browser user-agent string</a>(by Aaron Andersen)<br>譯文：<a href="http://52good.skylast.com/2008/12/07/history-of-the-browser-user-agent-string.html" target="_blank">UserAgent的曆史變遷</a>（by heart5）</p>
+<p>簡介</p>
+<p>Google推出的Chrome讓大家熱議紛紛，只有專業用戶才會注意到用Chrome訪問網頁時發出的 “Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13”UserAgent字符串，貌似天書，它到底是怎麼回事兒代表什麼呢？我們來看看吧！</p>
+<p>最早的時候有一個瀏覽器叫<a href="http://archive.ncsa.uiuc.edu/mosaic.html" target="_blank">NCSA Mosaic</a>，把自己標稱為NCSA_Mosaic/2.0 (Windows 3.1)，它支持文字顯示的同時還支持圖片，於是Web開始好玩起來。</p>
+<p>然後出現了一個新的網頁瀏覽器，<a href="http://en.wikipedia.org/wiki/Mozilla" target="_blank">“Mozilla”</a>，其實就是“Mosaic終結者”的意思，這搞的Mosaic很不爽，（畢竟Mosaic出道早，江湖老），新瀏覽器最後正式公布的名稱是Netscape，它把自己標稱為Mozilla/1.0 (Win3.1)，更好玩了。Netscape支持框架顯示，後來框架在大家中間流行起來了，但Mosaic不支持框架啊，於是偉大的“用戶代理人探測”技術出現了，如果是“Mozilla”，那就發給支持框架的頁面，至於其他的瀏覽器，則發給不含框架的頁面。</p>
+<p>Netscape想逗Microsoft玩兒，把Windows叫做“幾乎不曾做過調試的設備驅動器”，後者很惱火。Microsoft於是推出了自己的 網頁瀏覽器，叫做Internet Explorer，希望它能成為“Netscape終結者”。Internet Explorer也支持框架，但它不是Mozilla啊，所以沒人給它發送帶有框架的頁面。Microsoft慢慢煩躁起來，不再寄希望於網站管理員逐漸 認識IE並給它發框架，而是宣稱自己是“兼容Mozilla”的，開始模仿Netscape，把自己標稱為Mozilla/1.22 (compatible; MSIE 2.0; Windows 95)，這樣Internet Explorer也能收到框架了，整個Microsoft狂喜，但網站管理員開始有點被搞糊塗了。 </p>
+<p>Microsoft把IE和Windows一起賣，並且把產品也弄得比Netscape更好了，拉開了第一場瀏覽器之戰。結果和大家知道的一樣，Netscape被幹掉了，Microsoft大勝、大喜。但是後來Netscape以Mozilla的新名稱重生了，構造了Gecko，標稱其為Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1) Gecko/20020826，Gecko屬於渲染引擎，表現優異。Mozilla開發了Firefox，標稱為Mozilla/5.0 (Windows; U; Windows NT 5.1; sv-SE; rv:1.7.5) Gecko/20041108 Firefox/1.0，並且Firefox表現也非常優秀。Gecko擴張迅速，一些瀏覽器使用了它的代碼並標稱為Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.7.2) Gecko/20040825 Camino/0.8.1 ，這是一個，還有Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.8.1.8) Gecko/20071008 SeaMonkey/1.0，另一個，它們都偽裝成Mozilla，同時也都是基於Gecko支持的。</p>
+<p>Gecko表現優秀，IE則很差勁，於是身份甄別再次發生，輸送給Gecko的是設計良好的網頁代碼，其他瀏覽器就沒有這個待遇了。Linux的跟隨者很傷心，因為他們創建了基於KHTML引擎支持的Konqueror，但卻不會被輸送好代碼，雖然他們自己認為KHTML和Gecko一樣優秀，於是Konquerer開始偽裝自己“像Gecko”那樣以得到好的網頁，並標稱自己為Mozilla/5.0 (compatible; Konqueror/3.2; FreeBSD) (KHTML, like Gecko)，這個世界更讓人困惑了.</p>
+<p>後來出現了Opera這樣的主兒，宣稱“允許用戶自己決定讓瀏覽器裝成誰”，它的菜單中提供了Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.51， Mozilla/5.0 (Windows NT 6.0; U; en; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.51，Opera/9.51 (Windows NT 5.1; U; en) 供大家來選擇，選誰是誰。</p>
+<p>Apple開發了Safari，使用了KHTML，同時也增加了很多新特性，後來幹脆一鍋煮，另起爐灶叫了WebKit，但是它有希望能夠得到那些為KHTML編寫的網頁，於是Safari標稱自己為Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/85.7 (KHTML, like Gecko) Safari/85.5，這個世界更混亂了。</p>
+<p>Microsoft越來越擔心Firefox的發展，重新啟動了Internet Explorer的開發，標稱自己為Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0) ，可以很好的渲染代碼，但那要看網站管理員是否指示它這麼做。</p>
+<p>Google也開發了自己的瀏覽器<a href="http://www.google.com/chrome"/ target="_blank">Chrome</a>，使用了Webkit，有點像Safari，希望能得到為Safari編寫的網頁，於是決定裝成Safari。這樣啊，Chrome使用了WebKit渲染引擎，想裝成Safari，而WebKit呢又偽裝自己是KHTML，KHTML呢又是偽裝成Gecko的，同時所有的瀏覽器又都宣稱自己是 Mozilla，於是，Chrome宣稱自己是Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13,，UserAgent字符串徹底混亂了，也幾乎不再發揮任何作用，每個人都宣稱自己是別人，混亂充斥人間啊。</p>
+<p>相關鏈接：<br>1）查看你的UA：<a href="http://www.useragent.org/" target="_blank">www.useragent.org</a><br>2）GraceCode：<a href="http://www.gracecode.com/Archive/Display/437" target="_blank">改變你的 User-Agent</a>   </p>
+<p>ps:將下面代碼添入覽器窗口後也可以獲取你的User Agent哦！  </p>
+<p><code>javascript:alert(navigator.userAgent)</code></p>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

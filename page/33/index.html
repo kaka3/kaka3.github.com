@@ -48,50 +48,28 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2010-04-02T00:09:45.000Z"><a href="/2010/04/02/keep-fucking-gfw/">4月 2 2010</a></time>
+      <time datetime="2010-05-21T23:21:29.000Z"><a href="/2010/05/22/google-ssl-web-search/">5月 22 2010</a></time>
     
     
   
-    <h1 class="title"><a href="/2010/04/02/keep-fucking-gfw/">keep fucking gfw</a></h1>
+    <h1 class="title"><a href="/2010/05/22/google-ssl-web-search/">google ssl web search</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>Fri, 2 Apr<br>哥翻的不是墻</p>
-<p>日子還是要數著手指頭過下去，墻也要照翻，但翻的是糾結，源于：一切都是被逼的！不過這樣的日子也惹得國外網民的羨慕，他們沒有想到大陸網民具有那么強的心理素質和技術素質。</p>
-<p>1.人的天性：愈壓迫愈反抗</p>
-<p>我一個普通的網民本不愿意折騰的，可是在國內訪問個國外著名網站就像趕赴沙場一樣，要有大無畏死而不驚的英雄氣概。數年下來，一批blog被封了，另一批blog又重新站起來了，并且一部分blogger選擇了獨立的域名和空間，他們沖破了某種網絡審查制度的桎梏，在網絡使用權利上至少恢復了自由身。這其中，開源blog軟件（如：WP/MT等）的廣泛傳播和使用起了重要的作用。從我訂閱的大多數RRS來看，最大的部分就是來自于用WP搭建的blog，在中文世界里的發展可見一斑。當然，在GC或SF這些軟件倉庫中也不斷地會有其他個人公布的blog程序。所以，這種向上發展的力量在網絡里如同每個人渴望自由的意識一樣，什么東西也擋不住的；想依靠一堵墻就能把這股力量圍起來，想摧毀它生根發芽的基礎令其自生自滅，這種愚蠢的辦法是行不通的。</p>
-<p>2.敵退我進.敵進我退</p>
-<p>本周之前的日子，我要瀏覽twitter或從google搜索結果里打開某些被重置的webpage的時候，需要開啟Ultra VPN（現在已經登錄不了）或PacketiX VPN（一直還可以用），但一直對這種免費軟件的速度不太滿意，又要注冊啊帳號之類的，對于比較懶惰的我來說，總是很少有機會把它們從機器里請出來。后來又遇上Puff，但最近免費版的好像也不好使喚，最后，這臺Windows破機器里沒有了其他工具可用啦！早前用FireFox的時候，也弄了Tor，但是那個速度比上面的幾款桌面軟件還要慢，簡直是龜速。至于其他的在線代理或自由門等，由于是初期<a href="http://blog.e-520.com.cn/index.php/archives/911" target="_blank">翻墻（掃盲貼）</a>階段掌握的，所以就不想再反轉頭顧及它們了。</p>
-<p>在免費VPN這些代理工具幾乎都被廢掉了之后，我就開始了SSH的嘗試之路。</p>
-<p>推薦閱讀：<a href="http://www.williamlong.info/archives/2057.html" target="_blank">如何使用代理服务器</a></p>
-<p>3.柳暗花明又一村</p>
-<p>好在Google好使，找到免費的SSH通行證還是不難的。以前雖有留意相關的SSH翻墻資料，但是迫于需要申請和購買帳號，所以只能望洋興嘆。我也沒有網銀，所以也僅能心懷羨慕那些富裕blogger之份。</p>
-<p>推薦閱讀：<a href="http://kangzj.net/difference-between-ssh-vpn/" target="_blank">使用SSH和VPN翻墙的联系与区别</a></p>
-<p>4.實用的SSH帳號及使用方法：</p>
-<p>維基百科：什么是SSH？<blockquote>SSH為Secure Shell的縮寫，由IETF的網路工作小組（Network Working Group）所制定；SSH為建立在應用層和傳輸層基礎上的安全協議。</p>
-<p>傳統的網路服務程序，如FTP、POP和Telnet其本質上都是不安全的；因為它們在網路上用明文傳送數據、用戶帳號和用戶口令，很容易受到中間人（man-in-the-middle）攻擊方式的攻擊。就是存在另一個人或者一台機器冒充真正的伺服器接收用戶傳給伺服器的數據，然後再冒充用戶把數據傳給真正的伺服器。</p>
-<p>而SSH是目前較可靠，專為遠程登錄會話和其他網路服務提供安全性的協議。利用SSH協議可以有效防止遠程管理過程中的信息泄露問題。透過SSH可以對所有傳輸的數據進行加密，也能夠防止DNS欺騙和IP欺騙。</p>
-<p>SSH之另一項優點為其傳輸的數據是經過壓縮的，所以可以加快傳輸的速度。SSH有很多功能，它既可以代替Telnet，又可以為FTP、POP、甚至為PPP提供一個安全的「通道」。</blockquote>1）使用MyEntunnel或Tunnelier</p>
-<p>從<a href="http://igfw.tk/archives/196" target="_blank">igfw.tk上</a>了解到的一個zip包，<a href="http://www.filedropper.com/theworld" target="_blank">下載后</a>看到包含有一個TW瀏覽器，一個TOR，一個Puff，還有一個SSH。我需要的就是SSH，所以解壓縮安裝，它已經含有5個配置好的帳戶，剩下的就是去把瀏覽器K-meleon中的Proxy連接設置成Socks：127.0.0.1，添加端口號2012，當然了選項是指定Socks v5啦！</p>
-<p>說明一下，這個SSH包里面使用了MyEnTunnel，其實很多朋友試驗過<a href="http://omobox.com/memo/tunnelier-instead-of-myentunnel.html" target="_blank">用Tunnelier替代MyEnTunnel</a>來翻墻的速度較快，但是由于不能提取密碼所以無法試用了。</p>
-<p>如果你有自己的SSH帳號，可以在<a href="http://www.bitvise.com/tunnelier" target="_blank">這里</a>下載Tunnelier。</p>
-<p>推薦閱讀：</p>
-<p>a: <a href="http://kangzj.net/tunnelier-tutorial" target="_blank">Tunnelier使用教程</a></p>
-<p>b: <a href="http://www.366300.org/ssh-proxy.html" target="_blank">用MyEntunnel代理翻墙访问被Gfw网站</a></p>
-<p>2）使用Putty圖形界面+少許Dos命令行</p>
-<p>從<a href="http://xiaod.in/read.php?10" target="_blank">xiaod.in那里</a>看到到他無償提供了SSH代理：</p>
-<p>IP:208.113.176.78<br>端口:22<br>账户名:xiaodin<br>密码:www.xiaod.in<br>流量:无限/月 </p>
-<p>至于Putty如何使用，可以參照閱讀xiaodin發的blog：<a href="http://xiaod.in/read.php?14" target="_blank">免费SSH代理账号及使用方法</a>。</p>
-<p>由于SSH代理账号信息會不定期更改，所以多关注:<a href="http://s.xiaod.in" target="_blank"><a href="http://s.xiaod.in">http://s.xiaod.in</a></a></p>
-<p>推薦閱讀：</p>
-<p>a: <a href="http://chaifeng.com/blog/2007/06/putty_200611.html" target="_blank">PuTTY中文教程</a></p>
-<p>b: <a href="http://tech.ddvip.com/2008-05/121188486544609.html" target="_blank">巧设PuTTY做Windows的安全代理</a></p>
-<p>5.進階（Linux系統）資料補充：</p>
-<p>1）<a href="http://blog.zhuli.name/archives/6644" target="_blank">使用expect防止sshgfw代理断线</a></p>
-<p>2）<a href="http://sprayfly.com/tag/%E7%BF%BB%E5%A2%99/" target="_blank">用tsocks和proxychains使Linux下所有软件能够翻墙</a></p>
+      <p>二三事</p>
+<p>周末啦（今天是5.22），記住今晚（5.23凌晨02：45）歐冠的決賽不能錯過了。</p>
+<p>早上上機用<a href="http://www.google.com" target="_blank">Google.com</a>的時候，注意到首頁logo變成了動態游戲畫面，原來是為了紀念一款叫“吃豆人”的游戲誕生30周年。（參照：<a href="http://www.cnbeta.com/articles/111811.htm" target="_blank">貓貓對Pac Man簡單分析</a>）</p>
+<p>Google的工程師們在普及藝術.科技文化方面帶了個好頭啊，往往在出其不意的情況下推出我們平日里幾乎不曾接觸的新知，這亦是一種留住用戶的招數，UE（用戶體驗）的提升也增強了更多的貼性。</p>
+<p>另外，還有好<a href="http://www.williamlong.info/archives/2186.html" target="_blank">消息</a>是：google加密搜索beta發布了！</p>
+<p><img src="https://www.google.com/images/logos/ssl_logo_beta_49.gif"/></p>
+<p><a href="https://www.google.com" target="_blank"><a href="https://www.google.com">https://www.google.com</a></a></p>
+<p>雖然目前只支持web搜索，但加了“<a href="https://”的好處是不用多說了，至少現在你可以輸入某些“敏感詞”（eg:“胡/羅/卜”.“天/安/門&quot;等）試一試結果是否暢通。" target="_blank">https://”的好處是不用多說了，至少現在你可以輸入某些“敏感詞”（eg:“胡/羅/卜”.“天/安/門&quot;等）試一試結果是否暢通。</a></p>
+<p>如果你用chrome瀏覽器，可以參照“小眾軟件”上介紹的<a href="http://www.appinn.com/chrome-search-https-google" target="_blank">辦法</a>實現自動使用https搜索。</p>
+<p>但，想起那邪惡的GFW，心里不免<a href="http://lolis.info/2010-05/thread-684-1-1.html" target="_blank">擔心地</a>問：Google SSL Search能堅持多久呢？ </p>
+<p>2010年的<a href="http://code.google.com/events/io/2010/" target="_blank">Google I/O</a>大會發布了不少新技術和產品以及開放了不少API，顯然成為了這2天的熱文，VP8+<a href="http://www.webmproject.org/" target="_blank">WebM</a>+<a href="http://developer.android.com/index.html" target="_blank">Adroid</a>+<a href="https://chrome.google.com/webstore" target="_blank">Froyo+Chrome Store</a>+<a href="http://www.google.com/tv" target="_blank">GTV</a>+<a href="http://code.google.com/apis/webfonts/" target="_blank">Web Font</a>等等雄霸IT頭條，真令人應接不暇。</p>
 
     
   </div>
@@ -110,27 +88,30 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2010-04-01T19:24:54.000Z"><a href="/2010/04/02/true-or-not-true/">4月 2 2010</a></time>
+      <time datetime="2010-05-19T00:23:24.000Z"><a href="/2010/05/19/ni-hao-du-ni-hao-du/">5月 19 2010</a></time>
     
     
   
-    <h1 class="title"><a href="/2010/04/02/true-or-not-true/">true or not true</a></h1>
+    <h1 class="title"><a href="/2010/05/19/ni-hao-du-ni-hao-du/">你好毒你好毒</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>假假真真，真真假假</p>
-<p>假戲真做就不好了，真戲假做也不行。可是到了“愚人節”仿佛開個玩笑就是天經地義的事情。</p>
-<p>4月1日，永遠不會忘了這天還是<a href="http://www.cnbeta.com/articles/107657.htm" target="_blank">Gmail的周歲</a>紀念日。</p>
-<p>大概是從當時的04年開始，Google和其他一些IT/網絡公司就開始以制造一些驚奇的新聞為嚼頭進行“病毒式宣傳“，為“愚人節”增添了不少樂趣。當然其中也有一些惡搞成分。比如：<a href="http://blog.donews.com/keepwalking/archive/2010/04/01/1583833.aspx" target="_blank">成龍昨夜之死</a>，<a href="http://tech.sina.com.cn/i/2010-04-02/09104015550.shtml" target="_blank">馬化騰與阿SA</a>，凡此種種，幾乎可以看到世間百態，以及某些媒體的良心。</p>
-<p>以下面的信息為例，證明今年也不例外：</p>
-<p>1）CB：<a href="http://www.cnbeta.com/articles/107658.htm" target="_blank">愚人節國外創意假新聞彙總</a></p>
-<p>2）GA：<a href="http://www.google.org.cn/posts/google-rename-to-topeka.html" target="_blank">Google宣布重大決定：改名為Topeka</a></p>
-<p>3）TW：<a href="http://www.techweb.com.cn/news/2010-04-01/571516.shtml" target="_blank">穀歌收購百度 今年愚人節最逼真的整蠱新聞</a></p>
-<p>4）CSDN：<a href="http://news.csdn.net/a/20100401/217696.html" target="_blank">Python與Perl合並，打造史上最牛語言Parrot</a></p>
-<p>5）iFanr：<a href="http://www.ifanr.com/8355" target="_blank">快訊：蘋果Google合並，矽穀進入寡頭時代</a></p>
+      <p>Wed, 19 May </p>
+<p>在中國，看來互聯網地圖這塊蛋糕不好吃啊！因為搞不好那些被標注的地方有可能泄露了國家機密（<a href="http://www.kenengba.com/post/2938.html" target="_blank">小心！</a>），至于哪些地方屬于保密的，倒是會有<a href="http://www.gov.cn/zwgk/2010-05/18/content_1608070.htm" target="_blank">相關管理部門</a>來制定標準的，反正，上面說你違規那么你就違規了，這是<a href="http://www.yeyezai.com/index.php?load=read&amp;id=735" target="_blank">神奇國度</a>的國情。</p>
+<p>這幾天<a href="http://www.moon-bbs.com/" target="_blank">“月光論壇”</a>好生被CCAV的<a href="http://www.cnbeta.com/articles/111331.htm" target="_blank">“嬌點訪談”</a></a>給欺壓了一下，”殺雞駭猴”的把戲居然被史上最強的宣傳工具發揮得淋漓盡致。他們宣稱<a href="http://www.williamlong.info/archives/1.html" target="_blank">williamlong</a>的論壇涉嫌泄露“國家機密”，這么大的罪名扣在一個平日不足2/30人PV的網站上，背后的黑手下得夠重的啊！</p>
+<p>看了南都報網眼新聞和月光博客的<a href="http://www.williamlong.info/archives/2180.html" target="_blank">說明</a>，相信<a href="http://www.xjp.cc/2010/05/18/moon-bbs-trace/" target="_blank">明白真相</a>的網友心里自然會有一桿秤的。“焦點訪談”的一些是非早有耳聞，不過對于這次“泄密”事件的采訪過程之細節，更是被聰明的新聞專業的blogger（Kinas：<a href="http://kinas04.net/2010/05/18/nothing-more-than-that-principle-of-the-press.html"/ target="_blank">不过如此——《焦点访谈》的细节</a>）找出了不可原諒的失誤。</p>
+<p>明顯地，CCAV這期節目的用意怎么看都讓人想起了“司馬昭之心”。借著“泄露機密”的幌子，實則是為測繪局<a href="http://news.163.com/10/0518/10/66V770RN000146BC.html" target="_blank">地圖服務標準</a>的出臺而造勢。一路下來，令網友們透徹地看清了TA的某些宣傳動機，為此，大家總結了幾條規律：<blockquote>1、央视一旦曝光某个企业的负面消息，这个企业接下来肯定会在央视做广告，老总甚至会出现在春晚。</p>
+<p>2、凡是《焦点访谈》批判的东西，10天内国家必定有相应的政策出台。 </p>
+<p>3、将《新闻联播》的内容反着看，往往能找到真相。</p>
+<p>4、在央视眼里，网友和群众演员的差别仅仅在于有没有低廉的工资。</p>
+<p>5、如果央视反复报道某个活动群众喜闻乐见，那这个活动必定深受冷落。</p>
+<p>6、央视新闻偏向哪一方，这一方未来必将倒霉。</blockquote></p>
+<p>本次節目除了讓“月光論壇”無奈停止注冊外，還是涉及到另外一個打擊的目標：<a href="http://earth.google.com/index.html" target="_blank">谷歌地球</a>，google！我只能說，CCAV你好毒你好毒！</p>
+<p>又及，在看到<a href="http://news.163.com/10/0519/11/671UAJ6Q00014AED.html" target="_blank">“百度参与互联网地图专业标准制定”</a>這條消息后，你又會怎么想？還能怎么想？</p>
+<p>G個B的恩怨有很多傳說了，不打不相識啊，讓他們掐去吧！</p>
 
     
   </div>
@@ -149,24 +130,32 @@
   <header>
     
       <div class="icon"></div>
-      <time datetime="2010-03-31T18:37:54.000Z"><a href="/2010/04/01/foolish-play/">4月 1 2010</a></time>
+      <time datetime="2010-05-17T22:18:58.000Z"><a href="/2010/05/18/bu-liu-shen/">5月 18 2010</a></time>
     
     
   
-    <h1 class="title"><a href="/2010/04/01/foolish-play/">foolish play</a></h1>
+    <h1 class="title"><a href="/2010/05/18/bu-liu-shen/">一不留神</a></h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>開放日：有仇的報仇</p>
-<p>本來不想摻和這種所謂節日的，<br>昨天還點擊了一個該死的網頁，巨汗！<br>看來只要是個人，今天難免要轉入進來，<br>不是愚樂別人，就是自己被人愚樂，<br>兩廂情愿的事情，就成全吧！</p>
-<p>人生，只得一個“樂”字，就該知足了！</p>
-<p>還有，今天之前如果與人有怨恨或是仇冤，請一起做個了結。<br>4月1日，就是開放日。咱們<a href="http://bbs.163.com/special/00153L3J/2010yurenjie.html" target="_blank">有仇的報仇去吧</a>！</p>
-<p>PS：</p>
-<p>聽聞騰訊<a href="http://t.qq.com/" target="_blank">QQ的微博</a>也在經歷開通了，但是登錄進去看到的是“98765320”這排數字，究竟是什么密碼？有誰知道嗎？</p>
-<p>如果哪位同學有邀請碼的話，不妨給俺發一個；否則，呵呵，小心今天被人整的。</p>
+      <p>我只想聽聽歌而已。藝人多一點天分總是好事兒，就像看過一些馬德鐘所演的劇集外，聽他的歌聲也是拜《一不留神》所賜，說真的，還幾乎不曾聽說過他也會唱歌哦。</p>
+<p>這周開始追看tvb劇集<a href="http://movie.douban.com/subject/3892397/" target="_blank">《搜下留情》</a>，看了頭幾集而已，一部輕松而又有些搞笑成分的感情戲，也是適合睡前打發無聊時段的佐料吧。起初也是為了這個怪怪的劇名才下手買碟的，我還以為是與內地那般“人肉搜索”之類的名詞有關，結果是我估計錯誤。</p>
+<p>鵪鶉妹（黃智雯）戴著眼鏡傻傻咁嘎模樣不錯啊，馬德鐘和陳慧珊就不評了，我覺得都是老角演技不是特別犀利的，倒是昌哥（石修）演老竇不似以前《流金歲月》里的作風，還有那個膝頭哥老表（阮兆祥）打拳的古靈古怪扮耶十分笑人，呵呵，不知他的金腰帶從何而來。看港劇的目的無他，僅僅是懷念以前在電視前看TVB或ATV的年代啊，現在都機頂盒了，普通的有線里很多節目被掐了，所以也是不看電視好多年啦！不知是時代的進步還是群眾生活水平的提高。</p>
+<blockquote>
+<p>主唱：馬德鐘   作曲：葉肇中<br>填詞：陳詩慧   編曲：葉肇中<br>監製：鄧智偉 </p>
+<blockquote>
+<p>歌詞：一不留神 </p>
+<p>若然貪心　才換來悔恨<br>就似一不留神  遺失今天抱緊<br>若然抓緊　那一剎好感  絕對抽身以便俯瞰<br>＊動情太易　而動搖更易 若有一絲猶豫  　<br>回想某個名字  實情愛是　<br>誰為誰付出不是恩賜卻是真摯<br>＃我也試過戲內看不清　<br>再看到這愛情是見証<br>哪個永遠與我分享笑聲<br>跌跌踫踫最後也清醒　<br>哪個予我快樂幸福讓心境以後更清　<br>如水般潔淨<br>Repeat＊＃＃</blockquote></p>
+</blockquote>
+</blockquote>
+<p>在看《搜》之前，看的是07年內地熱播的<a href="http://ent.sina.com.cn/f/xsht/" target="_blank">《新上海灘》</a>，導演是高希希，而新《三國》也是其主導的呢，無論她被褒貶得如何，那就從老劇開始了解這個導演的水準吧！以下是昨天在<a href="http://twitter.com/guokb" target="_blank">twitter上</a>的斷想，也在這里留個記號：</p>
+<p>1）不過，想起原版《上海灘》的粵語主題歌，那還是經典的沒得說。“浪奔,浪流，萬里滔滔江水永不休……“這是學生時代就唱得很爛熟的開頭。</p>
+<p>2）《新上海灘》主題太廣泛了，英雄主義，愛國救國，兄弟義氣，外國侵略，北洋政府，黑道與巡捕房，知識青年學生，還有男女愛情，以及復仇，精武門兄弟，等等，所以才有41集那么長啊！</p>
+<p>3）《新上海灘》42集總算看完了，很長，但對許文強（黃曉明）的戲份還是比80～90s看過的周潤發呂良偉版的《上海灘》有些不及啊。許文強遇到的3個女人，其實我還是贊賞阿娣對強哥的追求，反而覺得孫儷演的馮程程有些假。</p>
+<p>4）看《新上海灘》，有一段講到利物浦球隊到上海與日本僑民球隊比賽，我想問：1930年代，利物浦球隊就來過上海了么？</p>
 
     
   </div>

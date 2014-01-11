@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>有[福]共享 | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  <meta name="description" content="3/26/09
+本文将提供一种一劳永逸的翻墙方式（ssh -D），实施之后，那道墙——对你来说——将从此透明。
+本文面向的用户：使用Windows作为操作系统并且使用Firefox作为常用浏览器。
+第一步：免费获取拥有SSH权限的帐号和密码。
+
+默认的免费获取方式：将本文转载到你自己的博客上，将转载">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="有[福]共享"/>
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2009-03-26T14:20:00.000Z"><a href="/2009/03/26/you-fu-gong-xiang/">3月 26 2009</a></time>
+    
+    
+  
+    <h1 class="title">有[福]共享</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>3/26/09</p>
+<p>本文将提供一种一劳永逸的翻墙方式（ssh -D），实施之后，那道墙——对你来说——将从此透明。</p>
+<p>本文面向的用户：使用Windows作为操作系统并且使用Firefox作为常用浏览器。</p>
+<h3>第一步：免费获取拥有SSH权限的帐号和密码。</h3>
+
+<p>默认的免费获取方式：将本文转载到你自己的博客上，将转载后的文章网址发送到<img src="http://photos.smugmug.com/photos/497999637_nw25h-O.png" alt="f.ckgfw#gmail.com" title="" />。</p>
+<p>转载方式：拷贝<a href="https://dl.getdropbox.com/u/398/html.txt" target="_blank">文章代码</a>至博客后台HTML编辑器中，直接发布即可，文章标题自拟，可在前后文插入自己的评论。</p>
+<p>经过人工审核，你将收到一封附有五个拥有SSH权限的帐号和密码的电子邮件，你可以将它们赠与你自己的读者。</p>
+<p>更多获取方式将在今后陆续激活，请关注帐号配送中心：<a href="https://friendfeed.com/rooms/fuckgfw-for-free" target="_blank"><a href="https://friendfeed.com/rooms/fuckgfw-for-free">https://friendfeed.com/rooms/fuckgfw-for-free</a></a></p>
+<h3>第二步：配置MyEntunnel软件</h3>
+
+<p>下载并安装MyEntunnel，该软件全名为My Encrypted Tunnel。</p>
+<p>一键下载：<a href="https://dl.getdropbox.com/u/398/myentunnel.exe" target="_blank"><a href="https://dl.getdropbox.com/u/398/myentunnel.exe">https://dl.getdropbox.com/u/398/myentunnel.exe</a></a></p>
+<p><img src="http://photos.smugmug.com/photos/497956295_FRKXY-O.jpg" alt="myentunnel" title="" /></p>
+<p>按照上图将第一步收到的帐号信息填写到相应的地方后，点击<img src="http://photos.smugmug.com/photos/497956305_GuUqV-O.jpg" alt="save" title="" />按钮，再点击<img src="http://photos.smugmug.com/photos/497956257_vDBHg-O.jpg" alt="hide" title="" />按钮。</p>
+<p>第一次连接过程中会出现一个认证对话框，按照提示确认即可。以后的自动连接中将不再出现此认证对话框。</p>
+<p>最后点击<img src="http://photos.smugmug.com/photos/497956277_uqUyE-O.jpg" alt="hide" title="" />按钮，使对话框隐藏到系统任务栏中。</p>
+<p>提示：</p>
+<p>为MyEntunnel创建一个快捷方式，将其复制到系统的【启动】（C:\Documents and Settings\当前用户名（需要修改成你自己的）\「开始」菜单\程序\启动）文件夹中，今后开机便可自动启动软件，并自动连接服务器。</p>
+<p><img src="http://photos.smugmug.com/photos/497956351_pNNkc-O.png" alt="tray" title=""/></p>
+<p>绿色代表连接成功且稳定；黄色代表正在连接或重新连接；红色代表连接失败。</p>
+<h3>第三步：配置Firefox浏览器</h3>
+
+<p>假设你正使用<a href="http://www.mozilla.com/firefox" target="_blank">Firefox浏览器</a>阅读本文。</p>
+<p>一键安装：<a href="http://autoproxy.mozdev.org/latest.xpi" target="_blank"><a href="http://autoproxy.mozdev.org/latest.xpi">http://autoproxy.mozdev.org/latest.xpi</a></a></p>
+<p><img src="http://photos.smugmug.com/photos/498951512_XzxSh-O.png" alt="xpi-offical" title="" /></p>
+<p>点击立即安装，安装后，重新启动Firefox。然后你会看到如下对话框，选择gfwlist (P.R.China)后，点击确定。</p>
+<p><img src="http://photos.smugmug.com/photos/497956357_vmp9W-O.png" alt="gfwlist" title="" /></p>
+<p>接着你会看到Firefox主界面右上角出现有一个“福”字图案，点击“福”。</p>
+<p><img src="http://photos.smugmug.com/photos/497956204_t4d3L-O.png" alt="fu" title="" /></p>
+<p>点击“代理服务器——编辑代理服务器”。</p>
+<p><img src="http://photos.smugmug.com/photos/497956317_yWwtL-O.png" alt="edit" title="" /></p>
+<p>随即出现如下画面，你会看到如GAppProxy、Tor和Your Freedom这样一系列代理服务器名称。</p>
+<p><img src="http://photos.smugmug.com/photos/497956227_jQby9-O.png" alt="before" title="" /></p>
+<p>将GAppProxy一栏的参数修改为如下图所示。</p>
+<p><img src="http://photos.smugmug.com/photos/497956232_ttQRj-O.png" alt="after" title="" /></p>
+<p>修改完毕后，点击确定。至此配置已全部就绪。</p>
+<p>获取更多帮助，请关注反馈中心：<a href="https://friendfeed.com/rooms/fuckgfw-feedback" target="_blank"><a href="https://friendfeed.com/rooms/fuckgfw-feedback">https://friendfeed.com/rooms/fuckgfw-feedback</a></a></p>
+<h3>第四步：支持fuckGFW</h3>
+
+<p>获取详情，请关注捐赠与推广中心：<a href="https://friendfeed.com/rooms/fuckgfw-donation-and-marketing" target="_blank"><a href="https://friendfeed.com/rooms/fuckgfw-donation-and-marketing">https://friendfeed.com/rooms/fuckgfw-donation-and-marketing</a></a></p>
+<p>版权信息：您可以自由复制、传播、演绎本作品且无需署名、无需注明原始出处。</p>
+
+    
+  </div>
+  <footer>
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

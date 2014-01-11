@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>第 215 页 | kaka@love</title>
+  <meta name="author" content="kaka">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  
+  <meta property="og:site_name" content="kaka@love"/>
+
+  <link rel="alternate" href="/atom.xml" title="kaka@love" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header id="header"><div class="title">
+  <h1><a href="/">kaka@love</a></h1>
+  <p><a href="/">人生是一本書，難免會有錯別字的。</a></p>
+</div>
+<nav class="nav">
+  <ul>
+    
+      <li><a href="/">what</a></li>
+    
+      <li><a href="/who">who</a></li>
+    
+      <li><a href="/wiki">wiki</a></li>
+    
+      <li><a href="/archives">whole</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+    <div class="content">
+  <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2008-08-20T11:21:00.000Z"><a href="/2008/08/20/shi-yong-opendns/">8月 20 2008</a></time>
+    
+    
+  
+    <h1 class="title"><a href="/2008/08/20/shi-yong-opendns/">試用OpenDNS</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>8/20/08</p>
+<p>網址：<a href="http://www.opendns.com/" target="_blank"><a href="http://www.opendns.com/">http://www.opendns.com/</a></a></p>
+<p>適用于Win、Mac、Unix/Linux三類常見操作系統，也適用于移動通訊系統（eg:Nokia S60,Palm OS，Windows Mobile 5等）。</p>
+<p><a href="http://www.bianceng.cn/Servers/DNS/200712/5719.htm" target="_blank">什麼是OpenDNS</a>？為什麼要用它？官方的解釋用了幾個詞：Reliable！Faster！Safer！Smarter！Free！</p>
+<p>其實這個已經流行很久了啊！它是一項免費的DNS網絡服務（可以注冊或者不注冊），能夠解決電信或網通攔截DNS插入廣告（如：互聯星空、綠色上網等）的問題；訪問國外網站的時候解析速度會加快；可以過濾一些釣魚等危險的網站，增強安全性；幫助你自動糾正錯誤的域名等等。</p>
+<p>1）之前我的電腦中DNS設置是按照下面的步驟進行的（使用系統WinXP，局域網環境)：</p>
+<p>從屏幕右下角找到【網絡連接】圖標<br>——&gt;【本地連接狀態】——&gt;【屬性（P)】——&gt;【常規】<br>——&gt;【internet協議(tcp/ip)】——&gt;【屬性(R)】<br>——&gt;【常規】——&gt;【使用下面的ip地址】：  </p>
+<p>ip地址: 192.168.1.13<br>子網掩碼：255.255.255.0<br>默認網關：192.168.1.1  </p>
+<p>【使用下面的DNS服務器地址】:<br>首選DNS服務器：202.96.128.86<br>備用DNS服務器：202.96.128.166<br>（可以搜索：<a href="http://www.google.com/search?hl=en&newwindow=1&q=%E6%9D%B1%E8%8E%9E%E9%9B%BB%E4%BF%A1DNS&btnG=Search" target="_blank">東莞電信DNS</a>）</p>
+<p>2）現在要改用OpenDNS服務器，所以上面的變化如下：<br>——&gt;【本地連接狀態】——&gt;【屬性（P)】——&gt;【常規】<br>——&gt;【internet協議(tcp/ip)】——&gt;【屬性(R)】<br>——&gt;【常規】——&gt;點選【自動獲得ip地址】  </p>
+<p>【使用下面的DNS服務器地址】：<br>首選DNS服務器：208.67.222.222<br>備用DNS服務器：208.67.220.220</p>
+<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_FzVWQaZQR5M/SKvSvSybsUI/AAAAAAAAAxM/nqT0HAvJ8RA/s1600-h/opendns.jpg" target="_blank"><img style="cursor:pointer; cursor:hand;" src="http://2.bp.blogspot.com/_FzVWQaZQR5M/SKvSvSybsUI/AAAAAAAAAxM/nqT0HAvJ8RA/s320/opendns.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5236510701687386434" /></a></p>
+<p>在設置完成後，重新成功連接網絡，在瀏覽器地址欄輸入這個地址：<a href="http://welcome.opendns.com/" target="_blank"><a href="http://welcome.opendns.com/">http://welcome.opendns.com/</a></a>，如果顯示的是打勾的頁面（見上圖），就表示你的OpenDNS已經設置成功了。也可以為家庭用戶的路由器提供DNS支持。</p>
+<p>參考文章：</p>
+<p>1）布拉格公園：<a href="http://evance.name/weblog/opendns" target="_blank">OPENDNS-解決山西網通的DNS劫持問題！</a><br>2）月光：<a href="http://www.williamlong.info/archives/1101.html" target="_blank">使用OpenDNS解決DNS域名劫持</a>和<br><a href="http://www.williamlong.info/archives/1113.html" target="_blank">OpenDNS不能解決DNS解析錯誤</a><br>3）好手：<a href="http://soft.onlyone.idv.tw/article.asp?id=170" target="_blank">OpenDNS-讓瀏覽網路更順暢</a><br>4）龜兔賽跑11: <a href="http://zhoucaiqi.com/post/642/" target="_blank">OpenDNS真的值得如此信任嗎？</a><br>5）TechPush：<a href="http://techpush.com/archives/smart-opendns/" target="_blank">OpenDNS,獨特的免費DNS</a><br>6）KennyP：<a href="http://www.kennyp.cn/2007/10/22/faster-and-safer-browsing-with-opendns/" target="_blank">OpenDNS 讓上網更快更安全</a><br>7）室內桃源：<a href="http://www.rinima.org/blog/post/opendns-detailed-set-method.html" target="_blank">OpenDNS詳細設置方法</a></p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+  <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2008-08-18T15:48:00.000Z"><a href="/2008/08/18/1yu-13de-jiao-liang/">8月 18 2008</a></time>
+    
+    
+  
+    <h1 class="title"><a href="/2008/08/18/1yu-13de-jiao-liang/">1與13的較量</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>8/18/08</p>
+<p>身體傷了，還可以憑借藥物加以醫治和補救；而我們的心受傷了，會面臨無法挽救的處境！當身體累了的時候，我們還可以通過休息加以調整，而如果人的心也處於受累的時刻，就難免會遭遇崩潰！</p>
+<p>曾經他的腿，就是他的翅膀，讓對手和世人刮目相待。<br><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_FzVWQaZQR5M/SKpmv1e9maI/AAAAAAAAAxE/Z4kCC-OHL30/s1600-h/1363.jpg" target="_blank"><img style="cursor:pointer; cursor:hand;" src="http://1.bp.blogspot.com/_FzVWQaZQR5M/SKpmv1e9maI/AAAAAAAAAxE/Z4kCC-OHL30/s320/1363.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5236110488768453026" /></a></p>
+<p>如今，他的腿傷喚醒了更多人認識到：金牌分量最重，也不要以運動員的生命代價來換取，體育不需要承載那麼多東西！我們該<a href="http://survey.2008.sina.com.cn/voteresult.php?pid=26356" target="_blank">如何看待</a>他的退賽呢？<br><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_FzVWQaZQR5M/SKo_Inb4vJI/AAAAAAAAAws/l3INrOPTINI/s1600-h/liuxiang1356.jpg" target="_blank"><img style="cursor:pointer; cursor:hand;" src="http://3.bp.blogspot.com/_FzVWQaZQR5M/SKo_Inb4vJI/AAAAAAAAAws/l3INrOPTINI/s320/liuxiang1356.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5236066934029073554" /></a></p>
+<p>今天，他是中國奧運會<a href="http://www.dw-world.de/dw/article/0,,3575534,00.html?maca=chi-rss-chi-top-1043-rdf" target="_blank">最大的悲情人物</a>！他的意外表現讓人意識到，一只曾經被寄予厚望的鳥兒不能夠再飛了！他令眾多粉絲失望和痛哭，但我<a href="http://liuxinzheng.blog.sohu.com/97534123.html" target="_blank">無權責備</a>劉翔做出的這種選擇，他<a href="http://blog.sina.com.cn/s/blog_46e7ba410100a1yj.html" target="_blank">有資格</a>選擇退賽。也許一場比賽下來，剩下的還應該關注一下<a href="http://monalisasmile.blog.sohu.com/97526151.html"/ target="_blank">留下的社會問題</a>。從現狀來看，無論是體育機制、還是運動員心理以及觀眾的心態，都不能太樂觀，也<a href="http://blog.sina.com.cn/s/blog_3f59fbc20100anhe.html" target="_blank">無法像開幕式那樣光鮮</a>。</p>
+<p>數字1，就是一個被大家熱議的”飛人”——劉翔；而13，就是代表著13億人口的大國，56個曬書民族。今天，他的退賽，考驗了13億國人的心態，對我們的心理素質也進行了一次檢驗。一直以來我們的時代太崇拜英雄了，也許期望得愈多，渴求的東西愈多，相反得到的越少。每個人都希望他能奪得金牌，但上帝和劉翔在8月18日在”鳥巢”給9萬觀眾、甚至所有關注他的人開了一個尷尬的”玩笑”。就算他是田徑運動場上的英雄，但他終究是人而不是神，不要給予他太大的壓力。</p>
+<p>一名運動員能進入奧運賽場站在全世界世人的目光面前，足以證明他（她)是出眾的有能力的，金牌沖刺雖然失利，但我們更應該寬容失敗者，即使失敗了，也<a href="http://yanghengjun65.blog.sohu.com/97526882.html" target="_blank">不應該有噓聲</a>，是他（她）們的積極參與才使得奧林匹克運動走得更遠。誠然，我們的運動員是國家花力氣好不容易培養出來的，但通過這次的退賽也可以讓我們冷靜地追問一下文教體等制度方面所存在的弊端。比賽貴在參與，無論輸贏都應該高高興興地，不必要弄得跟戰場似的，享受比賽的樂趣和過程才重要。何況因傷退賽的運動員又不是只有一個劉翔，也不是只發生在這次的夏季運動會上。</p>
+<p>我承認<a href="http://zt.blog.sohu.com/s2008/liuxiangtuisai" target="_blank">劉翔退賽是個謎</a>，但對遭遇到的不應有的質疑，難免讓人覺得我們<a href="http://q.sohu.com/forum/4/topic/3384238" target="_blank">自漢城奧運會20年來</a>的一些觀念還沒有改變。我不贊同”唯金牌論”，如果比賽一定要拿金牌才算是為國家做了貢獻符合國家利益，而且不顧運動員的傷病，就已經違背了體育精神，也很難成為一個體育強國！奧林匹克是一個Game，看作娛樂也罷，看作強身健體也罷，僅僅是一種精神享受而已！</p>
+<p><a href="http://yule.sohu.com/20080818/n258968426.shtml" target="_blank">“勝也愛你輸也愛你，不拼不愛你”！</a>今日的退賽，也許拯救了更多的人，我能<a href="http://vote.2008.163.com/vote/2008_results.jsp?voteid=29853
+">對他說點什麼呢</a>？曾經輝煌過的劉翔，但願他能夠實現再一次的飛躍。</p>
+<p>相關閱讀：</p>
+<p>1）騰訊：<a href="http://2008.qq.com/zhuanti/liuxiang.htm" target="_blank">劉翔退賽</a><br>2）網易：<a href="http://2008.163.com/special/00742R2S/hurtlx.html" target="_blank">悲傷！劉翔受傷退賽北京奧運無緣衛冕</a><br>3）百度：<a href="http://2008.baidu.com/renwu/liuxiang.html" target="_blank">劉翔-百度2008總動員</a><br>4）新浪：<a href="http://2008.sina.com.cn/z/liuxiang/index.shtml" target="_blank">劉翔因傷退出奧運會110米欄比賽</a><br>5）搜狐：<a href="http://2008.sohu.com/china/athletics/08liuxiang/" target="_blank">劉翔因傷退賽無緣衛冕</a><br>6）鳳凰網：<a href="http://2008.ifeng.com/specials/110mh/" target="_blank">奧運110m欄</a><br>7）<a href="http://2008.163.com/special/00742QLM/Superman_Games.html" target="_blank">超能英雄”奧運會”</a><br>8）<a href="http://2008.163.com/special/00742SDK/cxx.html" target="_blank">奧運冠軍”奧運經紀人”</a><br>9）<a href="http://2008.163.com/special/00742Q9F/photo_b09.html" target="_blank">從農村你走出來的奧運冠軍</a><br>10）<a href="http://2008.163.com/special/00742Q9F/photo_b11.html" target="_blank">奧運冠軍背後的女人用愛情為奧運加油</a></p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+  <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <time datetime="2008-08-18T11:19:00.000Z"><a href="/2008/08/18/ru-guo-ni-shi-yi-wei-zhong-guo-yun-dong-yuan/">8月 18 2008</a></time>
+    
+    
+  
+    <h1 class="title"><a href="/2008/08/18/ru-guo-ni-shi-yi-wei-zhong-guo-yun-dong-yuan/">如果你是一位中國運動員</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>8/18/08</p>
+<p>注：這段文字來自于網友的<a href="http://comment.2008.163.com/2008pl_bbs/4JJQ6M3V00742RIA.html" target="_blank">精彩留言</a>，雖然是”如果”的句式，但是也是比較貼近我們的現實——中國特色，難道不是嗎？某些冠軍的人生結果是成也金牌，敗也金牌!!</p>
+<p>如果菲爾普斯是一位中國運動員，這位中國運動員神奇地贏得了八枚奧運金牌，那麼會有什麼事情發生呢？</p>
+<p>1）他們家的門檻在奧運會期間將會被記者、領導、鄰居們踏平，每天都會擠滿一屋子人共同看電視，買鞭炮的小販將在他們家門口擺攤。</p>
+<p>2）他將得到來自中央和地方各級政府的物質獎勵，每枚金牌至少一百萬元；同時，全國很多大企業的老板都會慷慨解囊；此外，廣告商也會排著隊來與他簽約。不出意外地話，奧運會後一個月之內，他就將成為一名億萬富翁。</p>
+<p>3）當然，他需要交稅，而且除去像一個美國人那樣交稅以外，他還有許多具有中國特色的支出。他要給從啟蒙教練到現任教練、從按摩師到食堂大師傅每人送上一份紅包，家裏的窮親戚也能跟著沾點光，另外，從體校，到省隊，直至中國泳協，都會從他的收入中按比例抽頭。</p>
+<p>4）奧運會後，他首先會參加一個巡回演講團，到全國各地講述自己奮勇奪取八枚奧運金牌的英雄事跡。他會聲淚俱下地說起自己戰勝傷病、刻苦訓練的感人故事，讓台下的觀眾淚水漣漣。</p>
+<p>5）他肯定會被請上2009年的CCTV春節晚會，並參加表演一個節目，估計會是鞏漢林或潘長江等人就他的偉大戰績來一番插科打諢。</p>
+<p>6）他會很快地當選人大代表，並在明年三月衣冠楚楚地出現在人民大會堂的主席台上。</p>
+<p>7）他的臉將無處不在，廣告商會把他的頭像貼滿中國大地，從飛機場邊巨大的廣告牌，到公共汽車的車廂；從品牌店的精美櫥窗，到雜貨鋪的簡陋櫃台，你睜開眼睛就能看到他，躲都躲不開。</p>
+<p>8）2009年全運會後，他將退役。中國的優秀運動員總是在這個時候急流勇退。</p>
+<p>9）退役後，他將被北京大學破格錄取，經過一番學習，順利地畢業，並且至少拿到一個碩士學位。在學校期間，他還能出演十部電影，參加幾十場電視綜藝節目，出席近百次大小慶典。</p>
+<p>10）最後，過了若幹年，邁克爾.菲爾普斯將移民美國，成為一名美國公民。</p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+
+
+<nav id="pagination">
+  
+    <a href="/page/214/" class="prev">上一页</a>
+  
+  
+    <a href="/page/216/" class="next">下一页</a>
+  
+  <div class="clearfix"></div>
+</nav></div>
+  </div>
+  <div class="widget-wrapper">
+    <aside id="sidebar">
+  
+  
+</aside>
+<div class="clearfix"></div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2014 <a href="/">kaka</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>
